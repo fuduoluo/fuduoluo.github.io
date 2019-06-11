@@ -61,7 +61,7 @@ about:
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://fuduoluo.github.io
 root: /
-permalink: posts/:abbrlink.html
+permalink: :abbrlink.html
 abbrlink:
   alg: crc32 
   rep: hex    
