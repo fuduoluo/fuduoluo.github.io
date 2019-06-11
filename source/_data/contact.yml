@@ -1,0 +1,9 @@
+- title: github
+  icon: icon-github
+  link: http://fuduoluo.github.io
+- title: email
+  icon: icon-email
+  link: mailto:fuduoluo@gmail.com
+- title: rss
+  icon: icon-rss
+  link: /atom.xml
