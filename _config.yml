@@ -38,7 +38,7 @@ avatar: ./img/code.png
 default_cover: https://images.unsplash.com/flagged/photo-1556669546-b1f29875df1c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60
 
 #默认语言
-language: zh-cn
+language: zh-Hans
 
 #时区
 timezone: Asia/Shanghai
@@ -75,18 +75,28 @@ category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
+  - README.md
+  - CNAME
 
-# 文章
-new_post_name: :title.md # File name of new posts
-default_layout: post
-titlecase: false # Transform title into titlecase
-external_link: true # Open external links in new tab
-filename_case: 0
-render_drafts: false
-post_asset_folder: false
-relative_link: false
+# Writing
+new_post_name:  # 新的博文的文件名
+  :title.md
+default_layout: #默认布局
+  post 
+titlecase: # 将标题转换为首字母大写标题
+  false 
+external_link: # 在新标签中打开外部链接
+  true 
+filename_case: #把文件名称转换为 (1) 小写或 (2) 大写
+  0 
+render_drafts: #是否显示草稿
+  false 
+post_asset_folder: #是否启动资源文件夹
+  false 
+relative_link: #把链接改为与根目录的相对位址
+  false 
 future: true
-highlight:
+highlight: #代码块的设置
   enable: true
   line_number: true
   auto_detect: false
@@ -102,8 +112,9 @@ index_generator:
   order_by: -date
   
 # Category & Tag
-default_category: uncategorized
-category_map:
+default_category: #如果撰写文章时没有设置分类，默认的分类选择
+  uncategorized 
+category_map: #用于映射分类的别名
 tag_map:
 
 # Date / Time format
@@ -121,8 +132,8 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: hexo-theme-skapp
-
+#theme: hexo-theme-skapp
+theme: next
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
@@ -131,12 +142,23 @@ deploy:
   branch: master
 # Extensions
 ## Plugins: http://hexo.io/plugins/
+# RSS订阅插件
+feed: 
+  type: atom
+  path: atom.xml
+  limit: 0
 plugins: hexo-generate-feed
+# 搜索
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
 #menu
 menu:
   home: / 
-  archive: /archives/
-  about: /about/
-  search: /search/
+  archive: /archives
+  about: /about
+  search: /search
 # Busuanzi
 busuanzi: true
