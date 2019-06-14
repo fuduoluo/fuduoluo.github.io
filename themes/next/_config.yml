@@ -46,7 +46,8 @@ rss: /atom.xml
 footer:
   # Specify the date when the site was setup.
   # If not defined, current year will be used.
-  since: 2019# 建站年份
+  #建站年份
+  since: 2019 
 
   # Icon between year and copyright info.
   icon: snowflake-o
@@ -55,7 +56,7 @@ footer:
   copyright: Hiddleston
   # -------------------------------------------------------------
   # Hexo link (Powered by Hexo).
-  powered: true
+  powered: false
 
   theme:
     # Theme & scheme info link (Theme - NexT.scheme).
@@ -176,9 +177,7 @@ toc:
 # Creative Commons 4.0 International License.
 # http://creativecommons.org/
 # Available: by | by-nc | by-nc-nd | by-nc-sa | by-nd | by-sa | zero
-#creative_commons: by-nc-sa
-  #sidebar: true
-  #post: true
+creative_commons: by-nc-sa
 #creative_commons:
 
 sidebar:
@@ -704,7 +703,7 @@ pace: false
 pace_theme: pace-theme-minimal
 
 # Canvas-nest
-canvas_nest: true
+canvas_nest: false
 
 # three_waves
 three_waves: false
@@ -812,7 +811,9 @@ vendors:
   # https://github.com/revir/need-more-share2
   needMoreShare2:
 
-
+# 文章末尾添加“本文结束”标记
+passage_end_tag:
+  enabled: true
 # Assets
 css: css
 js: js
