@@ -19,9 +19,8 @@ keywords: Hiddleston, Hiddleston blog, PHP, 前端, 程序员,VUE, 前端开发,
 
 # 站长信息
 
-author: 
-  name: Hiddleston
-  link: http://fuduoluo.github.io
+author: Hiddleston
+  #link: http://fuduoluo.github.io
   
 # 个人介绍  
 introduction: 
@@ -30,13 +29,13 @@ introduction:
 favicon_ico: ./img/code.png
 
 # 博客的左上角logo图标，支持本地及在线两种方式
-logo: ./img/code.png
+logo: https://images.unsplash.com/photo-1560487765-67095b892dd1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60
 
 # 头像/二维码（用于显示在底部）二选一
-avatar: ./img/code.png
+avatar: https://images.unsplash.com/photo-1560487765-67095b892dd1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60
 
 # 文章的默认封面
-default_cover: https://images.unsplash.com/flagged/photo-1556669546-b1f29875df1c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60
+#default_cover: https://images.unsplash.com/flagged/photo-1556669546-b1f29875df1c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60
 
 #默认语言
 language: zh-Hans
@@ -45,18 +44,18 @@ language: zh-Hans
 timezone: Asia/Shanghai
 
 # header 的背景图
-header_cover: https://images.unsplash.com/photo-1524601500432-1e1a4c71d692?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60
+#header_cover: https://images.unsplash.com/photo-1524601500432-1e1a4c71d692?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60
 # 404 页面的背景图
 error_page_bg: https://images.unsplash.com/photo-1542434684-41a0bf4e6cd3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60
 
 # 页面加载loading图标
-loader_img: 
+#loader_img: 
 
 # 用于页面 footer 的站长信息
-about:
-  info: 本站是基于 Hexo 搭建的静态资源博客，主要用于分享日常学习、生活及工作的一些心得总结，欢迎点击右下角订阅 rss。
-  address: Fuzhou, Fujian Province, China
-  email: fuduoluo@gmail.com
+#about:
+  #info: 本站是基于 Hexo 搭建的静态资源博客，主要用于分享日常学习、生活及工作的一些心得总结，欢迎点击右下角订阅 rss。
+  #address: Fuzhou, Fujian Province, China
+  #email: fuduoluo@gmail.com
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
@@ -155,11 +154,5 @@ search:
   field: post
   format: html
   limit: 10000
-#menu
-menu:
-  home: / 
-  archive: /archives
-  about: /about
-  search: /search
 # Busuanzi
-busuanzi: true
+#busuanzi: true
