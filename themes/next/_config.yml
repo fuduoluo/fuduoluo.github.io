@@ -46,22 +46,22 @@ rss: /atom.xml
 footer:
   # Specify the date when the site was setup.
   # If not defined, current year will be used.
-  since:  # 建站年份
+  since: 2019# 建站年份
 
   # Icon between year and copyright info.
   icon: snowflake-o
 
   # If not defined, will be used `author` from Hexo main config.
-  copyright: 
+  copyright: Hiddleston
   # -------------------------------------------------------------
   # Hexo link (Powered by Hexo).
   powered: true
 
   theme:
     # Theme & scheme info link (Theme - NexT.scheme).
-    enable: true
+    enable: false
     # Version info of NexT after scheme info (vX.X.X).
-    version: true
+    version: false
   # -------------------------------------------------------------
   # Any custom text can be defined here.
   #custom_text: Hosted by <a target="_blank" href="https://pages.github.com">GitHub Pages</a>
@@ -177,6 +177,8 @@ toc:
 # http://creativecommons.org/
 # Available: by | by-nc | by-nc-nd | by-nc-sa | by-nd | by-sa | zero
 #creative_commons: by-nc-sa
+  #sidebar: true
+  #post: true
 #creative_commons:
 
 sidebar:
@@ -402,7 +404,7 @@ valine:
 
 # Support for LiveRe comments system.
 # You can get your uid from https://livere.com/insight/myCode (General web site)
-#livere_uid: your uid
+livere_uid: MTAyMC80NDcwNS8yMTIzMQ
 
 # Gitment
 # Introduction: https://imsun.net/posts/gitment-introduction/
