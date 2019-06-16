@@ -164,6 +164,10 @@ links:
 # in site  directory(source/uploads): /uploads/avatar.gif
 #avatar: /images/avatar.gif
 
+# Online contact 
+daovoice: true
+daovoice_app_id: ab1e1d5b
+
 # Table Of Contents in the Sidebar
 toc:
   enable: true
