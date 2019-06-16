@@ -209,8 +209,8 @@
                {% if theme.post_meta.item_text %}
                  <span class="post-meta-item-text">{{__('post.visitors')}}&#58;</span>
                {% endif %}
-                 <span class="leancloud-visitors-count">℃</span>
-				
+                 <span class="leancloud-visitors-count"></span>
+				<span>℃</span>
              </span>
           {% endif %}
 
@@ -234,7 +234,7 @@
                   <span class="post-meta-item-text">{{ __('post.wordcount') }}&#58;</span>
                 {% endif %}
                 <span title="{{ __('post.wordcount') }}">
-                  {{ wordcount(post.content) }}
+                  {{ wordcount(post.content) }} 字
                 </span>
               {% endif %}
 
@@ -250,7 +250,7 @@
                   <span class="post-meta-item-text">{{ __('post.min2read') }} &asymp;</span>
                 {% endif %}
                 <span title="{{ __('post.min2read') }}">
-                  {{ min2read(post.content) }}
+                  {{ min2read(post.content) }} 分钟
                 </span>
               {% endif %}
             </div>
@@ -258,7 +258,7 @@
 
           {% if post.description and (not theme.excerpt_description or not is_index) %}
               <div class="post-description">
-                  {{ post.description }}
+                  {{ post.description }} 次
               </div>
           {% endif %}
 
