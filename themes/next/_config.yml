@@ -114,8 +114,8 @@ menu_icons:
 
 # Schemes
 #scheme: Muse
-scheme: Mist
-#scheme: Pisces
+#scheme: Mist
+scheme: Pisces
 #scheme: Gemini
 
 
@@ -154,10 +154,7 @@ links_layout: inline
 links:
   Web前端导航: http://www.alloyteam.com/nav/
   创造狮导航: http://www.chuangzaoshi.com/code
-  前端书籍资料: http://www.36zhen.com/t?id=3448
-  掘金酱: http://e.xitu.io/
   V2EX: https://www.v2ex.com/
-  印记中文: https://www.v2ex.com/
 
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.gif
@@ -195,12 +192,12 @@ sidebar:
   #  - hide    expand only when click on the sidebar toggle icon.
   #  - remove  Totally remove sidebar including sidebar toggle.
   display: post
+  width: 300
   #display: always
   #display: hide
   #display: remove
-
   # Sidebar offset from top menubar in pixels (only for Pisces | Gemini).
-  offset: 12
+  offset: 20
 
   # Back to top in sidebar (only for Pisces | Gemini).
   b2t: true
@@ -209,7 +206,7 @@ sidebar:
   scrollpercent: true
 
   # Enable sidebar on narrow view (only for Muse | Mist).
-  onmobile: false
+  onmobile: true
 
 
 # ---------------------------------------------------------------
