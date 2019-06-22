@@ -4,6 +4,8 @@ date: {{ date }}
 updated: {{ date }}
 categories:
 tags:
-permalink: 
+permalink: posts/:abbrlink.html
+abbrlink: 
+subtitle: 
 copyright: true
 ---

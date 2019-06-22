@@ -3,7 +3,7 @@ title: 向往的生活
 tags: 向往的生活
 categories:
   - 日常
-permalink: :abbrlink.html
+permalink: posts/:abbrlink.html
 cover: 
   https://images.unsplash.com/photo-1484100356142-db6ab6244067?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60
 author: 
