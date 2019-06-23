@@ -138,7 +138,19 @@
           {% include '../_custom/sidebar.swig' %}
         </div>
       </section>
-
+	  <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=280 height=110 src="//music.163.com/outchain/player?type=0&id=365005798&auto=1&height=90"></iframe>
+	{% if site.tags.length > 1 %}
+	<script type="text/javascript" charset="utf-8" src="{{ url_for('/js/tagcloud.js') }}"></script>
+	<script type="text/javascript" charset="utf-8" src="{{ url_for('/js/tagcanvas.js') }}"></script>
+	<div class="widget-wrap">
+		<h3 class="widget-title">Tag Cloud</h3>
+		<div id="myCanvasContainer" class="widget tagcloud">
+			<canvas width="250" height="250" id="resCanvas" style="width=100%">
+				{{ list_tags() }}
+			</canvas>
+		</div>
+	</div>
+	{% endif %}
       {% if display_toc and toc(page.content).length > 1 %}
       <!--noindex-->
         <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
@@ -160,7 +172,7 @@
         </section>
       <!--/noindex-->
       {% endif %}
-		<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=280 height=110 src="//music.163.com/outchain/player?type=0&id=365005798&auto=1&height=90"></iframe>
+	
       {% if theme.sidebar.b2t %}
         <div class="back-to-top">
           <i class="fa fa-arrow-up"></i>
