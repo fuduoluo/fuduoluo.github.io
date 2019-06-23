@@ -138,7 +138,7 @@
           {% include '../_custom/sidebar.swig' %}
         </div>
       </section>
-	  <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=280 height=110 src="//music.163.com/outchain/player?type=0&id=365005798&auto=1&height=90"></iframe>
+	
 	{% if site.tags.length > 1 %}
 	<script type="text/javascript" charset="utf-8" src="{{ url_for('/js/tagcloud.js') }}"></script>
 	<script type="text/javascript" charset="utf-8" src="{{ url_for('/js/tagcanvas.js') }}"></script>
