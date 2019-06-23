@@ -13,6 +13,7 @@ copyright:
 subtitle: 向往的生活就是这么简单
 abbrlink: d8c6d5c6
 date: 2019-06-04 00:11:27
+top: true
 ---
 
 向往的生活呀！！！
