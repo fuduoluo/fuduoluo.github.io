@@ -59,7 +59,7 @@ error_page_bg: https://images.unsplash.com/photo-1542434684-41a0bf4e6cd3?ixlib=r
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://fuduoluo.github.io
+url: https://www.phpcoder.club/
 root: /
 permalink: posts/:abbrlink.html
 abbrlink:
@@ -177,8 +177,8 @@ live2d:
   model:
     use: live2d-widget-model-hijiki
   display:
-    position: left
-    width: 150
-    height: 300
+    position: right
+    width: 100
+    height: 150
   mobile:
     show: false
