@@ -148,13 +148,20 @@ social_icons:
 
 # Blog rolls
 links_icon: link
-links_title: 学习之门
+links_title: 推荐学习
 #links_layout: block
 links_layout: inline
 links:
   Web前端导航: http://www.alloyteam.com/nav/
   创造狮导航: http://www.chuangzaoshi.com/code
   V2EX: https://www.v2ex.com/
+  张鑫旭: http://www.zhangxinxu.com/
+  百度前端技术学院: http://ife.baidu.com/
+  google前端开发基础: http://wf.uisdc.com/cn/
+  格物: https://shockerli.net/post/1000-line-mysql-note/
+  PHP: https://shockerli.net/post/php-awesome/
+  代码规范(前端): http://alloyteam.github.io/CodeGuide/#project-naming
+  代码规范(语言类): http://sideeffect.kr/popularconvention
 
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.gif
