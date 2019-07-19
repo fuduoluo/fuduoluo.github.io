@@ -204,7 +204,7 @@ sidebar:
   #display: hide
   #display: remove
   # Sidebar offset from top menubar in pixels (only for Pisces | Gemini).
-  offset: 20
+  offset: -20
 
   # Back to top in sidebar (only for Pisces | Gemini).
   b2t: true

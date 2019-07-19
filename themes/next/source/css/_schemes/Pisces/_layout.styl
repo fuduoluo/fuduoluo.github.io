@@ -22,7 +22,7 @@
   border-radius: $border-radius-inner;
 
   +desktop-large() {
-    .container & { width: 240px; }
+    .container & { width: 300px; }
   }
   +tablet() {
     position: relative;
@@ -128,13 +128,21 @@
   }
 }
 
-// 以下为新增代码！！
-header{ width: 90% !important; }
+// 以下为新增代码！！修改next主题文章post宽度
+$white_max_width = 1200px
+header{ 
+  width: 90% !important;
+  max-width: $white_max_width;
+}
 header.post-header {
   width: auto !important;
 }
-.container .main-inner { width: 90%; }
-.content-wrap { width: calc(100% - 310px); padding:20px;}
+.container .main-inner {
+  width: 90%;
+  max-width: $white_max_width;
+}
+.content-wrap { width: calc(100% - 320px); }
+
 
 .header {
   +tablet() {
@@ -144,6 +152,7 @@ header.post-header {
     width: auto !important;
   }
 }
+
 
 .container .main-inner {
   +tablet() {
@@ -159,6 +168,8 @@ header.post-header {
     width: 100% !important;
   }
   +mobile() {
+    // 为了在手机访问时，内边距不至于太大
+    padding: 0 !important;
     width: 100% !important;
   }
 }
