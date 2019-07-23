@@ -14,10 +14,10 @@ subtitle:
 ##### 设置relative
 ##### padding-top代替高度
 1.
-![image.png](https://upload-images.jianshu.io/upload_images/3098875-92d3e876f388aaa0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](https://phpcoder-1259614901.cos.ap-guangzhou.myqcloud.com/phpcoder/css/3098875-92d3e876f388aaa0.png)
 <!--more-->
 2.
-![image.png](https://upload-images.jianshu.io/upload_images/3098875-4d9bd24405bc7db1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](https://phpcoder-1259614901.cos.ap-guangzhou.myqcloud.com/phpcoder/css/3098875-4d9bd24405bc7db1.png)
 > 加上 display: block;是因为a标签是行级标签
 
 
@@ -41,7 +41,7 @@ subtitle:
 
 >同样做法:图片大小不一致导致布错乱
 
-![image.png](https://upload-images.jianshu.io/upload_images/3098875-5a628665dd31b157.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](https://phpcoder-1259614901.cos.ap-guangzhou.myqcloud.com/phpcoder/css/3098875-5a628665dd31b157.png)
 
 ```
 html：

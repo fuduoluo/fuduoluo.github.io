@@ -19,13 +19,13 @@ subtitle:
 ```
 git init
 ```
-![image.png](https://upload-images.jianshu.io/upload_images/3098875-aa08eb0c8eea9641.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](https://phpcoder-1259614901.cos.ap-guangzhou.myqcloud.com/phpcoder/git%E6%97%A5%E5%B8%B8%E6%93%8D%E4%BD%9C/3098875-aa08eb0c8eea9641.png)
 <!--more-->
 ###### 连接git
 ```
 git remote add l链接别名 git地址链接
 ```
-![image.png](https://upload-images.jianshu.io/upload_images/3098875-84b3a36deb70c062.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](https://phpcoder-1259614901.cos.ap-guangzhou.myqcloud.com/phpcoder/git%E6%97%A5%E5%B8%B8%E6%93%8D%E4%BD%9C/3098875-84b3a36deb70c062.png)
 
 ###### 克隆git分支
 ```
@@ -36,7 +36,7 @@ git clone 分支名 git链接地址 //默认克隆master分支
 ```
 git branch -a //查看全部地址分支
 ```
-![image.png](https://upload-images.jianshu.io/upload_images/3098875-ef916c40ab81e016.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](https://phpcoder-1259614901.cos.ap-guangzhou.myqcloud.com/phpcoder/git%E6%97%A5%E5%B8%B8%E6%93%8D%E4%BD%9C/3098875-ef916c40ab81e016.png)
 ###### 删除本地git分支
 ```
 git branch -d/-D 分支名 
@@ -78,7 +78,7 @@ git stash show 文件名
 ```
 git remode -v
 ```
-![image.png](https://upload-images.jianshu.io/upload_images/3098875-dbe574874e1c02e6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](https://phpcoder-1259614901.cos.ap-guangzhou.myqcloud.com/phpcoder/git%E6%97%A5%E5%B8%B8%E6%93%8D%E4%BD%9C/3098875-dbe574874e1c02e6.png)
 
 ###### 删除远程连接
 ```
@@ -92,7 +92,7 @@ git remte set-url origin URL
 ```
 git push --delete 链接别名  远程分支名
 ```
-![image.png](https://upload-images.jianshu.io/upload_images/3098875-1b317fd2f097f390.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](https://phpcoder-1259614901.cos.ap-guangzhou.myqcloud.com/phpcoder/git%E6%97%A5%E5%B8%B8%E6%93%8D%E4%BD%9C/3098875-1b317fd2f097f390.png)
 
 ###### 拉取git分支（远程新建分支）
 
@@ -107,7 +107,7 @@ git push
 git branch 分支名
 git push origin(链接别名) 分支名
 ```
-![image.png](https://upload-images.jianshu.io/upload_images/3098875-f8359479aa69fc43.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](https://phpcoder-1259614901.cos.ap-guangzhou.myqcloud.com/phpcoder/git%E6%97%A5%E5%B8%B8%E6%93%8D%E4%BD%9C/3098875-f8359479aa69fc43.png)
 ###### 解决冲突
 [查看解决冲突](https://www.jianshu.com/p/b69f6dc03f55)
 
@@ -154,35 +154,39 @@ git reset --hard origin/master  //把HEAD指向最新下载的版本
 git config --global credential.helper store
 然后，下次再输入一次 账号密码 就可以了。
 ```
+
 ###### git merge 出现以下错误
-![image.png](https://upload-images.jianshu.io/upload_images/3098875-477e115aad7f2129.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](https://phpcoder-1259614901.cos.ap-guangzhou.myqcloud.com/phpcoder/git%E6%97%A5%E5%B8%B8%E6%93%8D%E4%BD%9C/3098875-477e115aad7f2129.png)
+
 ```
 git merge 分支名 --allow-unrelated-histories
 ```
+
 ###### git pull 出现以下错误
+
 ```
 拒绝合并不相关历史
 fatal: refusing to merge unrelated histories
 git pull --allow-unrelated-histories
 ```
+
 ###### git clone报错
 
-![image.png](https://upload-images.jianshu.io/upload_images/3098875-bb5704ee6a442f76.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](https://phpcoder-1259614901.cos.ap-guangzhou.myqcloud.com/phpcoder/git%E6%97%A5%E5%B8%B8%E6%93%8D%E4%BD%9C/3098875-bb5704ee6a442f76.png)
 
 [使用Git clone代码失败的解决方法](https://www.jianshu.com/p/f5295c74ee39)
+
 ```
 error: RPC failed; curl 56 OpenSSL SSL_read: SSL_ERROR_SYSCALL, errno 10054
 fatal: The remote end hung up unexpectedly
 fatal: early EOF
 fatal: index-pack failed
 因为Git限制了推送数据的大小导致的错误。
-```
-```
+
 解决方法：重新设置通信缓存大小
 git config http.postBuffer 524288000
 git config --global http.postBuffer 524288000
-```
-```
+
 之后执行
  git config http.sslVerify "false"
 出现错误：fatal: not in a git directory
