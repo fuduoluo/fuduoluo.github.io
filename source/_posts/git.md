@@ -1,12 +1,12 @@
 ---
-title: git学习
+title: git学习小记
 permalink: 'posts/:abbrlink.html'
 copyright: true
 abbrlink: 518e617c
 date: 2019-07-11 22:18:18
 updated: 2019-07-11 22:18:18
-categories: git版本控制
-tags: git版本控制
+categories: git学习小记
+tags: git学习
 subtitle:
 ---
 <blockquote class="blockquote-center">学习git版本控制</blockquote>

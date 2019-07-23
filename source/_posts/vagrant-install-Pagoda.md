@@ -5,8 +5,8 @@ copyright: true
 abbrlink: 5a9ca69a
 date: 2019-07-11 21:31:10
 updated: 2019-07-11 21:31:10
-categories: vagrant centos 宝塔
-tags: centos centos 宝塔
+categories: vagrant centos 
+tags:  centos宝塔
 subtitle:
 ---
 <blockquote class="blockquote-center">Linux权限,安装宝塔</blockquote>

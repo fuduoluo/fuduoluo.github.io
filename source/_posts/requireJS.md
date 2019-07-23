@@ -5,8 +5,8 @@ copyright: true
 abbrlink: 525bc5ee
 date: 2019-07-11 22:12:07
 updated: 2019-07-11 22:12:07
-categories: fastadmin requireJs
-tags: fastadmin requireJs
+categories: requireJs
+tags: requireJs
 subtitle:
 ---
 <blockquote class="blockquote-center">fastadmin的js模块化</blockquote>

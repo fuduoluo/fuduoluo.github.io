@@ -2,8 +2,8 @@
 title:  Vue Cli 3.* + TP5 前后端分离项目遇到的坑(未跨域)
 permalink: 'posts/:abbrlink.html'
 copyright: true
-categories: vue cli3
-tags: vue cli3
+categories: vue
+tags: vue
 abbrlink: c0add594
 subtitle: Vue Cli 3.* + TP5
 date: 2019-07-11 21:03:56
@@ -13,7 +13,7 @@ updated: 2019-07-11 21:03:56
 
 
 ##### 目录
-![结构目录](https://upload-images.jianshu.io/upload_images/3098875-a904c86423d30c18.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![结构目录](https://phpcoder-1259614901.cos.ap-guangzhou.myqcloud.com/phpcoder/vuecli3%2Bphp%E5%89%8D%E5%90%8E%E7%AB%AF%E5%88%86%E7%A6%BB/3098875-a904c86423d30c18.png)
 
 ##### 1.Vue Cli3 和Vue  Cli2 区别
 ```
@@ -151,7 +151,7 @@ npm install qs ---序列化
 import https from './https.js'
 Vue.prototype.$https=https
 ```
-![image.png](https://upload-images.jianshu.io/upload_images/3098875-3620afba8fd33c83.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![https.js main.js](https://phpcoder-1259614901.cos.ap-guangzhou.myqcloud.com/phpcoder/vuecli3%2Bphp%E5%89%8D%E5%90%8E%E7%AB%AF%E5%88%86%E7%A6%BB/3098875-3620afba8fd33c83.png)
 
 ```
 这边是使用已封装好的axios
@@ -297,7 +297,7 @@ export default {
 [参考文章](https://www.jianshu.com/p/fec73eaec081)
 ###### [原理]vue和tp5有自己的路由，但是tp5用来做数据端就不需要这个了，直接设置为vue的nginx配置即可
 ###### 4.1 nginx伪静态配置：
-![nginx伪静态配置](https://upload-images.jianshu.io/upload_images/3098875-0d77e2b640fcc8c7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![nginx伪静态配置](https://phpcoder-1259614901.cos.ap-guangzhou.myqcloud.com/phpcoder/vuecli3%2Bphp%E5%89%8D%E5%90%8E%E7%AB%AF%E5%88%86%E7%A6%BB/3098875-0d77e2b640fcc8c7.png)
 ```
 直接复制：
 -------
@@ -310,10 +310,10 @@ location ~ ^/(thinkphp|vendor/phpunit|application|runtime)/.*\.php
 }
 ```
 ###### 4.2nginx默认文件配置：
-![默认文件配置](https://upload-images.jianshu.io/upload_images/3098875-e18a02d85391908c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![默认文件配置](https://phpcoder-1259614901.cos.ap-guangzhou.myqcloud.com/phpcoder/vuecli3%2Bphp%E5%89%8D%E5%90%8E%E7%AB%AF%E5%88%86%E7%A6%BB/3098875-e18a02d85391908c.png)
 设置优先级
 ###### 4.3将打包好的vue文件包dist上传到public目录下并解压：
-![](https://upload-images.jianshu.io/upload_images/11860463-949e19e810d5b496.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1000/format/webp)
+![上传服务器](https://phpcoder-1259614901.cos.ap-guangzhou.myqcloud.com/phpcoder/vuecli3%2Bphp%E5%89%8D%E5%90%8E%E7%AB%AF%E5%88%86%E7%A6%BB/11860463-949e19e810d5b496.webp)
 ###### 4.3请求接口
 ```
 原本：/api/index/index

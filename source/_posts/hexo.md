@@ -3,11 +3,11 @@ title: hexo搭建问题汇总
 permalink: 'posts/:abbrlink.html'
 copyright: true
 categories: hexo
-tags: hexo
+tags: hexo搭建汇总
 abbrlink: cded68c5
 date: 2019-07-12 00:27:11
 updated: 2019-07-12 00:27:11
-subtitle:
+subtitle:	
 top: true
 ---
 #### 1.hexo 发布之后 gitpage 自定义域名失效

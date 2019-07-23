@@ -5,7 +5,7 @@ copyright: true
 abbrlink: fa5609a0
 date: 2019-07-11 21:25:28
 updated: 2019-07-11 21:25:28
-categories: fastadmin
+categories: 安装fastadmin
 tags: fastadmin
 subtitle:
 ---

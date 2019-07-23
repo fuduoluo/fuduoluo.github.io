@@ -6,9 +6,9 @@ abbrlink: d62e33af
 date: 2019-06-22 22:31:45
 updated: 2019-06-22 22:31:45
 categories:
-	fastadmin Boostrap-table
+	fastadmin
 tags:
-	fastadmin Boostrap-table
+	Boostrap-table
 subtitle: 不断学习fastadmin 努力进步
 
 ---

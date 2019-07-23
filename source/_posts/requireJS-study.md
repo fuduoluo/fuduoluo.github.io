@@ -5,8 +5,8 @@ copyright: true
 abbrlink: 5422b83b
 date: 2019-07-11 22:43:59
 updated: 2019-07-11 22:43:59
-categories:  requireJS入门学习
-tags:  requireJS入门学习
+categories:  requireJS入门
+tags:  requireJS入门
 subtitle:
 ---
 ##### 总述：

@@ -5,8 +5,8 @@ copyright: true
 abbrlink: 888d2e2
 date: 2019-07-11 22:32:11
 updated: 2019-07-11 22:32:11
-categories: git git command
-tags: git git command
+categories: git命令
+tags: git命令
 subtitle:
 ---
 <blockquote class="blockquote-center">自己工作git常见操作</blockquote>
@@ -164,6 +164,30 @@ git merge 分支名 --allow-unrelated-histories
 拒绝合并不相关历史
 fatal: refusing to merge unrelated histories
 git pull --allow-unrelated-histories
+```
+###### git clone报错
+
+![image.png](https://upload-images.jianshu.io/upload_images/3098875-bb5704ee6a442f76.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+[使用Git clone代码失败的解决方法](https://www.jianshu.com/p/f5295c74ee39)
+```
+error: RPC failed; curl 56 OpenSSL SSL_read: SSL_ERROR_SYSCALL, errno 10054
+fatal: The remote end hung up unexpectedly
+fatal: early EOF
+fatal: index-pack failed
+因为Git限制了推送数据的大小导致的错误。
+```
+```
+解决方法：重新设置通信缓存大小
+git config http.postBuffer 524288000
+git config --global http.postBuffer 524288000
+```
+```
+之后执行
+ git config http.sslVerify "false"
+出现错误：fatal: not in a git directory
+在执行
+git config --global http.sslVerify false
 ```
 
 还在补充中ing......
