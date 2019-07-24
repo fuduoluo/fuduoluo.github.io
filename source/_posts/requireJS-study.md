@@ -23,7 +23,7 @@ RequireJS是一个JavaScript文件和模块加载器。
 <!--more-->
 ##### 1.下载文件
 [下载文件地址]([https://requirejs.org/docs/download.html](https://requirejs.org/docs/download.html))
-![image.png](https://upload-images.jianshu.io/upload_images/3098875-04cd66ccb7b083a8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](https://phpcoder-1259614901.cos.ap-guangzhou.myqcloud.com/phpcoder/requirejs/3098875-04cd66ccb7b083a8%20.png)
 
 
 ##### 理解概念
@@ -186,7 +186,7 @@ console.log(require.s.contexts._.config.testData.color);
 </script>
 
 ```
-![image.png](https://upload-images.jianshu.io/upload_images/3098875-8680f34e113bc88d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](https://phpcoder-1259614901.cos.ap-guangzhou.myqcloud.com/phpcoder/requirejs/3098875-8680f34e113bc88d%20.png)
 
 ###### deps：表示当前模块需要依赖哪些库
 

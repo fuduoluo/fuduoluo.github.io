@@ -82,9 +82,9 @@ fa中使用 ----> %s - 字符串
             dump($a.$b); //15
 ```
 ##### 5.PHP版本出现错误
-![弃用-方法名和类名一样的构造函数](https://upload-images.jianshu.io/upload_images/3098875-b4bd5a143605e8f6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![弃用-方法名和类名一样的构造函数](https://phpcoder-1259614901.cos.ap-guangzhou.myqcloud.com/phpcoder/fastadmin/3098875-b4bd5a143605e8f6.png)
 
-![文档说明](https://upload-images.jianshu.io/upload_images/3098875-4c52a07f6ec7e856.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![文档说明](https://phpcoder-1259614901.cos.ap-guangzhou.myqcloud.com/phpcoder/fastadmin/3098875-4c52a07f6ec7e856.png)
 ##### 6.http_build_query偶遇
 ##### 用 http_build_query 对 url 进行编码：
 - http_build_query 可以将一维或多维 数组/对象 进行 url_encode 编码，并返回编码后的字符串。

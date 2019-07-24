@@ -28,11 +28,11 @@ subtitle: 不断学习fastadmin 努力进步
 #### 以下为使用遇到问题小记
 
 ##### status字段
-![效果](https://upload-images.jianshu.io/upload_images/3098875-16fda5bcfc1d3503.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![效果](https://phpcoder-1259614901.cos.ap-guangzhou.myqcloud.com/phpcoder/fastadmin/3098875-16fda5bcfc1d3503.png)
 
 ##### 1.1数据库
-![效果](https://upload-images.jianshu.io/upload_images/3098875-b8a39aa7ae9a17d9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-![image.png](https://upload-images.jianshu.io/upload_images/3098875-5886e5950cbd2403.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![效果](https://phpcoder-1259614901.cos.ap-guangzhou.myqcloud.com/phpcoder/fastadmin/3098875-b8a39aa7ae9a17d9.png)
+![image.png](https://phpcoder-1259614901.cos.ap-guangzhou.myqcloud.com/phpcoder/fastadmin/3098875-5886e5950cbd2403.png)
 
 ###### 1.2JS
 ```
@@ -71,15 +71,15 @@ class Indexpic extends Model
 
 ```
 ##### 隐藏默认按钮
-![image.png](https://upload-images.jianshu.io/upload_images/3098875-63d38e16f75aee51.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](https://phpcoder-1259614901.cos.ap-guangzhou.myqcloud.com/phpcoder/fastadmin/3098875-63d38e16f75aee51.png)
 ###### 1.1找到对应的JS设置为空
-![image.png](https://upload-images.jianshu.io/upload_images/3098875-c5df8984a92391e5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](https://phpcoder-1259614901.cos.ap-guangzhou.myqcloud.com/phpcoder/fastadmin/3098875-c5df8984a92391e5.png)
 ###### 1.2效果
-![image.png](https://upload-images.jianshu.io/upload_images/3098875-60d4697bd4c09a31.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](https://phpcoder-1259614901.cos.ap-guangzhou.myqcloud.com/phpcoder/fastadmin/3098875-60d4697bd4c09a31.png)
 
 ###### 1.3原因：
 ###### 作者通过获取按钮名称来增加按钮
-![image.png](https://upload-images.jianshu.io/upload_images/3098875-1013288cd447b845.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](https://phpcoder-1259614901.cos.ap-guangzhou.myqcloud.com/phpcoder/fastadmin/3098875-1013288cd447b845.png)
 
 ##### 按钮组
 ```

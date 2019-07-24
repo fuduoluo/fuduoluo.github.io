@@ -13,7 +13,7 @@ subtitle:
 
 ###### 安装后台出现以下错误
 
-![image.png](https://upload-images.jianshu.io/upload_images/3098875-e510b29ffbec60e9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](https://phpcoder-1259614901.cos.ap-guangzhou.myqcloud.com/phpcoder/fastadmin/3098875-e510b29ffbec60e9.png)
 
 ###### 解决方法
 
