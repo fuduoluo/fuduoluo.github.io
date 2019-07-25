@@ -160,6 +160,10 @@ search:
   field: post
   format: html
   limit: 10000
+urlforgoogle: https://www.phpcoder.club/
+# 自动生成sitemap
+sitemap:
+  path: sitemap.xml
 # Busuanzi
 #busuanzi: true
 #看板宠物

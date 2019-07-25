@@ -72,7 +72,7 @@ Js文件：var controller = { detail:function(){} }
 ```
 [配置项介绍入口](https://www.jianshu.com/p/37ec668500ae)
 
-#####JS语言包加载
+##### JS语言包加载
 > requirejs.s.contexts._.config.xx.xx.xx 这个是直接把requirejs的对象暴露出来  ！！！主要是配置文件信息的读取！
 
 
@@ -134,7 +134,7 @@ PHP/JS：__('')
 
 ![image.png](https://upload-images.jianshu.io/upload_images/3098875-6007f5d93b962e63.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-##### Object.keys(obj)
+#### Object.keys(obj)
 [参考火狐开发手册](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/keys)
 ```
 解释：
