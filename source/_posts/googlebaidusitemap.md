@@ -9,6 +9,7 @@ date: 2019-07-25 09:57:50
 updated: 2019-07-25 09:57:50
 subtitle:
 ---
+<meta name="referrer" content="never">
 <blockquote class="blockquote-center">hexo站点地图收录</blockquote>
 
 {% note success %}
