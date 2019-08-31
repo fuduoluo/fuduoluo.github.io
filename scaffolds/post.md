@@ -9,3 +9,4 @@ abbrlink:
 subtitle: 
 copyright: true
 ---
+<meta name="referrer" content="never">

@@ -123,6 +123,20 @@
   })
 }}
 
+<script>
+    (function () {
+        if ('{{ page.password }}') {
+            if (prompt('回答芝麻开门') !== '{{ page.password }}') {
+                alert('回去问清楚再来！');
+                if (history.length === 1) {
+                    location.replace("https://www.phpcoder.club"); // 这里替换成你的首页
+                } else {
+                    history.back();
+                }
+            }
+        }
+    })();
+</script>
 
 {# Export some HEXO Configurations to Front-End #}
 <script type="text/javascript" id="hexo.configurations">
