@@ -26,13 +26,13 @@ author: Hiddleston
 introduction: 
 
 # 博客的favicon图标，支持本地及在线两种方式，本地请将图标放置于 themes/hexo-theme-skapp/source/img 目录下
-favicon_ico: ./img/code.png
+favicon_ico: https://phpcoder-1259614901.cos.ap-guangzhou.myqcloud.com/phpcoder/logo/icon.svg
 
 # 博客的左上角logo图标，支持本地及在线两种方式
 logo: https://images.unsplash.com/photo-1560487765-67095b892dd1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60
 
 # 头像/二维码（用于显示在底部）二选一
-avatar: https://images.unsplash.com/photo-1505489435671-80a165c60816?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60
+avatar: https://phpcoder-1259614901.cos.ap-guangzhou.myqcloud.com/phpcoder/logo/logos.svg
 
 # 文章的默认封面
 #default_cover: https://images.unsplash.com/flagged/photo-1556669546-b1f29875df1c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60

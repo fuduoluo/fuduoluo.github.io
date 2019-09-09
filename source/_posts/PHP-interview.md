@@ -1,8 +1,8 @@
 ---
-title: PHP面试题
+title: 360解读PHP面试题
 permalink: 'posts/:abbrlink.html'
 copyright: true
-categories: interview
+categories: PHP
 tags: PHP面试
 abbrlink: 263d185a
 date: 2019-09-01 01:34:28
@@ -11,15 +11,20 @@ subtitle:
 password: interview
 ---
 <meta name="referrer" content="never">
+<blockquote class="blockquote-center">360解读PHP面试题(理论)</blockquote>
 
 ##### 1.php引用变量
 [引用传值的核心原理解析](https://www.cnblogs.com/chrdai/p/11061174.html)
+
 ##### 2.php字符串定义方式和区别
 单引号：不能解析变量 转义字符  效率高
  双引号：解析变量 特殊字符  {}包含  转义字符  效率低
 [heredoc newdoc区别](https://blog.csdn.net/fdipzone/article/details/24937669)
+
 ##### 3.常量与数据类型
 [数据类型](https://www.w3school.com.cn/php/php_superglobals.asp)
+<!--more-->
+
 ##### 4.运算符
 错误抑制符@：放在PHP表达式前面可以抑制任何错误信息
 ![image.png](https://upload-images.jianshu.io/upload_images/3098875-a3bf50b3e0ce6b58.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
@@ -33,7 +38,7 @@ while list  each
 
 ##### 6.自定义函数及其内部函数
 ![image.png](https://upload-images.jianshu.io/upload_images/3098875-90fac53f52edde18.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-<!--more-->
+
 ##### 变量作用域
 ![image.png](https://upload-images.jianshu.io/upload_images/3098875-3f1fa7b1ceeee905.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 

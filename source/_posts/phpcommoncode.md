@@ -20,6 +20,7 @@ subtitle:
 
 [PHP 完整实战 23 种设计模式](https://juejin.im/entry/5857b81b1b69e60056ec2f55)
 
+<!--more-->
 ###### 56个PHP常用的代码片段(SMS Mandrill发送邮件等 )
 
 [56个PHP常用的代码片段](https://juejin.im/entry/56c0192032132c0052b4b29e)
