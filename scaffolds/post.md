@@ -10,3 +10,6 @@ subtitle:
 copyright: true
 ---
 <meta name="referrer" content="never">
+<blockquote class="blockquote-center"></blockquote>
+{% note success %}
+{% endnote %}

@@ -18,14 +18,26 @@ subtitle: 不断学习fastadmin 努力进步
 强大的一键生成功能极速简化你的开发流程,加快你的项目开发 
 {% endnote %}
 
-<!--more-->
 ##### 前言
 [boostrap-table官网文档](https://examples.bootstrap-table.com/#options/search-text.html)
 
 ##### 图解
 [一张图解析FastAdmin中的表格列表的功能](https://ask.fastadmin.net/article/323.html)
 
+
+<!--more-->
 #### 以下为使用遇到问题小记
+
+
+###### 安装后台出现以下错误
+
+![image.png](https://phpcoder-1259614901.cos.ap-guangzhou.myqcloud.com/phpcoder/fastadmin/3098875-e510b29ffbec60e9.png)
+
+###### 解决方法
+
+```
+数据库密码填写root
+原因可能默认数据库密码root 
 
 ##### status字段
 ![效果](https://phpcoder-1259614901.cos.ap-guangzhou.myqcloud.com/phpcoder/fastadmin/3098875-16fda5bcfc1d3503.png)

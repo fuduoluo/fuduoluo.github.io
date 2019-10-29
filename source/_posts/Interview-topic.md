@@ -34,6 +34,8 @@ include_once/require_once和include/require 处理错误方式一样，
 注意:包含文件不存在或者语法错误的时候require是致命的，而include不是
   ● require_once表示了只包含一次，避免了重复包含
 ```
+<!--more-->
+
 ###### echo、print_r、print、var_dump之间的区别
 ```
 1. echo、print是php语句，var_dump和print_r是函数

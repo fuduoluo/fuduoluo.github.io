@@ -72,3 +72,14 @@ vagrant reload --provision
 ##### 线上服务器上传本地项目访问没有找到文件(前提已购买域名 并绑定到购买服务器上)
 ![image.png](https://upload-images.jianshu.io/upload_images/3098875-b1b9746a1d0d36c0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
+
+###### 忘记查看宝塔登录端口URL
+![宝塔登录端口URL](https://upload-images.jianshu.io/upload_images/3098875-15309752537182ad.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+##### 共享目录失败无法和服务器进行同步更新
+```
+安装插件：
+vagrant plugin install vagrant-vbguest
+vagrant reload
+```
+

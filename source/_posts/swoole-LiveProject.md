@@ -1,0 +1,277 @@
+---
+title: Swoole赛事直播问题汇总
+permalink: 'posts/:abbrlink.html'
+copyright: true
+abbrlink: 5d473dd
+date: 2019-10-29 17:12:01
+updated: 2019-10-29 17:12:01
+categories: swoole redis mysql php
+tags: swoole
+subtitle:
+---
+<meta name="referrer" content="never">
+{% note success %}
+Swoole赛事直播问题汇总
+{% endnote %}
+
+##### 以下是通过PHP7.2.23和Swoole4.4.9安装编译遇到的问题！
+###### PHP7.2.23安装路径/home/var/www/soft/php   
+###### swoole 编译安装目录 /home/var/www/soft/php/lib/php/extensions
+######  记住以下两个命令
+```
+查看PHP扩展
+php -m
+查看swoole扩展
+php --ri swoole
+```
+###### 在Linux下，编译安装PHP时报错libxml2 configure: error
+```
+在Linux下，编译安装PHP时报错：
+libxml2 configure: error: xml2-config not found. 
+Please check your libxml2 installation.
+
+但是在Linux下已经安装了libxml2，
+我通过rpm -qa | grep libxml2就可以查到，那为什么还会提示那个错误呢
+
+解决方法：
+安装的版本应该是libxml2-dev
+1.ubuntu/debian镜像:
+sudo apt-get install libxml2-dev
+
+centos/redhat镜像:
+2.sudo yum install libxml2-devel
+```
+<!--more-->
+![问题解决](https://upload-images.jianshu.io/upload_images/3098875-d679a6d454916c1c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+##### 解决PHP 7编译安装错误：cannot stat ‘phar.phar’: No such file or directory，主要包括解决PHP 7编译安装错误：cannot stat ‘phar.phar’: No such file or directory
+```
+cp -pR -f phar.phar /usr/local/php7/bin/phar
+cp: cannot stat 'phar.phar': No such file or directory
+make: *** [install-pharcmd] Error 1
+解决办法
+find . -name 'phar.phar'
+找到 phar.phar 文件, 移动或者复制到安装指令执行的目录下就行了.
+```
+#### 执行phpize进行扩展PHP扩展模块出现以下问题
+```
+[vagrant@bogon swoole]$ /home/var/www/soft/php/bin/phpize
+Configuring for:
+PHP Api Version:         20170718
+Zend Module Api No:      20170718
+Zend Extension Api No:   320170718
+Cannot find autoconf. Please check your autoconf installation and the
+$PHP_AUTOCONF environment variable. Then, rerun this script.
+解决方法：
+sudo yum install autoconf
+```
+##### 执行将swoole扩展模块添加到PHP7扩展
+
+```
+执行以下命令
+ ./configure  --with-php-config=/home/var/www/soft/php/bin/php-config
+报错：
+configure: error: C++ preprocessor "/lib/cpp" fails sanity check
+解决方法：
+ yum install glibc-headers
+ yum install gcc-c++ 
+```
+##### 执行make install 
+```
+出现权限不足：
+Installing shared extensions: /home/var/www/soft/php/lib/php/extensions
+/no-debug-non-zts-20170718/cp:cannot create regular file 
+'/home/var/www/soft/php/lib/php/extensions/no-debug-non-zts-20170718/#INST@29034#': 
+Permission denied
+
+解决方法：
+sudo chmod 777 /home/var/www/soft/php/lib/php/extensions/no-debug-non-zts-20170718/
+sudo make install
+```
+![编译安装swoole扩展模块](https://upload-images.jianshu.io/upload_images/3098875-7a05ac5bc9e26fa6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+##### telnet: command not found
+[安装Telnet](https://blog.csdn.net/qq_38018165/article/details/89919556)
+```
+[vagrant@localhost ~]$ telnet 127.0.0.1 9501
+-bash: telnet: command not found
+解决办法
+yum list telnet*              列出telnet相关的安装包
+yum install telnet-server          安装telnet服务
+yum install telnet.*           安装telnet客户端
+```
+##### 使用Xftp上传本地文件到centos上，传输文件类型显示错误
+```
+更改文件权限 
+chmod 777  dir【文件/文件夹名称】
+```
+#####  彻底杀死进程
+```
+netstat -nlp 查看占用端口号的服务 
+netstat -nlp | grep :3306  用管道符给grep处理 只查看3306这个端口号
+kill -9 pid[端口号进程ID]
+```
+
+#### 更改web服务器为Nginx
+##### Linux安装Nginx报错make: *** No targets specified and no makefile found. Stop.解决方法
+```
+以下是在依赖包安装好前提下：
+先运行./configure，生成makefile，再执行make，即可正常运行
+```
+##### 大致安装过程
+```
+一. gcc 安装
+安装 nginx 需要先将官网下载的源码进行编译，编译依赖 gcc 环境，
+如果没有 gcc 环境，则需要安装：
+
+yum install gcc-c++
+
+二. PCRE pcre-devel 安装
+PCRE(Perl Compatible Regular Expressions) 是一个Perl库，包括 perl 兼容的正则表达式库。
+nginx 的 http 模块使用 pcre 来解析正则表达式，所以需要在 linux 上安装 pcre 库，
+pcre-devel 是使用 pcre 开发的一个二次开发库。nginx也需要此库。命令：
+
+yum install -y pcre pcre-devel
+
+三. zlib 安装
+zlib 库提供了很多种压缩和解压缩的方式，
+nginx 使用 zlib 对 http 包的内容进行 gzip ，所以需要在 Centos 上安装 zlib 库。
+
+yum install -y zlib zlib-devel
+
+四. OpenSSL 安装
+OpenSSL 是一个强大的安全套接字层密码库，
+囊括主要的密码算法、常用的密钥和证书封装管理功能及 SSL 协议，
+并提供丰富的应用程序供测试或其它目的使用。
+nginx 不仅支持 http 协议，还支持 https（即在ssl协议上传输http），
+所以需要在 Centos 安装 OpenSSL 库。
+
+yum install -y openssl openssl-devel
+
+以上依赖包已安装完成
+
+在根目录下进行安装【查看当前目录路径   pwd】
+/root
+下载包
+wget -c https://nginx.org/download/nginx-1.12.0.tar.gz
+解压包
+tar -zxvf nginx-1.12.0.tar.gz
+cd nginx-1.12.0
+生成配置文件
+./configure
+编译
+make
+编译安装
+make install
+查看安装路径
+whereis nginx
+```
+##### 使用高版本的swoole 4.4.9 协程Coroutine进行异步文件和异步数据库操作
+```
+//查看swoole版本  php --ri swoole
+// 异步文件系统仅限于4.3.0之前的版本，后续版本已经全面使用协程（coroutine）代替原有方案，
+//具体参见：Coroutine模块
+//以下针对是4.3.0以下swoole的版本
+//本次安装的swoole是4.4.9
+
+ 使用协程进行连接Mysql
+// 第一种写法create缩写
+// go() 是 Swoole\Coroutine::create() 的缩写
+go(function () {
+    //以下实例化都可以
+    $db =new Co\MySQL();
+    // $db = new Swoole\Coroutine\MySQL();
+    $server = [
+        'host' => '主机地址',
+        'port' => 3306,
+        'user' => 'root',
+        'password' => '密码',
+        'database' => 'swoole',
+        'charset' => 'utf8', //指定字符集
+    ];
+    $res = $db->connect($server);
+    // var_dump($res);
+    $result = $db->query('SELECT * FROM test');
+    // var_dump($result);
+});
+// 第二种写法
+Co::create(function () {
+    // $swoole_mysql = new Swoole\Coroutine\MySQL();
+    $swoole_mysql =new Co\MySQL();
+    $server = [
+        'host' => '主机地址',
+        'port' => 3306,
+        'user' => 'root',
+        'password' => '密码',
+        'database' => 'swoole',
+        'charset' => 'utf8', //指定字符集
+    ];
+    $res1 = $swoole_mysql->connect($server);
+    $res = $swoole_mysql->query('select sleep(1)');
+    var_dump($res);
+});
+
+协程异步文件操作：
+use Swoole\Coroutine\System;
+$SwooleReadFileName = __DIR__.'/log.txt';
+go(function () use ($SwooleReadFileName)
+{
+    $r =  System::readFile($SwooleReadFileName);
+    var_dump($r);
+});
+
+$fp = fopen(__DIR__ . "/log.txt", "r");
+go(function () use ($fp)
+{
+    fseek($fp, 1);//移动文件指针到指定位置
+    $r =  System::fread($fp);
+    var_dump($r);
+});
+```
+##### 使用异步redis前置条件
+1.安装redis服务
+2.安装hiredis库
+3.重新编译swoole
+[参考官网手册](https://wiki.swoole.com/wiki/index/prid-1)
+
+##### 安装redis服务
+```
+官网下载redis包
+进行编译 make
+进入该目录中src 启动redis服务
+[root@bogon src] ./redis-server
+Increased maximum number of open files to 10032 (it was originally set to 1024).
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 5.0.5 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 9267
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+  
+```
+##### 安装hiredis库并重新编译swoole
+```
+下载hiredis包:https://github.com/redis/hiredis/releases
+sudo make
+sudo make install
+sudo ldconfig
+进入swoole安装位置
+执行以下命令
+./configure --with-php-config=/home/var/www/soft/php/bin/php-config
+清除先前编译缓存
+make clean
+make install
+查看swoole扩展和redis扩展有没有安装成功
+php -m 
+php --ri swoole
+```
+

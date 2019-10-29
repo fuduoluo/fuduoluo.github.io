@@ -8,7 +8,7 @@ abbrlink: cded68c5
 date: 2019-07-12 00:27:11
 updated: 2019-07-12 00:27:11
 subtitle:	
-top: true
+top: 
 ---
 #### hexo 发布之后 gitpage 自定义域名失效
 - 起因：每次配置 custom domain 之后，再次 hexo deploy 之后，custom domain 会被重置失效。
