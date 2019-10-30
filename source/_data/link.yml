@@ -1,0 +1,31 @@
+class:
+  class_name: 友情鏈接
+  link_list:
+    1:
+      name: Web前端导航
+      link: http://www.alloyteam.com/nav/
+      avatar: http://www.alloyteam.com/nav/static/images/alloyteam-favicon.jpg
+      descr: web开发必备导航网址
+    2:
+      name: google前端开发基础
+      link: http://wf.uisdc.com/cn/
+      avatar: http://wf.uisdc.com/cn/imgs/developers-logo.svg
+      descr: Google前端开发基础实践手册
+    3:
+      name:  V2EX
+      link: https://www.v2ex.com/
+      avatar: https://www.v2ex.com/static/img/v2ex@2x.png
+      descr: V2EX = way to explore 是一个关于分享和探索的地方
+class2:
+  class_name: 代码规范
+  link_list:
+    1:
+      name:  代码规范(前端)
+      link: http://alloyteam.github.io/CodeGuide/#project-naming
+      avatar: https://xxxxx/avatar.png
+      descr: 通过分析github代码库总结出来的工程师代码书写习惯
+    2:
+      name: 代码规范(语言类)
+      link: http://sideeffect.kr/popularconvention
+      avatar: https://xxxxx/avatar.png
+      descr: Popular Coding Convention on Github

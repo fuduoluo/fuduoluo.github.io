@@ -11,8 +11,9 @@ subtitle:
 ---
 <blockquote class="blockquote-center">Linux权限,安装宝塔</blockquote>
 <!--more-->
-##### 重置sudo密码
->如何应用root权限呢？
+<meta name="referrer" content="never">
+
+##### 重置sudo密码 如何应用root权限？
 
 - (1)sudo 命令  
 这样输入当前管理员用户密码就可以得到超级用户的权限。但默认的情况下5分钟root权限就失效了。
@@ -76,10 +77,5 @@ vagrant reload --provision
 ###### 忘记查看宝塔登录端口URL
 ![宝塔登录端口URL](https://upload-images.jianshu.io/upload_images/3098875-15309752537182ad.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-##### 共享目录失败无法和服务器进行同步更新
-```
-安装插件：
-vagrant plugin install vagrant-vbguest
-vagrant reload
-```
+
 
