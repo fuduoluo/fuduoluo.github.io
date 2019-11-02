@@ -8,6 +8,7 @@ abbrlink: cf2bd071
 date: 2019-10-29 17:16:25
 updated: 2019-10-29 17:16:25
 subtitle:
+cover: https://cakephp.org/images/slider/slide-1.jpg
 ---
 <meta name="referrer" content="never">
 {% note success %}

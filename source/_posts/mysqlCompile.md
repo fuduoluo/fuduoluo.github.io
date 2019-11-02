@@ -2,12 +2,13 @@
 title: 编译安装Mysql
 permalink: 'posts/:abbrlink.html'
 copyright: true
-categories: Mysql编译安装
-tags: Mysql
+categories: Mysql
+tags: Mysql编译安装
 abbrlink: 2ce8eb6c
 date: 2019-10-29 16:37:25
 updated: 2019-10-29 16:37:25
 subtitle:
+cover: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStC7WMJa5q7NNTxSyVReZvJczqf80ZiTq4LSDdyO2oZSS-_cxw&s
 ---
 <meta name="referrer" content="never">
 <blockquote class="blockquote-center">编译安装Linux centos7 mysql数据库</blockquote>

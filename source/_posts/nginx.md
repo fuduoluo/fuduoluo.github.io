@@ -8,6 +8,7 @@ updated: 2019-09-05 22:04:31
 categories: Nginx
 tags: Nginx
 subtitle:
+cover: https://cdn.jsdelivr.net/npm/@bootcss/www.bootcss.com@0.0.3/dist/img/nginx.jpg
 ---
 <meta name="referrer" content="never">
 

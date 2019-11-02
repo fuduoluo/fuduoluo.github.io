@@ -1,17 +1,18 @@
 ---
-title: Swoole赛事直播问题汇总
+title: 编译安装Swoole ,PHP问题汇总
 permalink: 'posts/:abbrlink.html'
 copyright: true
 abbrlink: 5d473dd
 date: 2019-10-29 17:12:01
 updated: 2019-10-29 17:12:01
-categories: swoole redis mysql php
-tags: swoole
+categories: Swoole
+tags: Swoole PHP
 subtitle:
+cover: data:image/png;base64,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
 ---
 <meta name="referrer" content="never">
 {% note success %}
-Swoole赛事直播问题汇总
+编译安装Swoole ,PHP问题汇总
 {% endnote %}
 
 ##### 以下是通过PHP7.2.23和Swoole4.4.9安装编译遇到的问题！
@@ -23,7 +24,16 @@ Swoole赛事直播问题汇总
 php -m
 查看swoole扩展
 php --ri swoole
+查找文件
+find /|grep 文件名
+
+杀死进程
+netstat -nlp 查看占用端口号的服务 
+netstat -nlp | grep :3306  用管道符给grep处理 只查看3306这个端口号
+nestat -anp | grep :3306
+kill -9 pid[端口号进程ID]
 ```
+
 ###### 在Linux下，编译安装PHP时报错libxml2 configure: error
 ```
 在Linux下，编译安装PHP时报错：
@@ -41,7 +51,6 @@ sudo apt-get install libxml2-dev
 centos/redhat镜像:
 2.sudo yum install libxml2-devel
 ```
-<!--more-->
 ![问题解决](https://upload-images.jianshu.io/upload_images/3098875-d679a6d454916c1c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ##### 解决PHP 7编译安装错误：cannot stat ‘phar.phar’: No such file or directory，主要包括解决PHP 7编译安装错误：cannot stat ‘phar.phar’: No such file or directory
@@ -54,6 +63,7 @@ find . -name 'phar.phar'
 找到 phar.phar 文件, 移动或者复制到安装指令执行的目录下就行了.
 ```
 #### 执行phpize进行扩展PHP扩展模块出现以下问题
+phpize：增加php扩展服务
 ```
 [vagrant@bogon swoole]$ /home/var/www/soft/php/bin/phpize
 Configuring for:
@@ -68,13 +78,19 @@ sudo yum install autoconf
 ##### 执行将swoole扩展模块添加到PHP7扩展
 
 ```
-执行以下命令
- ./configure  --with-php-config=/home/var/www/soft/php/bin/php-config
+linux下执行以下命令
+1.进入 swoole解压目录  cd swoole 
+ 2. ./configure  --with-php-config=/home/var/www/soft/php/bin/php-config
 报错：
 configure: error: C++ preprocessor "/lib/cpp" fails sanity check
 解决方法：
  yum install glibc-headers
  yum install gcc-c++ 
+3.编译：make
+4.执行make install 
+5.查看swoole 
+php -m
+php --ri swoole 
 ```
 ##### 执行make install 
 ```
@@ -104,13 +120,6 @@ yum install telnet.*           安装telnet客户端
 更改文件权限 
 chmod 777  dir【文件/文件夹名称】
 ```
-#####  彻底杀死进程
-```
-netstat -nlp 查看占用端口号的服务 
-netstat -nlp | grep :3306  用管道符给grep处理 只查看3306这个端口号
-kill -9 pid[端口号进程ID]
-```
-
 #### 更改web服务器为Nginx
 ##### Linux安装Nginx报错make: *** No targets specified and no makefile found. Stop.解决方法
 ```
@@ -227,7 +236,7 @@ go(function () use ($fp)
     var_dump($r);
 });
 ```
-##### 使用异步redis前置条件
+##### 安装使用异步redis前置条件
 1.安装redis服务
 2.安装hiredis库
 3.重新编译swoole
@@ -261,7 +270,7 @@ Increased maximum number of open files to 10032 (it was originally set to 1024).
 ##### 安装hiredis库并重新编译swoole
 ```
 下载hiredis包:https://github.com/redis/hiredis/releases
-sudo make
+sudo make -j
 sudo make install
 sudo ldconfig
 进入swoole安装位置
@@ -274,4 +283,3 @@ make install
 php -m 
 php --ri swoole
 ```
-

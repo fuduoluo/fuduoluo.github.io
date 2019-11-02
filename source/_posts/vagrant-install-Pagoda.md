@@ -5,9 +5,11 @@ copyright: true
 abbrlink: 5a9ca69a
 date: 2019-07-11 21:31:10
 updated: 2019-07-11 21:31:10
-categories: vagrant centos 
-tags:  centos宝塔
+categories: vagrant 
+tags:  centos宝塔 centos
 subtitle:
+cover: https://gss0.bdstatic.com/-4o3dSag_xI4khGkpoWK1HF6hhy/baike/w%3D268%3Bg%3D0/sign=b7c0b9d9fc36afc30e0c38638b228cf9/203fb80e7bec54e7825eee07b2389b504fc26a7d.jpg
+
 ---
 <blockquote class="blockquote-center">Linux权限,安装宝塔</blockquote>
 <!--more-->

@@ -1,13 +1,14 @@
 ---
-title:  Vue Cli 3.* + TP5 前后端分离项目遇到的坑(未跨域)
+title:  Vue Cli 3.* + TP5 前后端分离访问(未跨域)
 permalink: 'posts/:abbrlink.html'
 copyright: true
 categories: vue
-tags: vue
+tags: vue 
 abbrlink: c0add594
 subtitle: Vue Cli 3.* + TP5
 date: 2019-07-11 21:03:56
 updated: 2019-07-11 21:03:56
+cover: https://cdn.jsdelivr.net/npm/@bootcss/www.bootcss.com@0.0.3/dist/img/vuejs.png
 ---
 >作为新手，坑是少不了的！下面是我很荣幸跳的坑
 

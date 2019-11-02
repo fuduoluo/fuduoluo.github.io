@@ -185,7 +185,7 @@ post_copyright:
 
 # 自動節選
 auto_excerpt:
-  enable: false
+  enable: true
   length: 150
 
 

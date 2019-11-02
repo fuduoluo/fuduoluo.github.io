@@ -2,12 +2,13 @@
 title: Hexo提交百度(待定)和Google收录站点
 permalink: 'posts/:abbrlink.html'
 copyright: true
-categories: hexo站点地图 hexo之SEO
-tags: SEO
+categories: Google-sitemap
+tags: SEO Google-sitemap  Hexo
 abbrlink: 895444f1
 date: 2019-07-25 09:57:50
 updated: 2019-07-25 09:57:50
 subtitle:
+cover: https://upload-images.jianshu.io/upload_images/3098875-32bb9281428b738f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240
 ---
 <meta name="referrer" content="never">
 <blockquote class="blockquote-center">hexo站点地图收录</blockquote>

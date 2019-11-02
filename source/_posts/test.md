@@ -9,6 +9,7 @@ subtitle:
 categories: fastadmin
 tags: fastadmin之PHP
 top: 
+cover: https://cdn.fastadmin.net/uploads/avatar/a70ee061f201db99f27e3ba8f9b38e23.png
 ---
 
 
