@@ -40,8 +40,10 @@ avatar: https://phpcoder-1259614901.cos.ap-guangzhou.myqcloud.com/phpcoder/logo/
 #默认语言
 #5.1.4
 #language: zh-Hans
-#7.4.2
+
+#language
 language: zh-TW
+
 
 #时区
 timezone: Asia/Shanghai
