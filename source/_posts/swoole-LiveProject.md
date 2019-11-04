@@ -75,27 +75,54 @@ $PHP_AUTOCONF environment variable. Then, rerun this script.
 解决方法：
 sudo yum install autoconf
 ```
+##### 添加到系统环境变量
+```
+解决php -v查看到版本于phpinfo()打印的版本不一致问题
+
+查看执行那个php.ini
+php -i | grep php.ini
+
+vi /etc/profile
+export PATH=执行php路径:$PATH
+export PATH=/www/server/php/70/bin:$PATH
+
+保存退出
+source /etc/profile
+2.
+宝塔面板：
+删除先前存在文件
+rm-f /usr/bin/php
+默认版本改成72
+ln -sf /www/server/php/72/bin/php /usr/bin/php
+```
 ##### 执行将swoole扩展模块添加到PHP7扩展
 
 ```
 linux下执行以下命令
-1.进入 swoole解压目录  cd swoole 
- 2. ./configure  --with-php-config=/home/var/www/soft/php/bin/php-config
+解压完成后
+进入 swoole解压目录  
+cd swoole 
+执行 /www/server/php/72/bin/phpize
+./configure  --with-php-config= /www/server/php/72/bin/php-config
+
 报错：
 configure: error: C++ preprocessor "/lib/cpp" fails sanity check
 解决方法：
  yum install glibc-headers
- yum install gcc-c++ 
+ yum install gcc-c++
+
 3.编译：make
 4.执行make install 
 5.查看swoole 
 php -m
-php --ri swoole 
+php --ri swoole
+找到PHP版本的php.ini文件添加  -->查看执行那个PHP.ini文件====>php -i | grep php.ini
+extension=swoole
 ```
-##### 执行make install 
+##### 执行make install出现权限不足 
 ```
 出现权限不足：
-Installing shared extensions: /home/var/www/soft/php/lib/php/extensions
+Installing shared extensions: /www/server/php/72/lib/php/extensions
 /no-debug-non-zts-20170718/cp:cannot create regular file 
 '/home/var/www/soft/php/lib/php/extensions/no-debug-non-zts-20170718/#INST@29034#': 
 Permission denied
@@ -105,7 +132,7 @@ sudo chmod 777 /home/var/www/soft/php/lib/php/extensions/no-debug-non-zts-201707
 sudo make install
 ```
 ![编译安装swoole扩展模块](https://upload-images.jianshu.io/upload_images/3098875-7a05ac5bc9e26fa6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-##### telnet: command not found
+##### telnet: command not found 服务不存在
 [安装Telnet](https://blog.csdn.net/qq_38018165/article/details/89919556)
 ```
 [vagrant@localhost ~]$ telnet 127.0.0.1 9501
@@ -120,13 +147,66 @@ yum install telnet.*           安装telnet客户端
 更改文件权限 
 chmod 777  dir【文件/文件夹名称】
 ```
-#### 更改web服务器为Nginx
+
+##### 安装使用异步redis前置条件
+1.安装redis服务
+2.安装hiredis库
+3.重新编译swoole
+[参考官网手册](https://wiki.swoole.com/wiki/index/prid-1)
+
+##### 安装redis服务
+```
+官网下载redis包
+进行编译 make
+进入该目录中src 启动redis服务
+[root@bogon src] ./redis-server
+Increased maximum number of open files to 10032 (it was originally set to 1024).
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 5.0.5 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 9267
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+  
+```
+##### 安装hiredis库并重新编译swoole
+```
+下载hiredis包:https://github.com/redis/hiredis/releases
+解压hiredis包
+cd 进入该目录  执行sudo make -j
+执行sudo make install
+执行sudo ldconfig
+cd 进入swoole安装位置
+
+执行以下命令
+./configure --with-php-config=/home/var/www/soft/php/bin/php-config
+清除先前编译缓存
+make clean
+make install
+查看swoole扩展和redis扩展有没有安装成功
+php -m  存在扩展
+php --ri swoole  存在acry_redis
+```
+
+
+
+## 更改web服务器为Nginx
 ##### Linux安装Nginx报错make: *** No targets specified and no makefile found. Stop.解决方法
 ```
 以下是在依赖包安装好前提下：
 先运行./configure，生成makefile，再执行make，即可正常运行
 ```
-##### 大致安装过程
+##### nginx大致安装过程
 ```
 一. gcc 安装
 安装 nginx 需要先将官网下载的源码进行编译，编译依赖 gcc 环境，
@@ -174,6 +254,7 @@ make install
 查看安装路径
 whereis nginx
 ```
+
 ##### 使用高版本的swoole 4.4.9 协程Coroutine进行异步文件和异步数据库操作
 ```
 //查看swoole版本  php --ri swoole
@@ -235,51 +316,4 @@ go(function () use ($fp)
     $r =  System::fread($fp);
     var_dump($r);
 });
-```
-##### 安装使用异步redis前置条件
-1.安装redis服务
-2.安装hiredis库
-3.重新编译swoole
-[参考官网手册](https://wiki.swoole.com/wiki/index/prid-1)
-
-##### 安装redis服务
-```
-官网下载redis包
-进行编译 make
-进入该目录中src 启动redis服务
-[root@bogon src] ./redis-server
-Increased maximum number of open files to 10032 (it was originally set to 1024).
-                _._                                                  
-           _.-``__ ''-._                                             
-      _.-``    `.  `_.  ''-._           Redis 5.0.5 (00000000/0) 64 bit
-  .-`` .-```.  ```\/    _.,_ ''-._                                   
- (    '      ,       .-`  | `,    )     Running in standalone mode
- |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
- |    `-._   `._    /     _.-'    |     PID: 9267
-  `-._    `-._  `-./  _.-'    _.-'                                   
- |`-._`-._    `-.__.-'    _.-'_.-'|                                  
- |    `-._`-._        _.-'_.-'    |           http://redis.io        
-  `-._    `-._`-.__.-'_.-'    _.-'                                   
- |`-._`-._    `-.__.-'    _.-'_.-'|                                  
- |    `-._`-._        _.-'_.-'    |                                  
-  `-._    `-._`-.__.-'_.-'    _.-'                                   
-      `-._    `-.__.-'    _.-'                                       
-          `-._        _.-'                                           
-  
-```
-##### 安装hiredis库并重新编译swoole
-```
-下载hiredis包:https://github.com/redis/hiredis/releases
-sudo make -j
-sudo make install
-sudo ldconfig
-进入swoole安装位置
-执行以下命令
-./configure --with-php-config=/home/var/www/soft/php/bin/php-config
-清除先前编译缓存
-make clean
-make install
-查看swoole扩展和redis扩展有没有安装成功
-php -m 
-php --ri swoole
 ```
