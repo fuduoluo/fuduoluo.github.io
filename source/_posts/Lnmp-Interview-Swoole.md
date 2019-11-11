@@ -149,27 +149,13 @@ class Http {
      * @param [type] $response
      * @return void
      * @Description  
-     * @author chenfucheng
+     * @author 
      * @date 2019-10-26
      */
 	 public function onRequest($request, $response) {
         $response->header("Content-Type", "text/html; charset=utf-8");
         $response->end("" . rand(1000, 9999));
     }
-    /**
-     * onClose function
-     *
-     * @param [type] $ser
-     * @param [type] $fd
-     * @return void
-     * @Description //监听WebSocket连接关闭事件
-     * @author chenfucheng
-     * @date 2019-10-26
-     */
-    // public function onClose($ser, $fd)
-    // {
-    //     echo "client {$fd} closed\n";
-    // }
 }
 new Http();//实例化http类
 ```

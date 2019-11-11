@@ -14,8 +14,9 @@ cover: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQsAAAC9CAMAAACTb6i8AAABj1B
 <blockquote class="blockquote-center">IO 进程线程、同步异步、阻塞非阻塞、并发并行</blockquote>
 
  [15分钟读懂进程线程、同步异步、阻塞非阻塞、并发并行](https://www.cnblogs.com/mhq-martin/p/9035640.html)
+ [nginx、swoole高并发原理初探](https://mp.weixin.qq.com/s/WMi7LZj0bqXa72V9fRhwCA)
 
-###### 同步/异步关注的是消息通知的机制，而阻塞/非阻塞关注的是程序（线程）等待消息通知时的状态。
+##### 同步/异步关注的是消息通知的机制，而阻塞/非阻塞关注的是程序（线程）等待消息通知时的状态。
 ##### 同步 
 就是我调用一个功能，该功能没有结束前，我死等结果。
 ```
