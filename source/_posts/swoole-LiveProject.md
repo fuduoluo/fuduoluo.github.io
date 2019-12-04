@@ -15,10 +15,10 @@ cover: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAAC3CAMAAAAGjUrGAAAArlB
 编译安装Swoole ,PHP问题汇总
 {% endnote %}
 
-##### 以下是通过PHP7.2.23和Swoole4.4.9安装编译遇到的问题！
-###### PHP7.2.23安装路径/home/var/www/soft/php   
-###### swoole 编译安装目录 /home/var/www/soft/php/lib/php/extensions
-######  记住以下两个命令
+#### 以下是通过PHP7.2.23和Swoole4.4.9安装编译遇到的问题！
+#### PHP7.2.23安装路径/home/var/www/soft/php   
+#### swoole 编译安装目录 /home/var/www/soft/php/lib/php/extensions
+####  记住以下两个命令
 ```
 查看PHP扩展
 php -m
@@ -34,7 +34,7 @@ nestat -anp | grep :3306
 kill -9 pid[端口号进程ID]
 ```
 
-###### 在Linux下，编译安装PHP时报错libxml2 configure: error
+#### 在Linux下，编译安装PHP时报错libxml2 configure: error
 ```
 在Linux下，编译安装PHP时报错：
 libxml2 configure: error: xml2-config not found. 
@@ -53,7 +53,7 @@ centos/redhat镜像:
 ```
 ![问题解决](https://upload-images.jianshu.io/upload_images/3098875-d679a6d454916c1c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-##### 解决PHP 7编译安装错误：cannot stat ‘phar.phar’: No such file or directory，主要包括解决PHP 7编译安装错误：cannot stat ‘phar.phar’: No such file or directory
+#### 解决PHP 7编译安装错误：cannot stat ‘phar.phar’: No such file or directory，主要包括解决PHP 7编译安装错误：cannot stat ‘phar.phar’: No such file or directory
 ```
 cp -pR -f phar.phar /usr/local/php7/bin/phar
 cp: cannot stat 'phar.phar': No such file or directory
@@ -75,7 +75,7 @@ $PHP_AUTOCONF environment variable. Then, rerun this script.
 解决方法：
 sudo yum install autoconf
 ```
-##### 添加到系统环境变量
+#### 添加到系统环境变量
 ```
 解决php -v查看到版本于phpinfo()打印的版本不一致问题
 
@@ -95,7 +95,7 @@ rm-f /usr/bin/php
 默认版本改成72
 ln -sf /www/server/php/72/bin/php /usr/bin/php
 ```
-##### 执行将swoole扩展模块添加到PHP7扩展
+#### 执行将swoole扩展模块添加到PHP7扩展
 
 ```
 linux下执行以下命令
@@ -119,7 +119,7 @@ php --ri swoole
 找到PHP版本的php.ini文件添加  -->查看执行那个PHP.ini文件====>php -i | grep php.ini
 extension=swoole
 ```
-##### 执行make install出现权限不足 
+#### 执行make install出现权限不足 
 ```
 出现权限不足：
 Installing shared extensions: /www/server/php/72/lib/php/extensions
@@ -132,7 +132,7 @@ sudo chmod 777 /home/var/www/soft/php/lib/php/extensions/no-debug-non-zts-201707
 sudo make install
 ```
 ![编译安装swoole扩展模块](https://upload-images.jianshu.io/upload_images/3098875-7a05ac5bc9e26fa6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-##### telnet: command not found 服务不存在
+#### telnet: command not found 服务不存在
 [安装Telnet](https://blog.csdn.net/qq_38018165/article/details/89919556)
 ```
 [vagrant@localhost ~]$ telnet 127.0.0.1 9501
@@ -142,19 +142,19 @@ yum list telnet*              列出telnet相关的安装包
 yum install telnet-server          安装telnet服务
 yum install telnet.*           安装telnet客户端
 ```
-##### 使用Xftp上传本地文件到centos上，传输文件类型显示错误
+#### 使用Xftp上传本地文件到centos上，传输文件类型显示错误
 ```
 更改文件权限 
 chmod 777  dir【文件/文件夹名称】
 ```
 
-##### 安装使用异步redis前置条件
+#### 安装使用异步redis前置条件
 1.安装redis服务
 2.安装hiredis库
 3.重新编译swoole
 [参考官网手册](https://wiki.swoole.com/wiki/index/prid-1)
 
-##### 安装redis服务
+#### 安装redis服务
 ```
 官网下载redis包
 进行编译 make
@@ -179,7 +179,7 @@ Increased maximum number of open files to 10032 (it was originally set to 1024).
           `-._        _.-'                                           
   
 ```
-##### 安装hiredis库并重新编译swoole
+#### 安装hiredis库并重新编译swoole
 ```
 下载hiredis包:https://github.com/redis/hiredis/releases
 解压hiredis包
@@ -201,12 +201,12 @@ php --ri swoole  存在acry_redis
 
 
 ## 更改web服务器为Nginx
-##### Linux安装Nginx报错make: *** No targets specified and no makefile found. Stop.解决方法
+#### Linux安装Nginx报错make: *** No targets specified and no makefile found. Stop.解决方法
 ```
 以下是在依赖包安装好前提下：
 先运行./configure，生成makefile，再执行make，即可正常运行
 ```
-##### nginx大致安装过程
+#### nginx大致安装过程
 ```
 一. gcc 安装
 安装 nginx 需要先将官网下载的源码进行编译，编译依赖 gcc 环境，
@@ -255,7 +255,7 @@ make install
 whereis nginx
 ```
 
-##### 使用高版本的swoole 4.4.9 协程Coroutine进行异步文件和异步数据库操作
+#### 使用高版本的swoole 4.4.9 协程Coroutine进行异步文件和异步数据库操作
 ```
 //查看swoole版本  php --ri swoole
 // 异步文件系统仅限于4.3.0之前的版本，后续版本已经全面使用协程（coroutine）代替原有方案，
@@ -316,4 +316,41 @@ go(function () use ($fp)
     $r =  System::fread($fp);
     var_dump($r);
 });
+```
+#### swoole中的task任务分发在TP5启用
+```
+Server->task方法
+
+使用Task功能，必须先设置 task_worker_num，并且必须设置Server的onTask和onFinish事件回调函数
+
+事件：
+set配置项开启了 task_enable_coroutine
+参考：http.php文件
+```
+#### swoole中的redis在TP5启用set一直失败
+```
+// 启用redis协程服务
+go(function () use ($data) {
+    // 使用命名空间 需要在swoole加\
+    $redis = new \Swoole\Coroutine\Redis();
+    $redis->connect(config('redis.host'), config('redis.port'));
+    // 缓存到redis 参数
+    $redis->set(Redis::smskey($data['phone']), $data['code']);
+    // 验证码发送成功
+    return Uitl::show(config('code.success'), 'Verification code success to send');
+});
+
+以上设置失效时间导致一直set失败或者是操作失误
+redis 127.0.0.1:6379> SET KEY VALUE [EX seconds] [PX milliseconds] [NX|XX]
+ 
+EX seconds − 设置指定的到期时间(以秒为单位)。
+PX milliseconds - 设置指定的到期时间(以毫秒为单位)。
+NX - 仅在键不存在时设置键。
+XX - 只有在键已存在时才设置。
+示例
+
+redis 127.0.0.1:6379> SET mykey "redis" EX 60 NX
+OK
+
+
 ```

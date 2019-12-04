@@ -29,3 +29,11 @@ class2:
       link: http://sideeffect.kr/popularconvention
       avatar: https://xxxxx/avatar.png
       descr: Popular Coding Convention on Github
+class3:
+  class_name: 没放盐的鸡汤
+  link_list:
+    1:
+      name:  loomob
+      link: https://loomob.com
+      avatar: https://xxxxx/avatar.png
+      descr: LOOMOB,平面设计师,前端UI,龙砚庭博客,橘子书
