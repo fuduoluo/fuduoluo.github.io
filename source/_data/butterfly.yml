@@ -6,15 +6,15 @@
 # xxx || icon:
 #   xxx || 連結 || icon
 menu:
-  Home: / || fa fa-home
-  Archives: /archives/ || fa fa-archive
-  Tags: /tags/ || fa fa-tags
-  Categories: /categories/ || fa fa-folder-open
-  Link: /link/ || fa fa-link
-  About: /about/ || fa fa-heart
-  List||fa fa-list:
-    - Music || /music/ || fa fa-music
-    - Movie || /movies/ || fa fa-film
+  首頁: / || fa fa-home
+  時間軸: /archives/ || fa fa-archive
+  標籤: /tags/ || fa fa-tags
+  分類: /categories/ || fa fa-folder-open
+  鏈接: /link/ || fa fa-link
+  關於: /about/ || fa fa-heart
+  # List||fa fa-list:
+  #   - Music || /music/ || fa fa-music
+  #   - Movie || /movies/ || fa fa-film
 
 
 keywords: [Hiddleston,,blog,GIT,WEB,程序员,Hiddleston个人博客,WEB开发,程序員,個人博客,Linux]
@@ -74,7 +74,7 @@ algolia_search:
     input_placeholder: Search for Posts
     hits_empty: "We didn't find any results for the search: ${query}" # if there are no result
     hits_stats: "${hits} results found in ${time} ms"
-
+    
 # Local search
 # Please see doc for more details: https://jerryc.me/posts/21cfbf15/#本地搜索
 # ---------------
@@ -94,7 +94,7 @@ mathjax:
 # KaTeX
 # ---------------
 katex:
-  enable: false
+  enable: true
   cdn:
     css: https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css  
   hide_scrollbar: true
@@ -190,7 +190,7 @@ auto_excerpt:
 
 
 ####    Share System    ####
-# -----------------------------------------
+# -----------------------------------------f
 addThis:
   enable: false
   pubid:
@@ -247,7 +247,7 @@ valine:
   appKey:   # leancloud application app key
   notify: false # valine mail notify (true/false) https://github.com/xCss/Valine/wiki
   verify: false # valine verify code (true/false)
-  pageSize: 10 # comment list page size
+  pageSize: 6 # comment list page size
   avatar: monsterid # gravatar style https://valine.js.org/#/avatar
   lang: en # i18n: zh-cn/en
   placeholder: Please leave your footprints # valine comment input placeholder(like: Please leave your footprints )
@@ -313,6 +313,7 @@ reward:
 related_post:
   enable: true
   limit: 6 # 顯示推薦文章數目
+  date_type: created
 
 ####    美化/效果    ####
 #--------------------------------
@@ -386,7 +387,7 @@ activate_power_mode:
 
 # 鼠標點擊效果
 fireworks:
-  enable: false
+  enable: true
 
 # 頭像會一直轉圈
 avatar_effect: true
@@ -398,13 +399,13 @@ display_mode: day
 
 # 美化post頁顯示
 post_beautify:
-  enable: false
+  enable: true
   title-prefix-icon: '\f0c1'
   title-prefix-icon-color: "#F47466"
 
 # 全局字體
 font:
-  enable: false
+  enable: true
   font-family: Lato, Helvetica Neue For Number, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, PingFang SC, Hiragino Sans GB, MicrMicrosoft YaHei", Helvetica Neue, Helvetica, Arial, sans-serif
   code-font: consolas, Menlo, "PingFang SC", "Microsoft YaHei", monospace, Helvetica Neue For Number
 
@@ -446,7 +447,7 @@ aside:
 
 # 網站公告
 announcement:
-  content: 妈妈我要吃烤山药,大块的 给我买^_^
+  content: 来了，说明我们有缘！！
 
 # busuanzi count for PV / UV in site
 # 訪問人數
@@ -460,7 +461,7 @@ busuanzi:
 # 也可以寫成 年/月/日 時間
 runtimeshow:
   enable: true
-  start_date: 6/12/2019 00:00:00
+  start_date: 6/12/2019 00:00:00  
 
 
 ####   右下角按鈕  ####
@@ -475,7 +476,7 @@ translate:
   #延迟时间,若不在前, 要设定延迟翻译时间, 如100表示100ms,默认为0
   translateDelay: 0
   #博客网址
-  cookieDomain: "https://xxx/"
+  cookieDomain: "https://www.phpcoder.club/"
   #當文字是簡體時，按鈕顯示的文字
   msgToTraditionalChinese: "繁"
   #當文字是繁體時，按鈕顯示的文字
@@ -495,7 +496,7 @@ readmode:
 
 #百度推送
 baidu_push:
-  enable: false
+  enable: true
 
 # https://instant.page/
 # prefetch預加載
@@ -546,3 +547,9 @@ daovoice_app_id: ab1e1d5b
 laibili:
   enable: true # or false
   uid: MTAyMC80NDcwNS8yMTIzMQ
+# google ad
+google_adsense:
+  enable: true
+  js: https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js
+  client: ca-pub-3688723022152326 # 填入個人識別碼
+  enable_page_level_ads: true

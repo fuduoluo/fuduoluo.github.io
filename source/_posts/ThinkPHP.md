@@ -1,7 +1,7 @@
 ---
 title: ThinkPHP5手记
 permalink: 'posts/:abbrlink.html'
-top_img: （除非特定需要，可以不寫）
+top_img: https://box.kancloud.cn/2015-12-12_566b6a10506a4.png
 comments: true
 toc: 是否顯示toc （除非特定文章設置，可以不寫）
 toc_number: 是否顯示toc數字 （除非特定文章設置，可以不寫）

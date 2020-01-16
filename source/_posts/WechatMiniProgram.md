@@ -1,7 +1,7 @@
 ---
 title: 微信小程序
 permalink: 'posts/:abbrlink.html'
-top_img: （除非特定需要，可以不寫）
+top_img: https://img4.mukewang.com/5bbf2def000118ab06000336-240-180.jpg
 comments: true
 toc: 是否顯示toc （除非特定文章設置，可以不寫）
 toc_number: 是否顯示toc數字 （除非特定文章設置，可以不寫）
@@ -20,6 +20,15 @@ tags:
 {% note success %}
 记录微信小程序学习
 {% endnote %}
+
+#### 开发小程序前的注意事项
+
+[小程序开发注意事项](https://cloud.tencent.com/developer/article/1552955)
+#### 如何规范设置的小程序名称、简称
+[规范命名小程序](https://developers.weixin.qq.com/community/develop/doc/0004221455ce78d413893d4b75b009?highLine=%25E7%2594%25B3%25E8%25AF%25B7%25E5%25A4%259A%25E4%25B8%25AA%25E5%25B0%258F%25E7%25A8%258B%25E5%25BA%258F)
+
+#### 微信小程序发布流程
+[发布流程](https://www.jianshu.com/p/a77b73f329e4)
 
 #### Promise含义
 - 异步编程的一种解决方案

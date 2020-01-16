@@ -10,4 +10,4 @@ top_img: https://images.pexels.com/photos/3074653/pexels-photo-3074653.jpeg?auto
 - 所在城市：福建厦门
 
 ##### 个人简介
-	不才还是小跟班
+- 不才还是小跟班

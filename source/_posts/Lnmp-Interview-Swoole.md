@@ -1,7 +1,7 @@
 ---
 title: centos7 宝塔[LNMP] 访问swoole服务问题
 permalink: 'posts/:abbrlink.html'
-top_img: （除非特定需要，可以不寫）
+top_img: https://img.php.cn/upload/article/000/000/007/2f6af5226adfeb6e67b09841b303e379.jpg
 comments: '是否顯示評論（除非設置false,可以不寫）'
 cover: https://img.php.cn/upload/article/000/000/007/2f6af5226adfeb6e67b09841b303e379.jpg
 toc: 是否顯示toc （除非特定文章設置，可以不寫）

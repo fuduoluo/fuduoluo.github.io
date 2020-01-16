@@ -35,24 +35,23 @@ cover: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQ0AAAC7CAMAAABIKDvmAAAAk1B
 
 ###### 解决方法
 
-```
 数据库密码填写root
 原因可能默认数据库密码root 
 
 ##### status字段
 ![效果](https://phpcoder-1259614901.cos.ap-guangzhou.myqcloud.com/phpcoder/fastadmin/3098875-16fda5bcfc1d3503.png)
 
-##### 1.1数据库
+##### 数据库
 ![效果](https://phpcoder-1259614901.cos.ap-guangzhou.myqcloud.com/phpcoder/fastadmin/3098875-b8a39aa7ae9a17d9.png)
 ![image.png](https://phpcoder-1259614901.cos.ap-guangzhou.myqcloud.com/phpcoder/fastadmin/3098875-5886e5950cbd2403.png)
 
-###### 1.2JS
+###### JS
 ```
  {field: 'status', title: __('Status'),formatter: Table.api.formatter.status,searchList: {normal: __('Normal'), hidden: __('Hidden')}},
 或者
 {field: 'status', title: __('Status'),formatter: Table.api.formatter.status},
 ```
-###### 1.3PHP
+###### PHP
 ```
 <?php
 

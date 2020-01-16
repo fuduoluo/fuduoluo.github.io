@@ -4,11 +4,12 @@ permalink: 'posts/:abbrlink.html'
 copyright: true
 categories: Mysql
 tags: Mysql编译安装
+top_img: https://upload-images.jianshu.io/upload_images/3098875-235077b6271f9f07.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240
 abbrlink: 2ce8eb6c
 date: 2019-10-29 16:37:25
 updated: 2019-10-29 16:37:25
 subtitle:
-cover: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStC7WMJa5q7NNTxSyVReZvJczqf80ZiTq4LSDdyO2oZSS-_cxw&s
+cover: https://upload-images.jianshu.io/upload_images/3098875-235077b6271f9f07.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240
 ---
 <meta name="referrer" content="never">
 <blockquote class="blockquote-center">编译安装Linux centos7 mysql数据库</blockquote>

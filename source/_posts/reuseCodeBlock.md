@@ -477,15 +477,17 @@ function truncate(target,length,truncation){
 }
 ```
 #### 字符串 trim--用于去除字符串两端的空白字符（直到遇到第一个非空白字符串为止它会清除包括换行符、空格、制表符等常见的空白字符。）
-// 简单好记版本
+
 ```
+简单好记版本
 function trim(str) {
     return str.replace(/^\s\s*/, '').replace(/\s\s*$/, '');
 }
 ```
+
+```
 // 速度超快版本(其实还有比这个更快的)
 // 前面的空格用正则，后面的用字符串原生方法
-```
 function trim(str) {
     str=str.replace(/^\s+/, '');
     var len=str.length-1;
@@ -524,7 +526,7 @@ let html=`<form action="a.php" id="registerForm" method="post">
 <input type="submit" value='提交'>
 </form>`
 ```
-##### 传统方式
+##### 表单传统方式
 ```
 let registerForm = document.querySelector('#registerForm')
 registerForm.addEventListener('submit', function() {
