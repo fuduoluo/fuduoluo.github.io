@@ -19,4 +19,17 @@ cover:  縮略圖
 <meta name="referrer" content="never">
 <blockquote class="blockquote-center"></blockquote>
 {% note success %}
+成功
+{% endnote %}
+{% note primary %}
+文本
+{% endnote %}
+{% note info %}
+信息
+{% endnote %}
+{% note danger %}
+危险
+{% endnote %}
+{% note warning %}
+警告
 {% endnote %}

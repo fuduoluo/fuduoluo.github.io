@@ -1,22 +1,22 @@
 ---
 title: 永久激活PHPstorm编辑器
 permalink: 'posts/:abbrlink.html'
-top_img: https://upload-images.jianshu.io/upload_images/3098875-79cc44d1d5a78b47.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240
+top_img: 
 comments: true
 toc: 是否顯示toc （除非特定文章設置，可以不寫）
 toc_number: 是否顯示toc數字 （除非特定文章設置，可以不寫）
 copyright: true
-cover: https://upload-images.jianshu.io/upload_images/3098875-79cc44d1d5a78b47.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240
+cover: 
 abbrlink: 7a17374d
 date: 2020-01-15 14:49:36
 updated: 2020-01-15 14:49:36
-tags:
-categories: phpstorm IDE
+tags: PHPSTORM
+categories: PHPSTORM IDE
 keywords: PHPSTORM  IDE  tool
 description: active 
 ---
 <meta name="referrer" content="never">
-{% note success %}
+{% note warning %}
 本教程仅供学习使用，切勿商务用途。若有问题，后果自负。
 {% endnote %}
 
@@ -39,7 +39,8 @@ description: active
 #### 点击你要注册的IDE菜单: Configure 或 Help -> Edit Custom VM Options ...如果提示是否要创建 件，请点 Yes 
 #### 打开phpstorm64.exe.vmoptionswe年添加压缩包路径
 ![添加压缩包配置文件](https://upload-images.jianshu.io/upload_images/3098875-abac70a83c66fdda.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-{% note success %}
+
+{% note danger %}
 以我本机为例，注意不要使用中文命名
 一定要自己确认好路径( 不要使用中文路径)，填错会导致IDE打不开!!!最好使用绝对路径。 
 一个vmoptions内只能有一个 -javaagent 参数。

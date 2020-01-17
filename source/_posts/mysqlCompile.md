@@ -92,7 +92,7 @@ sudo cat /var/log/mysqld.log | grep -i 'temporary password'
 show variables like '%character%';
 ```
 ##### 使用初始化密码进入数据库不能进行任何操作需修改原始密码
-```
+
 ALTER USER 'root'@'localhost' IDENTIFIED BY 'new password';
 //以下命令是在有User表的情况下进行修改
 UPDATE user SET Password = 'new-password' WHERE User = 'root';
@@ -112,7 +112,7 @@ show variables like '%password%';
 navicat连接失败：
 ERROR 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
 密码错误
-```
+
 [查看密码策略参考文章](https://blog.csdn.net/hello_world_qwp/article/details/79551789)
 ##### 登录mysql命令
 ```
