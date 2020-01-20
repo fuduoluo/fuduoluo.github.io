@@ -113,7 +113,7 @@ highlight: #代码块的设置
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
   path: ''
-  per_page: 10
+  per_page: 6
   order_by: -date
   
 # Category & Tag
@@ -150,7 +150,7 @@ theme: Butterfly
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: http://github.com/fuduoluo/fuduoluo.github.io.git
+  repo: https://github.com/fuduoluo/fuduoluo.github.io
   branch: master
 # Extensions
 ## Plugins: http://hexo.io/plugins/
@@ -170,6 +170,7 @@ urlforgoogle: https://www.phpcoder.club/
 # 自动生成sitemap
 sitemap:
   path: sitemap.xml
+  plugins: hexo-generate-sitemap
 # Busuanzi
 #busuanzi: true
 #看板宠物
@@ -192,3 +193,5 @@ live2d:
     height: 100
   mobile:
     show: false
+Plugins:
+  - hexo-generator-sitemap

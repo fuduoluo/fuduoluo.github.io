@@ -6,3 +6,6 @@ node_modules/
 public/
 .deploy*/
 package-lock.json
+lockfile/
+themes/next5
+themes/_config_old.yml

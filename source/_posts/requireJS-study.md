@@ -11,7 +11,7 @@ subtitle:
 cover: data:image/png;base64,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
 ---
 <meta name="referrer" content="never">
-##### 总述：
+#### 总述：
 ```
 RequireJS是一个JavaScript文件和模块加载器。 
 它针对浏览器内使用进行了优化，但可以在其他JavaScript环境中使用，例如Rhino和Node。
@@ -23,18 +23,18 @@ RequireJS是一个JavaScript文件和模块加载器。
 
 ```
 <!--more-->
-##### 1.下载文件
+#### 1.下载文件
 [下载文件地址]([https://requirejs.org/docs/download.html](https://requirejs.org/docs/download.html))
 ![image.png](https://phpcoder-1259614901.cos.ap-guangzhou.myqcloud.com/phpcoder/requirejs/3098875-04cd66ccb7b083a8%20.png)
 
 
-##### 理解概念
+#### 理解概念
 ```
 require([],function(){}) //个人理解 加载其他js
 define //定义依赖关系
 ```
 
-##### 2.加载js文件
+#### 2.加载js文件
 ```
 <!--这将baseUrl(主入口)设置为“scripts”目录，并且 加载一个模块ID为'main'的脚本-->
 <!--也可以手动配置配置文件-->
@@ -59,7 +59,7 @@ www/
     app.js
     require.js
 ```
-###### 目录结构解析
+#### 目录结构解析
 ```
 -----栗子：
 index.html
@@ -71,7 +71,7 @@ js/app.js
 requirejs.config({
     //默认情况下从js / lib加载任何模块ID。
     baseUrl: 'js/lib',
-      //除了，如果模块ID以“app”开头，
+      //除了，如果模块ID以“app”开头，   
      //从js / app目录加载它
      // paths config相对于baseUrl，
      //依赖资源都是js脚本,无需在module ID上再加".js"后缀
@@ -87,11 +87,11 @@ requirejs(['jquery', 'canvas', 'app/sub'],function   ($,  canvas,   sub) {
     //可以使用已加载js文件方法，属性等
 });
 ```
-###### 3.配置项
+#### 3.配置项
 [配置项学习入口](https://segmentfault.com/a/1190000002401665)
 
 
-###### 配置文件位置
+#### 配置文件位置
 ```
 在引用requirejs上面
 
@@ -134,14 +134,13 @@ require( ["some/module", "my/module", "a.js", "b.js"],
     };
 </script>
 <script src="scripts/require.js"></script>
-
--------使用视业务逻辑需求--------
 ```
-###### 注意
+
+#### 注意
 1.配置文件单独成一个文件，不要跟具体的业务模块耦合。
 2.最好使用 var require = {} 的形式而不是 window.require = {}的形式。后者在IE中运行不正常。
 
-###### urlArgs
+#### urlArgs
 ```
 RequireJS获取资源时附加在URL后面的额外的query参数。
 作为浏览器或服务器未正确配置时的“cache bust”手段很有用。使用cache bust配置的一个示例：
@@ -152,7 +151,7 @@ urlArgs: "bust=" +  (new Date()).getTime()
 
  urlArgs: "v=" + requirejs.s.contexts._.config.config.site.version,
 ```
-###### map
+#### map
 ```
 map: {
     '<module name>': {
@@ -161,7 +160,7 @@ map: {
 }
 //这里<module name>是一个已经存在的模块js文件，或者你可以使用'*'。这里Id用于别名JS文件。
 ```
-###### config：
+#### config：
 ```
 当您要将某些配置传递给所有模块时使用。这些值是所有模块的通用值
 现在，在您的js文件中，您可以使用以下命令访问此值:require.s.contexts._.config
@@ -190,10 +189,11 @@ console.log(require.s.contexts._.config.testData.color);
 ```
 ![image.png](https://phpcoder-1259614901.cos.ap-guangzhou.myqcloud.com/phpcoder/requirejs/3098875-8680f34e113bc88d%20.png)
 
-###### deps：表示当前模块需要依赖哪些库
+#### deps：表示当前模块需要依赖哪些库
 
-###### exports:暴露的全局名称
-###### shim:配置没有使用define的依赖js文件
+#### exports:暴露的全局名称
+
+#### shim:配置没有使用define的依赖js文件
 ```
 当有一些脚本时，它们用于你想要全局声明的那些脚本，以及那些不使用define（）来定义值的脚本，
 如果那些脚本已经使用了define（）那么它将无法正常工作。
@@ -228,8 +228,10 @@ init:当加载多个模块的时候存在名字冲突的可能,比如JQuery、Un
 暴露全局栗子：
 参考fast.js  ---- window.Fast = Fast;
 ```
+
 [noConflict()题外话](https://blog.csdn.net/aitangyong/article/details/44200751)
->JS小记
+
+
 [关于$.extend()用法总结](https://www.cnblogs.com/yuqingfamily/p/5775950.html)
 ```
 1.jQuery.extend(object); 
@@ -264,12 +266,13 @@ $.fn.extend({
 $("#input1").alertWhileClick();
 
 ```
->trigger()
+trigger()
+
 ```
 trigger() 方法触发被选元素的指定事件类型。
 ```
 
-###### 前言
+#### 前言
 ```
 主要是了解后台模块使用requireJs怎么引用其他js
 
@@ -277,10 +280,10 @@ trigger() 方法触发被选元素的指定事件类型。
 ```
 [点击进入....官方文档入口](https://doc.fastadmin.net/docs/index.html)
 <!--more-->
-###### 1.目录
+#### 1.目录
 ![image.png](https://upload-images.jianshu.io/upload_images/3098875-75f15b0f93c6b0b4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-###### 2.主入口文件
+#### 2.主入口文件
 ```
 1-1.html文件位置(主入口)
 
@@ -332,7 +335,7 @@ Js文件：var controller = { detail:function(){} }
 
 [配置项介绍入口](https://www.jianshu.com/p/37ec668500ae)
 
-##### JS语言包加载
+#### JS语言包加载
 > requirejs.s.contexts._.config.xx.xx.xx 这个是直接把requirejs的对象暴露出来  ！！！主要是配置文件信息的读取！
 
 

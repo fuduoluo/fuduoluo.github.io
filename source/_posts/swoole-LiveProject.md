@@ -15,9 +15,12 @@ cover: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAAC3CAMAAAAGjUrGAAAArlB
 编译安装Swoole ,PHP问题汇总
 {% endnote %}
 
-#### 以下是通过PHP7.2.23和Swoole4.4.9安装编译遇到的问题！
-#### PHP7.2.23安装路径/home/var/www/soft/php   
-#### swoole 编译安装目录 /home/var/www/soft/php/lib/php/extensions
+{% note danger %}
+ 以下是通过PHP7.2.23和Swoole4.4.9安装编译遇到的问题！
+ PHP7.2.23安装路径/home/var/www/soft/php   
+ swoole 编译安装目录 /home/var/www/soft/php/lib/php/extensions
+{% endnote %}
+
 ####  记住以下两个命令
 ```
 查看PHP扩展
@@ -200,7 +203,7 @@ php --ri swoole  存在acry_redis
 
 
 
-## 更改web服务器为Nginx
+### 更改web服务器为Nginx
 #### Linux安装Nginx报错make: *** No targets specified and no makefile found. Stop.解决方法
 ```
 以下是在依赖包安装好前提下：
@@ -351,6 +354,5 @@ XX - 只有在键已存在时才设置。
 
 redis 127.0.0.1:6379> SET mykey "redis" EX 60 NX
 OK
-
 
 ```

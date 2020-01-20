@@ -10,13 +10,13 @@ date: 2019-07-11 21:03:56
 updated: 2019-07-11 21:03:56
 cover: https://cdn.jsdelivr.net/npm/@bootcss/www.bootcss.com@0.0.3/dist/img/vuejs.png
 ---
->作为新手，坑是少不了的！下面是我很荣幸跳的坑
+作为新手，坑是少不了的！下面是我很荣幸跳的坑
 
 
-##### 目录
+#### 目录
 ![结构目录](https://phpcoder-1259614901.cos.ap-guangzhou.myqcloud.com/phpcoder/vuecli3%2Bphp%E5%89%8D%E5%90%8E%E7%AB%AF%E5%88%86%E7%A6%BB/3098875-a904c86423d30c18.png)
 
-##### 1.Vue Cli3 和Vue  Cli2 区别
+#### 1.Vue Cli3 和Vue  Cli2 区别
 ```
 1.vue-cli 3 的 github 仓库由原有独立的 github 仓库迁移到了 vue 项目下
 2.vue-cli 3 的项目架构完全抛弃了 vue-cli 2 的原有架构，3 的设计更加抽象和简洁（此处后续可以详细介绍）
@@ -24,19 +24,19 @@ cover: https://cdn.jsdelivr.net/npm/@bootcss/www.bootcss.com@0.0.3/dist/img/vuej
 4.vue-cli 3 的设计原则是“0配置”
 5.vue-cli 3 提供了 vue ui 命令，提供了可视化配置，更加人性化
 ```
-###### 以上对我来说有这个东西就行了 我反正也没有深入研究  哈哈哈  毕竟菜！
+##### 以上对我来说有这个东西就行了 我反正也没有深入研究  哈哈哈  毕竟菜！
 >由于 vue-cli 3 也学习了 rollup 的零配置思路，所以项目初始化后，没有了以前熟悉的 build 目录，也就没有了 webpack.base.config.js、webpack.dev.config.js 、webpack.prod.config.js 等配置文件。
 
-###### 我还以为一直问怎么就没有了build 我去哪里配置东西  真惭愧！
+##### 我还以为一直问怎么就没有了build 我去哪里配置东西  真惭愧！
 <!--more-->
-##### 2.Vue.Config.js 怎么配置?
+#### 2.Vue.Config.js 怎么配置?
 [如何配置 vue-cli 3.0 的 vue.config.js](https://segmentfault.com/a/1190000016101954)
 [以上链接大佬个人主页](https://segmentfault.com/u/shenyibandenanren)
 [vue cli3中文文档](https://cli.vuejs.org/zh/guide/)
 [webpack-plugins](https://webpack.js.org/plugins/mini-css-extract-plugin/)
 [webpack-chain](https://github.com/neutrinojs/webpack-chain)
 
-##### 附上我自己的配置（因人而异以下有的我都没有真正实践用过！！）
+#### 附上我自己的配置（因人而异以下有的我都没有真正实践用过！！）
 
 
 ```
@@ -140,7 +140,7 @@ module.exports = {
 	}
 }
 ```
-##### 3.axios安装使用
+#### 3.axios安装使用
 ```
 1.安装
 npm install axios ---ajax
@@ -288,7 +288,7 @@ export default {
   },
 .......
 ```
-##### 4.Vue和Tp5 共享同一路由
+#### 4.Vue和Tp5 共享同一路由
 起因：
 - 访问www.xxxx.com进入前端页面（vue项目）
 - www.xxxx.com/admin.php/login 进入后台登陆界面（Tp5项目）
@@ -296,8 +296,8 @@ export default {
 根本没办法返回数据至前端页面 也打不开vue前端页面
 
 [参考文章](https://www.jianshu.com/p/fec73eaec081)
-###### [原理]vue和tp5有自己的路由，但是tp5用来做数据端就不需要这个了，直接设置为vue的nginx配置即可
-###### 4.1 nginx伪静态配置：
+##### [原理]vue和tp5有自己的路由，但是tp5用来做数据端就不需要这个了，直接设置为vue的nginx配置即可
+##### 4.1 nginx伪静态配置：
 ![nginx伪静态配置](https://phpcoder-1259614901.cos.ap-guangzhou.myqcloud.com/phpcoder/vuecli3%2Bphp%E5%89%8D%E5%90%8E%E7%AB%AF%E5%88%86%E7%A6%BB/3098875-0d77e2b640fcc8c7.png)
 ```
 直接复制：
@@ -310,12 +310,12 @@ location ~ ^/(thinkphp|vendor/phpunit|application|runtime)/.*\.php
     return 404;
 }
 ```
-###### 4.2nginx默认文件配置：
+##### 4.2nginx默认文件配置：
 ![默认文件配置](https://phpcoder-1259614901.cos.ap-guangzhou.myqcloud.com/phpcoder/vuecli3%2Bphp%E5%89%8D%E5%90%8E%E7%AB%AF%E5%88%86%E7%A6%BB/3098875-e18a02d85391908c.png)
 设置优先级
-###### 4.3将打包好的vue文件包dist上传到public目录下并解压：
+##### 4.3将打包好的vue文件包dist上传到public目录下并解压：
 ![上传服务器](https://phpcoder-1259614901.cos.ap-guangzhou.myqcloud.com/phpcoder/vuecli3%2Bphp%E5%89%8D%E5%90%8E%E7%AB%AF%E5%88%86%E7%A6%BB/11860463-949e19e810d5b496.webp)
-###### 4.3请求接口
+##### 4.3请求接口
 ```
 原本：/api/index/index
       loginPost: function () {
@@ -326,10 +326,10 @@ location ~ ^/(thinkphp|vendor/phpunit|application|runtime)/.*\.php
           })
       }
 ```
-##### 线上测试结果
+#### 线上测试结果
 ![返回前端数据](https://upload-images.jianshu.io/upload_images/3098875-e5a1faad4c07a526.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-##### 以上配置后--本地环境与线上环境获取数据
+#### 以上配置后--本地环境与线上环境获取数据
 - 本地环境
 ```
   methods: {
