@@ -1,5 +1,5 @@
 class:
-  class_name: 友情鏈接
+  class_name: 前端導航
   link_list:
     1:
       name: Web前端导航
@@ -42,3 +42,17 @@ class3:
       link: http://www.sunnyos.com/
       avatar: http://www.sunnyos.com/public/home/images/default.jpg
       descr: 讲述一个程序员代码史记
+class4:
+  class_name: 友情鏈接
+  link_list:
+    1:
+      name:  DaleInTeach
+      link: https://dale-.github.io/
+      avatar: http://www.sunnyos.com/public/home/images/default.jpg
+      descr: 酷酷前端小女孩
+    2:
+      name:  BookJ
+      link: http://html5book.bluej.cn/#/
+      avatar: http://html5book.bluej.cn/book_logo.png
+      descr: 一本讲求技术情怀的书
+      

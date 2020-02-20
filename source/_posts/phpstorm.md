@@ -9,7 +9,7 @@ copyright: true
 cover: 
 abbrlink: 7a17374d
 date: 2020-01-15 14:49:36
-updated: 2020-01-15 14:49:36
+updated: 2020-02-20 11:49:36
 tags: PHPSTORM
 categories: PHPSTORM IDE
 keywords: PHPSTORM  IDE  tool
@@ -63,3 +63,7 @@ description: active
 ##### IDE升级会从旧版本导 以上设置，导入配置后可能提示未注册(因为刚导入的vmoptions未生效)，直接重启IDE即可，无需其他操作
 #### 感谢作者的分享，关注公众号：源码站
 [感谢作者分享该教程，详细教程请点击这里](https://mp.weixin.qq.com/s?__biz=MzI1ODYyODAwNQ==&mid=100000335&idx=1&sn=c77b63784b5b647710823480c09034f0&chksm=6a0402855d738b93baee8ca1a824dc4e58b3e83842b6279346eed646078ce84bf7a7aabe5da5&scene=20&xtrack=1&key=502e06af756d4cb04377922d22b73e81deab910af219eaf7294382cf6a12d8a8fe18340bba04c06ad95f426f212b5fa4535815773f12e26322f2d10709aff364e2803e73d4b5873acbe368628a502033&ascene=1&uin=Nzc5Njg4NzAz&devicetype=Windows+10&version=62070158&lang=zh_CN&exportkey=AeIOvo%2B9JKfiE6ks3c7%2B6A0%3D&pass_ticket=gkhf1X5NOmcKe9civKguQPE9C6vYoOVr8p483MF3ee8tnHorVS8prgMxMgMmkO%2F3)
+
+#### VSCODE git 出现"没有活动的源代码控制提供程序
+- 扩展程序——输入**@builtin**——找到git——启动——重启vscode
+- 在设置中找到“git.path”，会发现后面路径为null，修改为git的安装位置。 "git.path": "E:/git/Git/bin/git.exe",

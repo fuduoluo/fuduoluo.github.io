@@ -12,7 +12,7 @@ keywords: ThinkPHP5
 description: ThinkPHP5日常手记
 abbrlink: 3ec68ba4
 date: 2019-12-27 20:29:21
-updated: 2019-12-27 20:29:21
+updated: 2020-02-20 11:49:36
 tags:
 ---
 <meta name="referrer" content="never">
@@ -110,5 +110,13 @@ fa中使用 ----> %s - 字符串
 - 无论传入的数据是数组还是 object，解码后都将转换为数组。
 [具体了解，戳这里！](https://www.jianshu.com/p/5e9239e44eb8)
 
+#### 记微信支付回调方法扣除库存和更新状态失败
+
+#### TP5.1依赖注入
+```
+// 执行应用并响应
+ Container::get('app')->run()->send();
+```
+- 
 
 

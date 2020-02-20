@@ -1,13 +1,13 @@
 ---
-title:  Vue Cli 3.* + TP5 前后端分离访问(未跨域)
+title:  Vue Cli 3 与 TP5 前后端分离访问[未跨域]
 permalink: 'posts/:abbrlink.html'
 copyright: true
-categories: vue
-tags: vue 
+categories: Vue
+tags: Vue 
 abbrlink: c0add594
 subtitle: Vue Cli 3.* + TP5
 date: 2019-07-11 21:03:56
-updated: 2019-07-11 21:03:56
+updated: 2020-02-20 11:49:36
 cover: https://cdn.jsdelivr.net/npm/@bootcss/www.bootcss.com@0.0.3/dist/img/vuejs.png
 ---
 作为新手，坑是少不了的！下面是我很荣幸跳的坑
@@ -358,3 +358,14 @@ location ~ ^/(thinkphp|vendor/phpunit|application|runtime)/.*\.php
     },
   }
 ```
+####  安装vue脚手架出现以下问题[电脑本身禁止运行脚本]
+
+{% note danger %}
+无法加载文件 C:\Users\1111111\AppData\Roaming\npm\vue.ps1,因为在此系统禁止运行脚本
+{% endnote %}
+ 
+ - 解决：管理员身份打开window powershell
+ - 输入set-ExecutionPolicy RemoteSigned 选择Y或者A
+
+ ![操作图](https://upload-images.jianshu.io/upload_images/3098875-552e1ee6addb1730.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+

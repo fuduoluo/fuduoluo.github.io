@@ -9,7 +9,7 @@ copyright: true
 cover: https://user-gold-cdn.xitu.io/2019/2/12/168df9eaae700fc2?imageView2/0/w/1280/h/960/format/webp/ignore-error/1
 abbrlink: 42b82995
 date: 2020-01-19 14:40:36
-updated: 2020-01-19 14:40:36
+updated: 2020-02-20 11:27:09
 tags: ES6
 categories: ES6
 keywords: ES6
@@ -29,8 +29,11 @@ description:
 
 ### 总结
 {% note primary %}
-总结个人常用语法
+记录不理解的地方
 {% endnote %}
+
+https://blog.techbridge.cc/2017/04/22/javascript-prototype/
+https://www.cnblogs.com/douyage/p/8630529.html
 
 #### rest参数与arguments关键字
 - arguments
@@ -113,6 +116,209 @@ description:
     console.log('name = ' + name + ', age = ' + age + ', passport = ' + passport);
     
     ```
+#### 数组解构
+    {% note info %}
+    左边模式等于右边模式
+    {% endnote %}
+
+- 完全解构:属于“模式匹配”，只要等号两边的模式相同
+    ```
+    let [x, y, ...z] = ['a'];
+    x // "a"
+    y // undefined
+    z // []
+
+    let [ , , third] = ["foo", "bar", "baz"];
+    third // "baz"
+
+    ```
+- 不完全解构:等号左边的模式，只匹配一部分的等号右边的数组
+    ```
+    let [x, y] = [1, 2, 3];
+    x // 1
+    y // 2
+
+    // 报错：等号的右边不是数组（或者严格地说，不是可遍历的结构）
+    let [foo] = 1;
+    let [foo] = false;
+    let [foo] = NaN;
+    let [foo] = undefined;
+    let [foo] = null;
+    let [foo] = {};
+
+
+    ```
+- 默认值
+    {% note warning %}
+    ES6 内部使用严格相等运算符（===），判断一个位置是否有值
+    只有当一个数组成员严格等于undefined，默认值才会生效。
+    默认值是一个表达式只有在用到的时候，才会求值。
+    引用解构赋值的其他变量，但该变量必须已经声明。
+    {% endnote %}
+
+    ```
+    let [x = 1] = [undefined];
+    x // 1
+
+    let [x = 1] = [null];
+    x // null
+
+    //表达式
+    function f() {
+      console.log('aaa');
+    }
+    let [x = f()] = [1];
+    x // 1
+
+    变量声明与未声明变量
+    let [x = 1, y = x] = [];     // x=1; y=1
+    let [x = y, y = 1] = [];     // ReferenceError: y is not defined
+    ```
+- 解构失败：变量的值就等于undefined
+    ```
+    let [foo] = [];
+    let [bar, foo] = [1];
+    foo //undefined
+    ```
+
+#### 对象解构
+
+{%  note success %}
+
+    区别：数组的元素是按次序排列的，变量的取值由它的位置决定；
+    而对象的属性没有次序，变量必须与属性同名，才能取到正确的值
+    解构失败：变量的值等于undefined.
+    对象的解构赋值的内部机制，是先找到同名属性，然后再赋给对应的变量。真正被赋值的是后者，而不是前者
+        
+{% endnote %}
+
+- 对象的属性没有次序，变量必须与属性同名，才能取到正确的值反之出现undefined
+    ```
+    let { bar, foo } = { foo: 'aaa', bar: 'bbb' };
+    foo // "aaa"
+    bar // "bbb"
+
+    let { baz } = { foo: 'aaa', bar: 'bbb' };
+    baz // undefined
+    
+    ```
+
+- 对象方法也可以赋值到某一个变量
+
+    ```
+    const { log } = console;
+    log('hello') // hello  将console.log赋值到log变量
+    ```
+- 变量名与属性名不一致时，可以改写如下达到解构成功
+    ```
+    foo 匹配模式  baz 变量  真正被赋值是baz
+    let { foo: baz } = { foo: 'aaa', bar: 'bbb' };
+    baz // "aaa"
+
+    ```
+- 对象解构也可以用于嵌套结构
+    ```
+    let obj = {
+        p: [
+            'Hello',
+            { y: 'World' }
+        ]
+    };
+
+    let { p: [x, { y }] } = obj;
+    x // "Hello"
+    y // "World"
+    
+    注意p 不是变量 是属于匹配模式
+    如果p也要作为变量赋值
+    let { p,p: [x, { y }] } = obj;
+    x // "Hello"
+    y // "World"
+    p // ["Hello", {y: "World"}]
+    ```
+- 默认值：只有对象属性值是undefined才会生效
+    ```
+    var {x = 3} = {x: undefined};
+    x // 3
+
+    var {x = 3} = {x: null};
+    x // null
+    ```
+#### 用途
+[点击这里](http://es6.ruanyifeng.com/#docs/destructuring#%E7%94%A8%E9%80%94)
+
+#### 扩展运算符
+
+    {% note success%}
+    扩展运算符（spread）是三个点（...）。它好比 rest 参数的逆运算，将一个数组转为用逗号分隔的参数序列
+    {% endnote %}
+
+    ```
+    console.log(...[1, 2, 3])
+    // 1 2 3
+
+    console.log(1, ...[2, 3, 4], 5)
+    // 1 2 3 4 5
+    
+    ```
+
+- 运算符主要用于函数调用
+    ```
+    function push(array, ...items) {
+        array.push(...items);
+    }
+
+    ```
+- 放置表达式
+    ```
+    const arr = [
+        ...(x > 0 ? a : ""),
+        'b',
+    ];
+    ```
+- 扩展运算符后面是一个空数组，则不产生任何效果
+    ```
+    [...[], 1]
+    // [1]  
+    ```
+- 代替apply
+    ```
+    // ES5 的写法
+    Math.max.apply(null, [1, 3, 7])
+
+    // ES6 的写法
+    Math.max(...[1, 3, 7])
+
+    // 等同于
+    Math.max(1, 3, 7);
+    通过push函数，将一个数组添加到另一个数组的尾部
+    // ES5的 写法
+    var arr1 = [0, 1, 2];
+    var arr2 = [3, 4, 5];
+    Array.prototype.push.apply(arr1, arr2);
+
+    // ES6 的写法
+    let arr1 = [0, 1, 2];
+    let arr2 = [3, 4, 5];
+    arr1.push(...arr2);
+    ```
+##### 扩展运算符应用
+[点击这里](http://es6.ruanyifeng.com/#docs/array#%E6%89%A9%E5%B1%95%E8%BF%90%E7%AE%97%E7%AC%A6%E7%9A%84%E5%BA%94%E7%94%A8)
+
+
+#### Prototype 属性
+##### 构造函数
+{% note info %}
+构造函数的特点有：
+
+　　　　a：构造函数的函数名首字母必须大写。
+
+　　　　b：内部使用this对象，来指向将要生成的对象实例。
+
+　　　　c：使用new操作符来调用构造函数，并返回对象实例
+{% endnote %}
+- 出现原因：
+
 
 #### 高阶函数
 - map()
