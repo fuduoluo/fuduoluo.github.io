@@ -10,8 +10,8 @@ cover: https://cdn.jsdelivr.net/npm/@bootcss/www.bootcss.com@0.0.3/dist/img/vuej
 abbrlink: "48944071"
 date: 2020-02-20 16:09:08
 updated: 2020-02-20 16:09:08
-tags: Vue
-categories: Vue
+tags: vue
+categories: vue
 keywords:
 description: 解决组件通信方案
 ---

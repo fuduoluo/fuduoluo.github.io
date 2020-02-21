@@ -7,8 +7,8 @@ toc: 是否顯示toc （除非特定文章設置，可以不寫）
 toc_number: 是否顯示toc數字 （除非特定文章設置，可以不寫）
 copyright: true
 cover: https://cdn.jsdelivr.net/npm/@bootcss/www.bootcss.com@0.0.3/dist/img/vuejs.png
-tags: Vue
-categories: Vue
+tags: vue
+categories: vue
 keywords: Prop component VueComponnets
 description: vue组件 vue自定义事件
 abbrlink: 5fcafa01
@@ -154,8 +154,6 @@ updated: 2020-02-20 09:15:45
                var _this = this;
                var tets = _this.$refs.test;
                console.log(tets);//<li>test</li>
-               console.log(this.$refs);
-               console.log(this.$refs["`list${i}`"]);
            })
        }
     ```
@@ -231,6 +229,7 @@ updated: 2020-02-20 09:15:45
                     //DOM修改等操作未更新
                     this.$nextTick(()=>{
                         //DOM修改等操作已更新
+                        //此时的$ref是指子组件实例所以可以使用子组件的所有方法
                         _this.$refs.handles.emitEvent('我是父组件中的数据');
                     })
                     //调用子组件的方法，handles是上边ref起的名字，emitEvent是子组件的方法。
@@ -243,7 +242,7 @@ updated: 2020-02-20 09:15:45
 
 ![效果](https://upload-images.jianshu.io/upload_images/3098875-8b90ab97e6eff302.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-- v-model 使用[移步]()
+- v-model 使用[移步](/posts/f4917a63.html)
 
 ##### 绑定原生事件至组件中
 

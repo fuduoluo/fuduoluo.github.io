@@ -10,8 +10,8 @@ cover: https://cdn.jsdelivr.net/npm/@bootcss/www.bootcss.com@0.0.3/dist/img/vuej
 abbrlink: f4917a63
 date: 2020-02-20 16:42:06
 updated: 2020-02-20 16:42:06
-tags: Vue
-categories: Vue
+tags: vue
+categories: vue
 keywords:
 description: v-model使用
 ---

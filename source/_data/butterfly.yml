@@ -111,13 +111,13 @@ post_img: https://cdn.jsdelivr.net/gh/jerryc127/CDN@latest/Photo/post.png
 default_cover: https://images.pexels.com/photos/889096/pexels-photo-889096.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500
 
 # the banner image of archive page
-archive_img: https://cdn.jsdelivr.net/gh/jerryc127/CDN@latest/Photo/archive.jpg
+archive_img: https://cdn.learnku.com/uploads/images/201904/03/4430/m5jnMlTIl1.png!large
 
 # the banner image of tag page
 tag_img: https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/tag-bg.png
 
 # the banner image of category page
-category_img: https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/category-bg
+category_img: https://cdn.jsdelivr.net/gh/jerryc127/CDN@latest/Photo/messageboard.jpg
 
 # 如果你有使用hexo-douban去生成movie界面，可配置這個
 movies_img: https://cdn.jsdelivr.net/gh/jerryc127/butterfly_cdn@2.1.0/top_img/movie.jpg
