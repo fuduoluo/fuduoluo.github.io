@@ -25,18 +25,6 @@ description: v-slot适用
 {% note success %}
 介绍插槽使用及注意点
 {% endnote %}
-{% note primary %}
-文本
-{% endnote %}
-{% note info %}
-信息
-{% endnote %}
-{% note danger %}
-危险
-{% endnote %}
-{% note warning %}
-警告
-{% endnote %}
 
 [基础插槽知识](https://cn.vuejs.org/v2/guide/components.html#%E9%80%9A%E8%BF%87%E6%8F%92%E6%A7%BD%E5%88%86%E5%8F%91%E5%86%85%E5%AE%B9)
 [进阶插槽知识](https://cn.vuejs.org/v2/guide/components-slots.html)
