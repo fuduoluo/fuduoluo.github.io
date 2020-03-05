@@ -18,15 +18,20 @@ updated: 2020-02-24 09:44:03
 ---
 
 <meta name="referrer" content="never">
-<blockquote class="blockquote-center"></blockquote>
+<blockquote class="blockquote-center">vue-router 提供的导航守卫主要用来通过跳转或取消的方式守卫导航, “导航”表示路由正在发生改变。</blockquote>
 
 [参考文章-详细介绍入口](https://segmentfault.com/a/1190000015727279)
+
+{% note danger %}
+通俗理解：路由跳转是一个大的过程，这个大的过程分为跳转前中后等等细小的过程，在每一个过程中都有一函数，这个函数能让你操作一些其他的事儿的时机，这就是导航守卫
+记住 参数或查询的改变并不会触发进入/离开的导航守卫. 你可以通过观察 $route 对象来应对这些变化，或使用 beforeRouteUpdate 的组件内守卫
+{% endnote %}
 
 #### 导航守护
 
 - 全局的, 单个路由独享的, 或者组件级的
 
-#### 全局守卫
+#### 全局守卫[触发路由就会触发]
 
 ##### vue-router 全局有三个守卫：
 

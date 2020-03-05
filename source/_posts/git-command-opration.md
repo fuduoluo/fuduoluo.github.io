@@ -89,11 +89,69 @@ git remote rm github
 ```
 git remte set-url origin URL
 ```
+#### 新建远程分支并把它PUSH远程仓库
+```
+1.切换到当前分支
+git checkout master //进入develop分支
+2.根据当前分支新建一个分支
+git checkout -b dev //以master为源创建本地分支dev
+3.推送到远程分支
+git push origin dev //将本地fromdevelop分支作为远程dev分支
+
+```
 #### 删除远程git分支
 ```
-git push --delete 链接别名  远程分支名
+git push --delete 链接别名[origin]  远程分支名
 ```
 ![image.png](https://phpcoder-1259614901.cos.ap-guangzhou.myqcloud.com/phpcoder/git%E6%97%A5%E5%B8%B8%E6%93%8D%E4%BD%9C/3098875-1b317fd2f097f390.png)
+
+#### 删除远程仓库文件
+```
+git rm -r --cached 文件夹/文件名
+```
+#### git rebase 使用场景和方法
+
+[git rebase出处](https://www.jianshu.com/p/f7ed3dd0d2d8)
+
+##### 不同分支之间的合并
+
+{% note success %}
+开发新功能在分支上，测试完成后合并到主分支上
+一般步骤如下：
+{% endnote %}
+
+```
+1.新建新分支
+git checkout -b feature
+
+2.开发新功能[以文件代替]
+vim newFunc.go
+git add newFunc.go
+git commit -m 'add new func'
+
+3.查看提交日志和分支情况
+git log --oneline --graph
+git branch
+
+4.合并分支
+有两种方法「有冲突自行解决在提交保存」
+4.1:切换到主分支master,使用git merge feature「易造成分支历史日志混乱」
+
+4.2:使用git rebase
+
+4.2.1:切换到新功能分支下
+4.2.2:在分支上执行「git rebase master」
+解释：以master为基础，将feature分支上的修改增加到master分支上，并生成新的版本。
+git rebase master
+4.2.3:产生冲突时候并解决后 使用 git rebase --continue继续完成之前的操作
+4.2.4:查看提交历史日志[自己衡量是否需要]
+4.2.5:合并至主分支上面去
+    切换到主分支上 git checkout master
+    执行 git merge feature
+4.2.6:删除本地分支 git branch -d  分支名
+      删除远程分支 git push --delete 链接别名[origin]  远程分支名
+```
+
 
 #### 拉取git分支（远程新建分支）
 
@@ -129,11 +187,11 @@ git revert -n master~5..master~2
 ```
 git commit --amend
 ```
-#### 查看版本号信息
+#### 查看版本号信息「提交历史」
 ```
 git shortlog 用户提交哪些组，再次显示简洁的主题行
 git reflog
-git log 
+git log --oneline --graph
 
 ```
 #### 忽略.idea文件夹下文件
@@ -161,6 +219,13 @@ git config --global credential.helper store
 
 ```
 git merge 分支名 --allow-unrelated-histories
+```
+#### git pull使用
+
+```
+git pull = git fetch + git merge FETCH_HEAD 
+
+git pull --rebase =  git fetch + git rebase FETCH_HEAD 「推荐使用」
 ```
 
 #### git pull 出现以下错误
