@@ -5,12 +5,12 @@
 # xxx || icon:
 #   xxx || 連結 || icon
 menu:
-  首頁: / || fa fa-home
-  時間軸: /archives/ || fa fa-archive
-  標籤: /tags/ || fa fa-tags
-  分類: /categories/ || fa fa-folder-open
-  鏈接: /link/ || fa fa-link
-  關於: /about/ || fa fa-heart
+  Hogwarts: / || fa fa-home
+  Gryffindor: /archives/ || fa fa-archive
+  Ravenclaw: /tags/ || fa fa-tags
+  Slytherin: /categories/ || fa fa-folder-open
+  Hitchpac: /link/ || fa fa-link
+  9 and 3/4: /about/ || fa fa-heart
   # List||fa fa-list:
   #   - Music || /music/ || fa fa-music
   #   - Movie || /movies/ || fa fa-film
@@ -35,7 +35,7 @@ favicon: /img/favicon.ico
 # ---------------
 highlight_theme: light # default / darker / pale night / light / ocean
 highlight_copy: true #代碼複製按鈕
-highlight_lang: true #代碼語言顯示
+highlight_lang: false #代碼語言顯示
 highlight_shrink: false # true 全部代碼框不展開，需點擊 '>' 打開 / false 代碼框展開，有'>'點擊按鈕 | none 代碼框展開，不顯示 '>' 按鈕
 
 code_word_wrap: false
@@ -167,7 +167,7 @@ sharejs:
 
 # https://www.addtoany.com/
 addtoany:
-  enable: false
+  enable: true
   item:
     - facebook
     - twitter
@@ -229,7 +229,7 @@ valine:
 # ------------------------------------
 since: 2019
 
-footer_custom_text: Keep Goning
+footer_custom_text: Observation-> Thinking-> Summary
 
 footer_copyright:
   enable: true
@@ -278,12 +278,12 @@ qihu_site_verification:
 
 # 友情鏈接界面設置
 Flink:
-  headline: 友情鏈接
+  headline: Gryffindor
   info_headline: 我的Blog資料
-  name: Blog 名字： Hiddleston
+  name: Blog 名字： LaputCat
   address: Blog 地址： https://www.phpcoder.club
   avatar: Blog 頭像： https://www.gravatar.com/avatar/06818ca4361a28447cffdd2daaed2799?s=160
-  info: Blog 簡介： 学习，不断向前！
+  info: Blog 簡介： Work your ass off
   comment: 如果需要交換友鏈,請留言
 
 # 打賞按鈕
@@ -302,7 +302,7 @@ reward:
 related_post:
   enable: true
   limit: 6 # 顯示推薦文章數目
-  date_type: created # or created or updated 文章日期顯示创建日或者更新日
+  date_type: updated # or created or updated 文章日期顯示创建日或者更新日
 
 ####    美化/效果    ####
 #--------------------------------
@@ -335,8 +335,8 @@ index_post_cover: both
 # category和tag頁的UI設置
 # index 值代表 UI將與首頁的UI一樣
 # 默認跟archives頁面UI一樣
-category_ui: # 留空或index
-tag_ui: # 留空或index
+category_ui: index # 留空或index
+tag_ui: index # 留空或index
 
 # 設置網站背景
 # 可設置圖片 或者 顔色
@@ -455,8 +455,8 @@ subtitle:
   source: false
   # (如果有英文逗號' , '，請使用轉義字符 &#44;)
   sub:
-    - 学习&#44;不断向前！ 
-    - Learning keep moving forward
+    - 生活是一份赠礼&#44;应该过好每一天！ 
+    - You are a wizard!
 
 ####    側邊欄    ####
 #-------------------------------------
@@ -476,7 +476,7 @@ aside:
 
 # 網站公告
 announcement:
-  content: 只有勤奋，才是你的唯一出路！！
+  content:  Gryffindor's LaputCat Graduated!
 
 # busuanzi count for PV / UV in site
 # 訪問人數

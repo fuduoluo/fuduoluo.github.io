@@ -1,17 +1,17 @@
 ---
 title: Xampp汇总
 permalink: 'posts/:abbrlink.html'
-top_img: data:image/png;base64,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
+top_img: https://i.loli.net/2020/03/20/hDBRKMuCLEp5d7z.jpg
 comments: true
 toc: 是否顯示toc （除非特定文章設置，可以不寫）
 toc_number: 是否顯示toc數字 （除非特定文章設置，可以不寫）
 copyright: true
-cover: data:image/png;base64,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
+cover: https://i.loli.net/2020/03/20/hDBRKMuCLEp5d7z.jpg
 categories: Xampp
 keywords: xampp
 abbrlink: 2da0cc6f
 date: 2019-12-26 11:01:26
-updated: 2019-12-26 11:01:26
+updated: 2020-03-20 09:12:26
 tags:
 description:
 ---
@@ -57,3 +57,79 @@ XAMPP 配置虚拟域名/localhost重定向
 ![请求成功](https://upload-images.jianshu.io/upload_images/3098875-9b22c82a20d45b08.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ![其他项目IP为内网地址](https://upload-images.jianshu.io/upload_images/3098875-39c49784f3dc3e49.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+
+#### xmapp：phpmyadmin连接，管理多个mysql服务器[本地和内网]
+
+> **方法一，修改phpMyAdmin/libraries/config.default.php**
+>
+> **修改配置文件前，最好先备份一下，万一改错地方了**
+
+> **方法二，同时管理多个mysql服务器。**
+>
+> **1，将phpMyAdmin根目录下的config.sample.inc.php，重命名为config.inc.php**，将原本都注释掉
+>
+> **2，修改config.inc.php文件**，通过循环遍历连接
+
+```js
+$connect_hosts = array(
+    '1' => array(
+        "host"   => "localhost",  //服务器1  
+        "user"   => "root",
+        "password" => "root"
+    ),
+    '2' => array(
+        "host"   => "IP地址", //服务器2  
+        "user"   => "xxxx",
+        "password" => "xxxx"
+    )
+);
+
+for ($i = 1; $i <= count($connect_hosts); $i++) {
+    /* Authentication type */
+    $cfg['Servers'][$i]['auth_type'] = 'cookie';
+    /* Server parameters */
+    $cfg['Servers'][$i]['host'] = $connect_hosts[$i]['host'];   //修改host  
+    $cfg['Servers'][$i]['connect_type'] = 'tcp';
+    $cfg['Servers'][$i]['compress'] = false;
+    /* Select mysqli if your server has it */
+    $cfg['Servers'][$i]['extension'] = 'mysql';
+    $cfg['Servers'][$i]['AllowNoPassword'] = true;//是否允许空密码登录
+    $cfg['Servers'][$i]['user'] = $connect_hosts[$i]['user'];  //修改用户名  
+    $cfg['Servers'][$i]['password'] = $connect_hosts[$i]['password']; //密码  
+    /* rajk - for blobstreaming */
+    $cfg['Servers'][$i]['bs_garbage_threshold'] = 50;
+    $cfg['Servers'][$i]['bs_repository_threshold'] = '32M';
+    $cfg['Servers'][$i]['bs_temp_blob_timeout'] = 600;
+    $cfg['Servers'][$i]['bs_temp_log_threshold'] = '32M';
+    /* User for advanced features */
+    $cfg['Servers'][$i]['controluser'] = $connect_hosts[$i]['user'];
+    $cfg['Servers'][$i]['controlpass'] = $connect_hosts[$i]['password'];
+}
+```
+
+![image.png](https://upload-images.jianshu.io/upload_images/3098875-c8703e4d0480aa16.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+##### 可能遇到问题：
+
+> xmapp默认mysql密码是空的，所以导致PHPmyadmin登录不了，不允许空密码登录。
+
+```js
+$cfg['Servers'][$i]['AllowNoPassword'] = true;是否允许空密码登录
+$cfg[‘blowfish_secret’] = ‘123456’; // 你要设置的密码
+```
+
+![image.png](https://upload-images.jianshu.io/upload_images/3098875-6038d7cbe84b56ed.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+#### xmapp和phpstudy同时启动mysql服务
+
+![image.png](https://upload-images.jianshu.io/upload_images/3098875-e52f226ce5128398.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+> 之前会遇到两个mysql不能同时启动，现在比较简单做法是先确定xmapp的mysql版本号
+>
+> phpstudy相对于下载对应版本[端口号什么都不用改变，只需要安装对应版本就行]
+>
+> 我这phpstudy安装是5.5.29
+
+![image.png](https://upload-images.jianshu.io/upload_images/3098875-33bcbef6838b9d34.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+

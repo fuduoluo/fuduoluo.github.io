@@ -1,5 +1,5 @@
 ---
-title: 使用padding实现图片的自适应
+title: 图片占位自适应
 permalink: 'posts/:abbrlink.html'
 copyright: true
 abbrlink: 78cea6d8
@@ -7,6 +7,8 @@ date: 2019-07-11 22:58:01
 updated: 2019-07-11 22:58:01
 categories: Css
 tags: Css
+cover: https://i.loli.net/2020/03/20/fKMOF9ezhvR3xAN.png
+top_img: https://i.loli.net/2020/03/20/fKMOF9ezhvR3xAN.png
 subtitle:
 ---
 #### 思路：

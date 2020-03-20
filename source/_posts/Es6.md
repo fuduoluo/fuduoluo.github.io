@@ -1,12 +1,12 @@
 ---
 title: ES6
 permalink: 'posts/:abbrlink.html'
-top_img: https://user-gold-cdn.xitu.io/2019/2/12/168df9eaae700fc2?imageView2/0/w/1280/h/960/format/webp/ignore-error/1
+top_img: https://i.loli.net/2020/03/20/laLpVHNxdgWDsJf.png
 comments: true
 toc: 是否顯示toc （除非特定文章設置，可以不寫）
 toc_number: 是否顯示toc數字 （除非特定文章設置，可以不寫）
 copyright: true
-cover: https://user-gold-cdn.xitu.io/2019/2/12/168df9eaae700fc2?imageView2/0/w/1280/h/960/format/webp/ignore-error/1
+cover: https://i.loli.net/2020/03/20/laLpVHNxdgWDsJf.png
 abbrlink: 42b82995
 date: 2020-01-19 14:40:36
 updated: 2020-02-20 11:27:09

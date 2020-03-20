@@ -1,12 +1,12 @@
 ---
 title: 永久激活PHPstorm编辑器
 permalink: 'posts/:abbrlink.html'
-top_img: 
+top_img: https://i.loli.net/2020/03/20/MbQ5TnxrIGt87zD.png
 comments: true
 toc: 是否顯示toc （除非特定文章設置，可以不寫）
 toc_number: 是否顯示toc數字 （除非特定文章設置，可以不寫）
 copyright: true
-cover: 
+cover: https://i.loli.net/2020/03/20/MbQ5TnxrIGt87zD.png
 abbrlink: 7a17374d
 date: 2020-01-15 14:49:36
 updated: 2020-02-20 11:49:36

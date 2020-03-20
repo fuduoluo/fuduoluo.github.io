@@ -8,8 +8,8 @@ abbrlink: 895444f1
 date: 2019-07-25 09:57:50
 updated: 2019-07-25 09:57:50
 subtitle:
-cover: 
-top_img: 
+cover: https://i.loli.net/2020/03/20/LOYJRzZjaHg618A.png
+top_img: https://i.loli.net/2020/03/20/LOYJRzZjaHg618A.png
 ---
 <meta name="referrer" content="never">
 <blockquote class="blockquote-center">hexo站点地图收录</blockquote>

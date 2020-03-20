@@ -6,7 +6,7 @@ comments: true
 toc: 是否顯示toc （除非特定文章設置，可以不寫）
 toc_number: 是否顯示toc數字 （除非特定文章設置，可以不寫）
 copyright: true
-cover: 'https://box.kancloud.cn/2015-12-12_566b6a10506a4.png'
+cover: https://i.loli.net/2020/03/20/cHFBvGO56rp3WSX.png
 categories: ThinkPHP5
 keywords: ThinkPHP5
 description: ThinkPHP5日常手记

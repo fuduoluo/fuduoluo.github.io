@@ -3,24 +3,24 @@
 ## Source: https://github.com/hexojs/hexo/
 # Site
 # 博客的标题
-title: Hiddleston
+title: LaputCat
 
 # banner显示的子标题
-subtitle: Hiddleston
+subtitle: LaputCat 
 
 # 博客介绍（同时用于seo）
-description: 日常学习与兴趣交流的个人博客
+description: Gryffindor LaputCat Wizard Growth
 
 # banner显示的简短介绍
-subtitle_desc: Hiddleston, Hiddleston blog, PHP, 前端开发, 全栈开发
+subtitle_desc: LaputCat, LaputCat blog, PHP, 前端开发, 全栈开发
 
 # seo关键字
-keywords: Hiddleston, Hiddleston blog, PHP, 前端, 程序员,VUE, 前端开发, 全栈开发, node.js, javascript
+keywords: LaputCat, LaputCat blog, PHP, 前端, 程序员,VUE, 前端开发, 全栈开发, node.js, javascript
 
 # 站长信息
 
-author: Hiddleston
-  #link: http://fuduoluo.github.io
+author: Gryffindor's LaputCat 
+link: https://www.phpcoder.club/
   
 # 个人介绍  
 introduction: 
@@ -119,14 +119,10 @@ index_generator:
 # Category & Tag
 default_category: uncategorized
 category_map:
-  编程: programming
-  生活: life
-  其他: other
+
     
 tag_map:
-  编程: programming
-  生活: life
-  其他: other
+
 
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date

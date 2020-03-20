@@ -212,6 +212,10 @@ git reset --hard origin/master  //把HEAD指向最新下载的版本
 执行一下 这个命令：
 git config --global credential.helper store
 然后，下次再输入一次 账号密码 就可以了。
+
+windown下修改拉取仓库代码登录账号密码
+[具体](https://blog.csdn.net/qq_29298577/article/details/84314200)
+控制面板 -----> 用户账户------> 管理windows凭据------>找到对应的地址修改登录名称和密码即可
 ```
 
 #### git merge 出现以下错误

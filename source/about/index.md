@@ -1,12 +1,16 @@
 ---
-title: 關於自己
-date: 2019-02-21 08:57:59
+title: Hagrid
+date: 2019-03-15 11:57:59
 top_img: https://cdn.jsdelivr.net/gh/jerryc127/CDN@latest/Photo/about.jpg
 ---
 ![spring](https://phpcoder-1259614901.cos.ap-guangzhou.myqcloud.com/phpcoder/aboutme/aboutme.gif)
 
-#### 刚出道菜鳥PHP老塞
-- 記住一條：Work your ass off
-#### 基本信息
-- 所在城市：厦门
-- 从事工作：PHP后端开发
+#### WebSiteName
+- LaputCat:
+    罗马尼亚语：猫猫，善于夜间活动
+    芬兰语：laput 亦为六边形全面成长
+#### Just debuted rookie PHP old stuff
+- Remember ：Work Your Ass Off!
+#### My Information
+- City：XiaMen
+- Work：PHP backend development
