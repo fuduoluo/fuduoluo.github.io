@@ -15,7 +15,7 @@ updated: 2020-03-20 09:12:26
 tags:
 description:
 ---
-<meta name="referrer" content="never">
+
 <blockquote class="blockquote-center"></blockquote>
 {% note success %}
 XAMPP 配置虚拟域名/localhost重定向
@@ -54,10 +54,10 @@ XAMPP 配置虚拟域名/localhost重定向
 </VirtualHost>
 ```
 ##### 解决
-![请求成功](https://upload-images.jianshu.io/upload_images/3098875-9b22c82a20d45b08.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-![其他项目IP为内网地址](https://upload-images.jianshu.io/upload_images/3098875-39c49784f3dc3e49.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![请求成功](https://i.loli.net/2020/03/22/PhXFV2Jt79A6vDj.png)
 
+![其他项目IP为内网地址](https://i.loli.net/2020/03/22/mloKuWf6OQDZqIe.png)
 
 #### xmapp：phpmyadmin连接，管理多个mysql服务器[本地和内网]
 
@@ -108,7 +108,7 @@ for ($i = 1; $i <= count($connect_hosts); $i++) {
 }
 ```
 
-![image.png](https://upload-images.jianshu.io/upload_images/3098875-c8703e4d0480aa16.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](https://i.loli.net/2020/03/22/7bY2RlWkZsEyK5C.png)
 
 ##### 可能遇到问题：
 
@@ -119,11 +119,11 @@ $cfg['Servers'][$i]['AllowNoPassword'] = true;是否允许空密码登录
 $cfg[‘blowfish_secret’] = ‘123456’; // 你要设置的密码
 ```
 
-![image.png](https://upload-images.jianshu.io/upload_images/3098875-6038d7cbe84b56ed.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](https://i.loli.net/2020/03/22/xFqTsLaYjwtv19z.png)
 
 #### xmapp和phpstudy同时启动mysql服务
 
-![image.png](https://upload-images.jianshu.io/upload_images/3098875-e52f226ce5128398.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](https://i.loli.net/2020/03/22/9IKVuw4mkDTqz61.png)
 
 > 之前会遇到两个mysql不能同时启动，现在比较简单做法是先确定xmapp的mysql版本号
 >
@@ -131,5 +131,6 @@ $cfg[‘blowfish_secret’] = ‘123456’; // 你要设置的密码
 >
 > 我这phpstudy安装是5.5.29
 
-![image.png](https://upload-images.jianshu.io/upload_images/3098875-33bcbef6838b9d34.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](https://i.loli.net/2020/03/22/Gp3qQZMdnwXx9k2.png)
+
 

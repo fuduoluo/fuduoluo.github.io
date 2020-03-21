@@ -12,7 +12,7 @@ updated: 2019-09-01 01:34:28
 subtitle:
 password: interview
 ---
-<meta name="referrer" content="never">
+
 <blockquote class="blockquote-center">360解读PHP面试题(理论)</blockquote>
 
 ##### 1.php引用变量

@@ -11,7 +11,7 @@ subtitle:
 cover: https://i.loli.net/2020/03/20/LOYJRzZjaHg618A.png
 top_img: https://i.loli.net/2020/03/20/LOYJRzZjaHg618A.png
 ---
-<meta name="referrer" content="never">
+
 <blockquote class="blockquote-center">hexo站点地图收录</blockquote>
 
 {% note success %}

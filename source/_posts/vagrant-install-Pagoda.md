@@ -13,7 +13,7 @@ cover: https://gss0.bdstatic.com/-4o3dSag_xI4khGkpoWK1HF6hhy/baike/w%3D268%3Bg%3
 ---
 <blockquote class="blockquote-center">Linux权限,安装宝塔</blockquote>
 <!--more-->
-<meta name="referrer" content="never">
+
 
 ##### 重置sudo密码 如何应用root权限？
 

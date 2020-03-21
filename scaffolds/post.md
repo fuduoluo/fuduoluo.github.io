@@ -16,7 +16,7 @@ toc_number: 是否顯示toc數字 （除非特定文章設置，可以不寫）
 copyright: true
 cover:  縮略圖
 ---
-<meta name="referrer" content="never">
+
 <blockquote class="blockquote-center"></blockquote>
 {% note success %}
 成功

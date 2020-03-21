@@ -11,7 +11,7 @@ categories: PHP
 tags: PHP常用代码块
 subtitle:
 ---
-<meta name="referrer" content="never">
+
 
 ![PHP](https://upload-images.jianshu.io/upload_images/3098875-0b923b9b7e9b2f30.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 

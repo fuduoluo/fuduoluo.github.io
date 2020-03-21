@@ -16,7 +16,7 @@ keywords: vue slot v-slot
 description: v-slot适用
 ---
 
-<meta name="referrer" content="never">
+
 
 ![v-slot的取代](https://upload-images.jianshu.io/upload_images/3098875-a8be017dfbe066bd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 

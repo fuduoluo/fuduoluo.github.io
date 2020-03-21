@@ -15,7 +15,7 @@ date: 2019-12-30 10:04:16
 updated: 2019-12-30 10:04:16
 tags:
 ---
-<meta name="referrer" content="never">
+
 <blockquote class="blockquote-center"></blockquote>
 {% note success %}
 记录微信小程序学习

@@ -15,7 +15,7 @@ categories: ES6
 keywords: ES6
 description:
 ---
-<meta name="referrer" content="never">
+
 <blockquote class="blockquote-center">图片来自网络</blockquote>
 
 ### ES6进化

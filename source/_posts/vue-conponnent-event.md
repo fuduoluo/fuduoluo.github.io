@@ -16,7 +16,7 @@ keywords:
 description: 解决组件通信方案
 ---
 
-<meta name="referrer" content="never">
+
 <blockquote class="blockquote-center">Vue组件学习</blockquote>
 
 #### 父组件与孙组件怎么通信？

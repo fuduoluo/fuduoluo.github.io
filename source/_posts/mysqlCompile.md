@@ -11,7 +11,7 @@ updated: 2019-10-29 16:37:25
 subtitle:
 cover: https://i.loli.net/2020/03/20/mCo37Ate5FDxjE1.jpg
 ---
-<meta name="referrer" content="never">
+
 <blockquote class="blockquote-center">编译安装Linux centos7 mysql数据库</blockquote>
 
 ####  1·下载官网压缩包安装前的准备

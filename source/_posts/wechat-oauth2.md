@@ -2,7 +2,6 @@
 title: 关于网页[H5]微信授权登录
 permalink: 'posts/:abbrlink.html'
 top_img: https://i.loli.net/2020/03/20/LkXy5aFSPhH2wtV.png
-comments: true
 toc: 是否顯示toc （除非特定文章設置，可以不寫）
 toc_number: 是否顯示toc數字 （除非特定文章設置，可以不寫）
 copyright: true
@@ -12,10 +11,10 @@ date: 2020-03-20 09:15:19
 updated: 2020-03-20 09:15:19
 tags: wechat
 categories: wechat
-keywords: 
+subtitle: 
 description: 微信登录步骤
 ---
-<meta name="referrer" content="never">
+
 
 {% note success %}
 关于网页[H5]微信授权登录

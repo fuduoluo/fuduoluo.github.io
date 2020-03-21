@@ -17,7 +17,7 @@ date: 2020-02-24 09:44:03
 updated: 2020-02-24 09:44:03
 ---
 
-<meta name="referrer" content="never">
+
 <blockquote class="blockquote-center">vue-router 提供的导航守卫主要用来通过跳转或取消的方式守卫导航, “导航”表示路由正在发生改变。</blockquote>
 
 [参考文章-详细介绍入口](https://segmentfault.com/a/1190000015727279)

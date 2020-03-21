@@ -16,7 +16,7 @@ date: 2020-02-20 09:15:45
 updated: 2020-02-20 09:15:45
 ---
 
-<meta name="referrer" content="never">
+
 <blockquote class="blockquote-center">Vue组件学习</blockquote>
 {% note warning %}
 请注意实例化方法等使用Vue版本

@@ -15,7 +15,7 @@ categories: PHPSTORM IDE
 keywords: PHPSTORM  IDE  tool
 description: active 
 ---
-<meta name="referrer" content="never">
+
 {% note warning %}
 本教程仅供学习使用，切勿商务用途。若有问题，后果自负。
 {% endnote %}

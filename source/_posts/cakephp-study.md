@@ -10,7 +10,7 @@ updated: 2019-10-29 17:16:25
 subtitle:
 cover: https://cakephp.org/images/slider/slide-1.jpg
 ---
-<meta name="referrer" content="never">
+
 {% note success %}
 CakePHP学习的水平只有这么点
 {% endnote %}

@@ -15,7 +15,7 @@ abbrlink: 49bed910
 date: 2020-02-23 17:41:25
 updated: 2020-02-23 17:41:25
 ---
-<meta name="referrer" content="never">
+
 <blockquote class="blockquote-center"></blockquote>
 {% note success %}
 Vue Router 是 Vue.js 官方的路由管理器。它和 Vue.js 的核心深度集成，让构建单页面应用变得易如反掌

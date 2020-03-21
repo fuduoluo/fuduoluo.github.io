@@ -15,7 +15,7 @@ abbrlink: 593ef122
 date: 2019-11-02 18:09:37
 updated: 2019-11-02 18:09:37
 ---
-<meta name="referrer" content="never">
+
 <blockquote class="blockquote-center"></blockquote>
 {% note success %}
 centos7 宝塔[LNMP] 访问swoole服务问题
