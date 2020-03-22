@@ -36,16 +36,20 @@ Linux bogon 3.10.0-957.5.1.el7.x86_64
 ```
 
 <!--more-->
-![查看linux系统位数](https://upload-images.jianshu.io/upload_images/3098875-9e96cc7371c670ce.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![查看linux系统位数](https://ae01.alicdn.com/kf/U6f9fe3774c9f436986f3b5058f8b89f2q.jpg)
 
 ##### 访问官网进入下载页面
-![访问官网进入下载页面](https://upload-images.jianshu.io/upload_images/3098875-a32a145247b12fd2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![访问官网进入下载页面](https://ae01.alicdn.com/kf/U7fa2f1a8f5764228b2caae42fadd6a37r.jpg)
 ##### 往下找到该位置 MySQL Community (GPL) Downloads »
-![MySQL Community (GPL) Downloads ](https://upload-images.jianshu.io/upload_images/3098875-285aeee53d730887.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-![找到community server](https://upload-images.jianshu.io/upload_images/3098875-1ea1ad1163da3626.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-![从这边准确找你想要安装的mysql包](https://upload-images.jianshu.io/upload_images/3098875-78d1442195229889.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-![下载对应系统包](https://upload-images.jianshu.io/upload_images/3098875-7924fc8a64e79ef3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-![本次下载版本](https://upload-images.jianshu.io/upload_images/3098875-10797280dba094fc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![MySQL Community (GPL) Downloads ](https://ae01.alicdn.com/kf/U37008da1ce7f4d9eabf03766a5842b01H.jpg)
+
+![找到community server](https://ae01.alicdn.com/kf/U55a1160c3e4b4acba10244ba307ef2f2n.jpg)
+
+![从这边准确找你想要安装的mysql包](https://ae01.alicdn.com/kf/Ufc6d932d3324449994cd987ffb40d7e7F.jpg)
+
+![下载对应系统包](https://ae01.alicdn.com/kf/Uc9785d0a3d1b456881d580938b47eeb4E.jpg)
+
+![本次下载版本](https://ae01.alicdn.com/kf/Uc48b7f57d6984af1912a4fe0c0f95fe7z.jpg)
 
 ##### 解压过程中出现以下问题：
 ```
@@ -82,7 +86,7 @@ default-character-set=utf8
 4，重启MySQL
 systemctl restart mysqld
 ```
-![解决后的截图](https://upload-images.jianshu.io/upload_images/3098875-c862505bcf232f29.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![解决后的截图](https://ae01.alicdn.com/kf/U2fc0ddd3312740e48ae47f888967e94dR.jpg)
 ##### 查看默认数据库密码
 ```
 sudo cat /var/log/mysqld.log | grep -i 'temporary password'

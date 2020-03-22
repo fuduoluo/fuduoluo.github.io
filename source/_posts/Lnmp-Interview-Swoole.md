@@ -119,7 +119,7 @@ server
 }
 ```
 结果如下：
-![访问服务成功](https://upload-images.jianshu.io/upload_images/3098875-c1b2333f5e489132.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![访问服务成功](https://ae01.alicdn.com/kf/Uf28781cb630e423cb2d4f708873dcb01X.jpg)
 
 [swoole 之http服务器静态资源](https://blog.csdn.net/hudeyong926/article/details/99540724)
 ```
@@ -160,6 +160,6 @@ class Http {
 new Http();//实例化http类
 ```
 结果如下：
-![加载静态资源成功](https://upload-images.jianshu.io/upload_images/3098875-11db2661a6c25b43.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![加载静态资源成功](https://ae01.alicdn.com/kf/Ubbe80be981c647d799902643508ebdaes.jpg)
 
 

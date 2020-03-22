@@ -18,9 +18,9 @@ description: v-slot适用
 
 
 
-![v-slot的取代](https://upload-images.jianshu.io/upload_images/3098875-a8be017dfbe066bd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![v-slot的取代](https://i.loli.net/2020/03/22/iHZ9AuycptWKTmz.png)
 
-![废弃语法](https://upload-images.jianshu.io/upload_images/3098875-6e6e724784cc600f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![废弃语法](https://i.loli.net/2020/03/22/czphIqNl4M9XQm2.png)
 
 {% note success %}
 介绍插槽使用及注意点
@@ -89,8 +89,7 @@ Vue.component('base-layout', {
 
 ```
 
-![具名插槽](https://upload-images.jianshu.io/upload_images/3098875-d362667f653e7421.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
+![具名插槽](https://i.loli.net/2020/03/22/OVL2rdaemXTBF8j.png)
 #### 作用域插槽
 
 {% note success %}
@@ -183,7 +182,7 @@ Vue.component('slot-child', {
     })
 ```
 
-![作用域插槽](https://upload-images.jianshu.io/upload_images/3098875-0e8f1a982a3f1628.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![作用域插槽](https://i.loli.net/2020/03/22/sQv5PrgnGlJEq6c.png)
 
 ##### 独占默认插槽的缩写语法
 

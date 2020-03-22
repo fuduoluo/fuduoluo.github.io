@@ -282,8 +282,7 @@ trigger() 方法触发被选元素的指定事件类型。
 [点击进入....官方文档入口](https://doc.fastadmin.net/docs/index.html)
 <!--more-->
 #### 1.目录
-![image.png](https://upload-images.jianshu.io/upload_images/3098875-75f15b0f93c6b0b4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
+![image.png](https://i.loli.net/2020/03/22/l1C2jeaw6JsxSnr.png)
 #### 2.主入口文件
 ```
 1-1.html文件位置(主入口)
@@ -393,10 +392,9 @@ PHP/JS：__('')
     format("And the %1 want to know whose %2 you %3", "papers", "shirt", "wear");
     返回：“And the papers want to know whose shirt you wear”
 ```
-![image.png](https://upload-images.jianshu.io/upload_images/3098875-b72e10a748525b7e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](https://i.loli.net/2020/03/22/Pp953J1eHu8hzCR.png)
 
-
-![image.png](https://upload-images.jianshu.io/upload_images/3098875-6007f5d93b962e63.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](https://i.loli.net/2020/03/22/FRTWUZb5n2oeCvx.png)
 
 #### Object.keys(obj)
 [参考火狐开发手册](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/keys)

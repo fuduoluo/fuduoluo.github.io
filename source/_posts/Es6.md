@@ -18,8 +18,9 @@ description:
 
 <blockquote class="blockquote-center">图片来自网络</blockquote>
 
+
 ### ES6进化
-![ES6进化史](https://user-gold-cdn.xitu.io/2019/12/12/16ef8c13ece2bc0c?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
+![ES6进化史](https://ae01.alicdn.com/kf/U55ffe7e89c4a4ea1a024f462149b3005X.jpg)
 
 ### 更新
 - 表达式：声明、解构赋值
@@ -322,7 +323,7 @@ https://www.cnblogs.com/douyage/p/8630529.html
 
 #### 高阶函数
 - map()
-![map简单例子](https://upload-images.jianshu.io/upload_images/3098875-c55fda08bd56bf6c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://ae01.alicdn.com/kf/Ud494650802a7469bb9152783e267ce7ep.jpg)
 ```
 function pow(x) {
     return x * x;
@@ -430,7 +431,7 @@ param => {statements;} //例如 x = > { x++; return x;};
 2. **函数执行上下文**
 3. **Eval 函数执行上下文**
 
-!![image.png](https://upload-images.jianshu.io/upload_images/3098875-aaf28e2a6c5692c8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://ae01.alicdn.com/kf/U9040b363dfc942ac8c05929ba222a8ccj.jpg)
 
 有1个全局上下文(Global Context)，使用紫色边框表示；
 
@@ -466,9 +467,9 @@ bar();       // 'this' 指向全局 window 对象，因为
 1. 全局作用域
 2. 局部作用域
 
-![image.png](https://upload-images.jianshu.io/upload_images/3098875-ef4406f54458d284.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://ae01.alicdn.com/kf/Uefb8cf0254ad44a1af49a8ee3382c130L.jpg)
 
-![image.png](https://upload-images.jianshu.io/upload_images/3098875-a76b86c263cf5500.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://ae01.alicdn.com/kf/Ud44f335e8e764663aa1f29a38e4f9210S.jpg)
 
 ##### ES6箭头函数
 
@@ -480,4 +481,4 @@ bar();       // 'this' 指向全局 window 对象，因为
 
 > `箭头函数this`对象，就是定义时所在的对象，而不是使用时所在的对象。
 
-![image.png](https://upload-images.jianshu.io/upload_images/3098875-f580708d967a8342.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://ae01.alicdn.com/kf/U9e9aeeeaf3a54652a32c3b9d1941ead2B.jpg)

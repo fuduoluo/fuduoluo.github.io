@@ -15,7 +15,7 @@ cover: https://gss0.bdstatic.com/-4o3dSag_xI4khGkpoWK1HF6hhy/baike/w%3D268%3Bg%3
 <!--more-->
 
 
-##### 重置sudo密码 如何应用root权限？
+#### 重置sudo密码 如何应用root权限？
 
 - (1)sudo 命令  
 这样输入当前管理员用户密码就可以得到超级用户的权限。但默认的情况下5分钟root权限就失效了。
@@ -30,29 +30,28 @@ sudo passwd root
 当然，如果想从root用户切换回一般用户，则可使用  su -val(一般用户名)
 而当你再次切回到root用户，则只需要键入exit,再次输入exit则回到最初的用户下
 
-![重置sudo密码](https://upload-images.jianshu.io/upload_images/3098875-cd759068f6abaf13.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![重置sudo密码](https://i.loli.net/2020/03/22/7ysDKTV1U8FupLC.png)
 ```
 新：root
 切换用户权限
 exit 退出
 ```
-![image.png](https://upload-images.jianshu.io/upload_images/3098875-09b49ce7a5dd5e82.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](https://i.loli.net/2020/03/22/ECUpQ9jbDhyzLmA.png)
 
-##### 安装宝塔出现权限错误
+#### 安装宝塔出现权限错误
 ```
 切换为root 进行安装
 ```
-##### 安装宝塔出现登录不了
-![image.png](https://upload-images.jianshu.io/upload_images/3098875-e378ba339ef6ef17.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-##### 解决
-![image.png](https://upload-images.jianshu.io/upload_images/3098875-3c7e3bdd89a54a6a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+#### 安装宝塔出现登录不了
+![image.png](https://i.loli.net/2020/03/22/7ysDKTV1U8FupLC.png)
+![image.png](https://i.loli.net/2020/03/22/NYHRp4zZoWrL7qP.png)
 ```
 配置私有地址：
 config.vm.network "private_network", ip: "192.168.33.20"
 ```
-##### vagrant+centos7 安装报错
+#### vagrant+centos7 安装报错
 [vagrant+centos7 安装报错传送门](https://blog.csdn.net/shilei_zhang/article/details/72811274)
-##### 设置同步映射文件路径报错
+#### 设置同步映射文件路径报错
 ```
 config.vm.synced_folder "D:/vagrant/centos/", "/var/www"
 报错以下：
@@ -67,17 +66,14 @@ mount -t vboxsf -o uid=1000,gid=1000 var_www /var/www
 The error output from the command was:
 mount: unknown filesystem type 'vboxsf'
 ```
-###### 解决：
+##### 解决：
 ```
 vagrant plugin install vagrant-vbguest
 vagrant reload --provision
 ```
-##### 线上服务器上传本地项目访问没有找到文件(前提已购买域名 并绑定到购买服务器上)
-![image.png](https://upload-images.jianshu.io/upload_images/3098875-b1b9746a1d0d36c0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+#### 线上服务器上传本地项目访问没有找到文件(前提已购买域名 并绑定到购买服务器上)
+![image.png](https://i.loli.net/2020/03/22/lQ7sW2d5DtFkARK.png)
 
 
-###### 忘记查看宝塔登录端口URL
-![宝塔登录端口URL](https://upload-images.jianshu.io/upload_images/3098875-15309752537182ad.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-
-
+##### 忘记查看宝塔登录端口URL
+![image.png](https://i.loli.net/2020/03/22/KptCAWaqMjO2cSB.png)

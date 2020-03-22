@@ -164,7 +164,7 @@ class ArticlesController extends AppController
 
 ##### window环境下使用cake bake  生成 M V C 文件
 ###### 确定console文件位置
-![image.png](https://upload-images.jianshu.io/upload_images/3098875-1962723df77b5b8f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://ae01.alicdn.com/kf/Uad7d955d00d549558b2e2c8896daa31cA.jpg)
 ```
 遇到问题
 需要配置系统环境变量
@@ -172,9 +172,9 @@ cake bake  和php
 配置完成后重新打开命令行--->我使用git bash
 运行 php -v看是否正常
 ```
-![image.png](https://upload-images.jianshu.io/upload_images/3098875-d4f536f1cbfa42c9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://ae01.alicdn.com/kf/U5688b335edac4c6a8c2b5f3fc405a903G.jpg)
 ##### 生成对应的数据表MVC文件
-![image.png](https://upload-images.jianshu.io/upload_images/3098875-5a1d711718e4fc5c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://ae01.alicdn.com/kf/U7239a938fd914f3f817071548f89191f4.jpg)
 
 ##### 常用的Model的方法
 ###### 查询方法：

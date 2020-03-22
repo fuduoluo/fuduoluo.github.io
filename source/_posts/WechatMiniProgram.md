@@ -68,7 +68,7 @@ tags:
 -  就是 Generator 函数的语法糖
 -  返回一个Promise对象
 -  async函数内部return语句返回的值，会成为then方法回调函数的参数。
--  只有async函数内部的异步操作执行完，才会执行then方法指定的回调函数。
+- 只有async函数内部的异步操作执行完，才会执行then方法指定的回调函数。
 #### async function语法
 - 自动将常规函数转换成Promise，返回值也是一个Promise对象
 
@@ -127,9 +127,10 @@ const foo = async () => {};
 #### 错误处理查看阮一峰老师讲解
 
 #### 小程序Token令牌使用场景
-![小程序Token令牌场景使用](https://upload-images.jianshu.io/upload_images/3098875-d088d07a3b75e9b0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![小程序Token令牌场景使用](https://i.loli.net/2020/03/22/TwCFRezYpZ8qyto.png)
+
 - Openid:一个用户针对一个小程序拥有一个Openid,在不同小程序Openid是不一样的
 - Unionid:，同一用户，对同一个微信开放平台下的不同应用，UnionID是相同的。用户的UnionID可通过调用“获取用户信息”接口获取。同一个用户在微信体系[微信公众号，小程序，服务号等]下Unionid是一样的
 
 #### 微信支付
-![微信支付简易版](https://upload-images.jianshu.io/upload_images/3098875-fb23dbe77a49b791.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![微信支付简易版](https://i.loli.net/2020/03/22/Lj71lnU45gaZXkc.png)

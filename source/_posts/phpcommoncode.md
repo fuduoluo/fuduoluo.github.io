@@ -13,8 +13,6 @@ subtitle:
 ---
 
 
-![PHP](https://upload-images.jianshu.io/upload_images/3098875-0b923b9b7e9b2f30.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
 ###### 100 个最常用的 PHP 函数
 [100 个最常用的 PHP 函数文章](https://juejin.im/post/5c9b2e395188252d876e5b58)
 

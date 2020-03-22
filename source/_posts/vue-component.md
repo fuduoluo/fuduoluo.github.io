@@ -47,8 +47,7 @@ updated: 2020-02-20 09:15:45
 
 #### 自定义事件
 
-![组件间通信](https://upload-images.jianshu.io/upload_images/3098875-702b90594a693cd8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
+![组件间通信](https://i.loli.net/2020/03/22/UhHz3xWEBnsLKuP.png)
 {% note warning %}
 当子组件需要向父组件传递数据时，就要用到自定义事件
 子组件用**\$ emit()来触发事件**，父组件在调用子组件上，加@事件名来监听子组件的事件。
@@ -158,7 +157,7 @@ updated: 2020-02-20 09:15:45
        }
     ```
 
-  ![坑](https://upload-images.jianshu.io/upload_images/3098875-6b651793500e3177.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+  ![坑](https://i.loli.net/2020/03/22/gD9AyWnPSjfedps.png)
 
   ```
     <div id="app">
@@ -240,7 +239,7 @@ updated: 2020-02-20 09:15:45
     </script>
     ```
 
-![效果](https://upload-images.jianshu.io/upload_images/3098875-8b90ab97e6eff302.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![效果](https://i.loli.net/2020/03/22/M1EwjDbBgZaIT4l.png)
 
 - v-model 使用[移步](/posts/f4917a63.html)
 

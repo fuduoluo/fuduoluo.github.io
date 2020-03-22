@@ -135,7 +135,7 @@ beforeRouteEnter (to, from, next) {
 }
 ```
 
-![完整的路由导航解析流程-不包括其他生命周期](https://upload-images.jianshu.io/upload_images/3098875-6033cf8094dc20cb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![完整的路由导航解析流程-不包括其他生命周期](https://i.loli.net/2020/03/22/ecPhwTOWB8dpm9R.png)
 
 #### 路由元信息[header中的mete等标签设置]
 ```
@@ -185,7 +185,7 @@ const router = new VueRouter({
 #### 组件生命周期钩子
 
 ![生命周期示意图](https://cn.vuejs.org/images/lifecycle.png)
-![生命周期注意点](https://upload-images.jianshu.io/upload_images/3098875-4a0dfe761713f69b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-![完整钩子函数触发顺序](https://upload-images.jianshu.io/upload_images/3098875-2d6230fe6061a16a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![生命周期注意点](https://i.loli.net/2020/03/22/aPpWZV2TMomU9AF.png)
+![完整钩子函数触发顺序](https://i.loli.net/2020/03/22/2orGhbVs8Y6uceQ.png)
 
 

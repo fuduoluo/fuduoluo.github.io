@@ -34,11 +34,11 @@ description: active
 {% endnote %}
 
 #### 解压压缩包放置任意位置
-![phpstorm安装位置和解压包放置位置](https://upload-images.jianshu.io/upload_images/3098875-2d79131c1106cb23.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](https://i.loli.net/2020/03/22/vCz74i3lQE1POBH.png)
 #### 启动你的IDE，如果上来就需要注册，选择:试 (Evaluate for free)进 IDE
 #### 点击你要注册的IDE菜单: Configure 或 Help -> Edit Custom VM Options ...如果提示是否要创建 件，请点 Yes 
 #### 打开phpstorm64.exe.vmoptionswe年添加压缩包路径
-![添加压缩包配置文件](https://upload-images.jianshu.io/upload_images/3098875-abac70a83c66fdda.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](https://i.loli.net/2020/03/22/7kGziqlhP9Mo5g4.png)
 
 {% note danger %}
 以我本机为例，注意不要使用中文命名

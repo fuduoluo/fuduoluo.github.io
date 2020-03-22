@@ -46,33 +46,31 @@ baidusitemap:
 > 自备梯子+谷歌账号
 
 [Google站长平台入口](https://www.google.com/webmasters/#?modal_active=none)
-###### 1.添加站点
+#### 1.添加站点
 >进入Search Console，添加站点：
 
-![使用GitHubpage请选择网址前缀进行验证](https://upload-images.jianshu.io/upload_images/3098875-32bb9281428b738f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![使用GitHubpage请选择网址前缀进行验证](https://i.loli.net/2020/03/22/ZGKRuwMh4eYkXlx.png)
 
-###### 2.验证站点
-![图片来自网络](https://upload-images.jianshu.io/upload_images/3098875-a3b45bd0980abbfd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+#### 2.验证站点
+![验证站点](https://i.loli.net/2020/03/22/1NhRlyWGMf6Z2w7.png)
 - 下载Google验证文件，放到themes/next/source目录中
 -  执行生成和部署命令验证即可
 ```
 hexo g && hexo d
 ```
-###### 由于我已经验证过所以会自动完成站点的验证
-![验证站点](https://upload-images.jianshu.io/upload_images/3098875-144e9a44531c5761.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+#### 由于我已经验证过所以会自动完成站点的验证
+![完成验证站点](https://i.loli.net/2020/03/22/BFmlkvKgjAnSJM3.png)
 
-###### 3.添加站点地图
-![步骤如下](https://upload-images.jianshu.io/upload_images/3098875-9306fcee433db0a6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+#### 3.添加站点地图
+![步骤如下](https://i.loli.net/2020/03/22/Bhnc6ZENiY5ysVP.png)
 
-###### 出现问题：
+#### 出现问题：
 > 添加完成后站点地图状态一直是无法读取[但是解决完后状态一直是无法读取]
 
-![解决问题](https://upload-images.jianshu.io/upload_images/3098875-a2cba7ad8e1a9569.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![解决问题](https://i.loli.net/2020/03/22/m1IbcSigMnUXFBq.png)
 
 
-###### 效果如下：
-![搜索结果](https://upload-images.jianshu.io/upload_images/3098875-8ca47d711c101eae.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+#### 效果如下：
+![搜索结果](https://i.loli.net/2020/03/22/PnUwceVThIbOu3q.png)
 
 [参考文章+部分图片来源](https://www.93bok.com/Hexo%E6%8F%90%E4%BA%A4%E7%99%BE%E5%BA%A6%E5%92%8CGoogle%E6%94%B6%E5%BD%95%E7%AB%99%E7%82%B9/)
-
->有知道的朋友请留言告诉我下

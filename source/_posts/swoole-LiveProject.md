@@ -54,7 +54,7 @@ sudo apt-get install libxml2-dev
 centos/redhat镜像:
 2.sudo yum install libxml2-devel
 ```
-![问题解决](https://upload-images.jianshu.io/upload_images/3098875-d679a6d454916c1c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](https://i.loli.net/2020/03/22/7xPR6FVoQHyE2Wt.png)
 
 #### 解决PHP 7编译安装错误：cannot stat ‘phar.phar’: No such file or directory，主要包括解决PHP 7编译安装错误：cannot stat ‘phar.phar’: No such file or directory
 ```
@@ -134,7 +134,7 @@ Permission denied
 sudo chmod 777 /home/var/www/soft/php/lib/php/extensions/no-debug-non-zts-20170718/
 sudo make install
 ```
-![编译安装swoole扩展模块](https://upload-images.jianshu.io/upload_images/3098875-7a05ac5bc9e26fa6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](https://i.loli.net/2020/03/22/zxl8PSXJQ5kANHG.png)
 #### telnet: command not found 服务不存在
 [安装Telnet](https://blog.csdn.net/qq_38018165/article/details/89919556)
 ```
