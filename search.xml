@@ -3,24 +3,7 @@
   <entry>
     <title>微信公众测试号接入流程</title>
     <url>/posts/277e2557.html</url>
-    <content><![CDATA[<blockquote class="blockquote-center"></blockquote>
-<div class="note success">
-            <p>成功</p>
-          </div>
-<div class="note primary">
-            <p>文本</p>
-          </div>
-<div class="note info">
-            <p>信息</p>
-          </div>
-<div class="note danger">
-            <p>危险</p>
-          </div>
-<div class="note warning">
-            <p>警告</p>
-          </div>
-
-<h4 id="NATAPP内网穿透"><a href="#NATAPP内网穿透" class="headerlink" title="NATAPP内网穿透"></a>NATAPP内网穿透</h4><h5 id="下载地址：根据不同环境下载"><a href="#下载地址：根据不同环境下载" class="headerlink" title="下载地址：根据不同环境下载"></a><a href="https://natapp.cn/#download" target="_blank" rel="noopener">下载地址</a>：根据不同环境下载</h5><h5 id="安装教程，点击这里：以window为例进行安装"><a href="#安装教程，点击这里：以window为例进行安装" class="headerlink" title="安装教程，点击这里：以window为例进行安装"></a><a href="https://natapp.cn/article/natapp_newbie" target="_blank" rel="noopener">安装教程，点击这里</a>：以window为例进行安装</h5><blockquote>
+    <content><![CDATA[<h4 id="NATAPP内网穿透"><a href="#NATAPP内网穿透" class="headerlink" title="NATAPP内网穿透"></a>NATAPP内网穿透</h4><h5 id="下载地址：根据不同环境下载"><a href="#下载地址：根据不同环境下载" class="headerlink" title="下载地址：根据不同环境下载"></a><a href="https://natapp.cn/#download" target="_blank" rel="noopener">下载地址</a>：根据不同环境下载</h5><h5 id="安装教程，点击这里：以window为例进行安装"><a href="#安装教程，点击这里：以window为例进行安装" class="headerlink" title="安装教程，点击这里：以window为例进行安装"></a><a href="https://natapp.cn/article/natapp_newbie" target="_blank" rel="noopener">安装教程，点击这里</a>：以window为例进行安装</h5><blockquote>
 <p>:question: 注意点：每次关闭NATAPP后生成的外网地址是不一样的，如需测试请更换测试号上的URL地址</p>
 </blockquote>
 <p><img src="/" alt="开启成功" class="lazyload" data-src="https://i.loli.net/2020/03/23/o7DN6ye3FcV1w5Q.png"></p>

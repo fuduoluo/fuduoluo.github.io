@@ -9,7 +9,7 @@
   </url>
   
   <url>
-    <loc>https://www.phpcoder.club/tags/index.html</loc>
+    <loc>https://www.phpcoder.club/search/index.html</loc>
     
     <lastmod>2020-03-22T06:03:42.535Z</lastmod>
     
@@ -23,16 +23,9 @@
   </url>
   
   <url>
-    <loc>https://www.phpcoder.club/search/index.html</loc>
+    <loc>https://www.phpcoder.club/tags/index.html</loc>
     
     <lastmod>2020-03-22T06:03:42.535Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.phpcoder.club/categories/index.html</loc>
-    
-    <lastmod>2020-03-22T06:03:42.534Z</lastmod>
     
   </url>
   
@@ -45,6 +38,13 @@
   
   <url>
     <loc>https://www.phpcoder.club/gallery/index.html</loc>
+    
+    <lastmod>2020-03-22T06:03:42.534Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.phpcoder.club/categories/index.html</loc>
     
     <lastmod>2020-03-22T06:03:42.534Z</lastmod>
     
@@ -93,6 +93,13 @@
   </url>
   
   <url>
+    <loc>https://www.phpcoder.club/posts/7a17374d.html</loc>
+    
+    <lastmod>2020-02-20T03:49:36.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.phpcoder.club/posts/c0add594.html</loc>
     
     <lastmod>2020-02-20T03:49:36.000Z</lastmod>
@@ -101,13 +108,6 @@
   
   <url>
     <loc>https://www.phpcoder.club/posts/3ec68ba4.html</loc>
-    
-    <lastmod>2020-02-20T03:49:36.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.phpcoder.club/posts/7a17374d.html</loc>
     
     <lastmod>2020-02-20T03:49:36.000Z</lastmod>
     
