@@ -4,11 +4,11 @@
     <title>微信公众测试号接入流程</title>
     <url>/posts/277e2557.html</url>
     <content><![CDATA[<h4 id="NATAPP内网穿透"><a href="#NATAPP内网穿透" class="headerlink" title="NATAPP内网穿透"></a>NATAPP内网穿透</h4><h5 id="下载地址：根据不同环境下载"><a href="#下载地址：根据不同环境下载" class="headerlink" title="下载地址：根据不同环境下载"></a><a href="https://natapp.cn/#download" target="_blank" rel="noopener">下载地址</a>：根据不同环境下载</h5><h5 id="安装教程，点击这里：以window为例进行安装"><a href="#安装教程，点击这里：以window为例进行安装" class="headerlink" title="安装教程，点击这里：以window为例进行安装"></a><a href="https://natapp.cn/article/natapp_newbie" target="_blank" rel="noopener">安装教程，点击这里</a>：以window为例进行安装</h5><blockquote>
-<p>:question: 注意点：每次关闭NATAPP后生成的外网地址是不一样的，如需测试请更换测试号上的URL地址</p>
+<p>注意点：每次关闭NATAPP后生成的外网地址是不一样的，如需测试请更换测试号上的URL地址</p>
 </blockquote>
 <p><img src="/" alt="开启成功" class="lazyload" data-src="https://i.loli.net/2020/03/23/o7DN6ye3FcV1w5Q.png"></p>
 <h4 id="微信公众号开发"><a href="#微信公众号开发" class="headerlink" title="微信公众号开发"></a>微信公众号开发</h4><p><a href="https://www.jianshu.com/nb/8725155" target="_blank" rel="noopener">参考接入文章</a></p>
-<h5 id="接口工具"><a href="#接口工具" class="headerlink" title="接口工具"></a><a href="https://mp.weixin.qq.com/debug/cgi-bin/apiinfo?t=index" target="_blank" rel="noopener">接口工具</a></h5><h5 id="公众号测试号申请地址"><a href="#公众号测试号申请地址" class="headerlink" title="公众号测试号申请地址"></a><a href="https://mp.weixin.qq.com/debug/cgi-bin/sandboxinfo?action=showinfo&t=sandbox/index" target="_blank" rel="noopener">公众号测试号申请地址</a></h5><p>:yum: <code>请先编写文件代码,不然填写好URL和TOKEN后点击提交会导致 --- 配置失败</code></p>
+<h5 id="接口工具"><a href="#接口工具" class="headerlink" title="接口工具"></a><a href="https://mp.weixin.qq.com/debug/cgi-bin/apiinfo?t=index" target="_blank" rel="noopener">接口工具</a></h5><h5 id="公众号测试号申请地址"><a href="#公众号测试号申请地址" class="headerlink" title="公众号测试号申请地址"></a><a href="https://mp.weixin.qq.com/debug/cgi-bin/sandboxinfo?action=showinfo&t=sandbox/index" target="_blank" rel="noopener">公众号测试号申请地址</a></h5><p> <code>请先编写文件代码,不然填写好URL和TOKEN后点击提交会导致 --- 配置失败</code></p>
 <blockquote>
 <p>开发者通过检验signature对请求进行校验。若确认此次GET请求来自微信服务器，请原样返回echostr参数内容，则接入生效，成为开发者成功，否则接入失败。</p>
 <p>加密/校验流程如下：</p>
@@ -37,9 +37,9 @@
 <p>返回普通消息格式：</p>
 <figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">xml</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">ToUserName</span>&gt;</span>&lt;![CDATA[%s]]&gt;<span class="tag">&lt;/<span class="name">ToUserName</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">FromUserName</span>&gt;</span>&lt;![CDATA[%s]]&gt;<span class="tag">&lt;/<span class="name">FromUserName</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">CreateTime</span>&gt;</span>%s<span class="tag">&lt;/<span class="name">CreateTime</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">MsgType</span>&gt;</span>&lt;![CDATA[text]]&gt;<span class="tag">&lt;/<span class="name">MsgType</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">Content</span>&gt;</span>&lt;![CDATA[%s]]&gt;<span class="tag">&lt;/<span class="name">Content</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">MsgId</span>&gt;</span>%d<span class="tag">&lt;/<span class="name">MsgId</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">xml</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
+<p>其他案例请结合文档进行编码开发</p>
 </li>
 </ul>
-<p>:jack_o_lantern: 其他案例请结合文档进行编码开发</p>
 ]]></content>
       <categories>
         <category>wechat</category>
