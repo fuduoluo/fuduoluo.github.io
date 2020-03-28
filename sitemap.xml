@@ -2,9 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.phpcoder.club/posts/42b82995.html</loc>
+    
+    <lastmod>2020-03-28T04:17:09.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.phpcoder.club/posts/277e2557.html</loc>
     
-    <lastmod>2020-03-23T10:26:54.000Z</lastmod>
+    <lastmod>2020-03-28T04:16:54.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.phpcoder.club/posts/9520183a.html</loc>
+    
+    <lastmod>2020-03-28T04:06:12.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.phpcoder.club/posts/f281c357.html</loc>
+    
+    <lastmod>2020-03-28T04:05:19.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.phpcoder.club/posts/3ec68ba4.html</loc>
+    
+    <lastmod>2020-03-28T03:52:36.000Z</lastmod>
     
   </url>
   
@@ -30,6 +58,13 @@
   </url>
   
   <url>
+    <loc>https://www.phpcoder.club/about/index.html</loc>
+    
+    <lastmod>2020-03-22T06:03:42.534Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.phpcoder.club/gallery/index.html</loc>
     
     <lastmod>2020-03-22T06:03:42.534Z</lastmod>
@@ -40,20 +75,6 @@
     <loc>https://www.phpcoder.club/categories/index.html</loc>
     
     <lastmod>2020-03-22T06:03:42.534Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.phpcoder.club/about/index.html</loc>
-    
-    <lastmod>2020-03-22T06:03:42.534Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.phpcoder.club/posts/f281c357.html</loc>
-    
-    <lastmod>2020-03-20T01:15:19.000Z</lastmod>
     
   </url>
   
@@ -103,20 +124,6 @@
     <loc>https://www.phpcoder.club/posts/c0add594.html</loc>
     
     <lastmod>2020-02-20T03:49:36.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.phpcoder.club/posts/3ec68ba4.html</loc>
-    
-    <lastmod>2020-02-20T03:49:36.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.phpcoder.club/posts/42b82995.html</loc>
-    
-    <lastmod>2020-02-20T03:27:09.000Z</lastmod>
     
   </url>
   

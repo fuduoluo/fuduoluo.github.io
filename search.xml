@@ -1,7 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>微信公众测试号接入流程</title>
+    <title>mysql</title>
+    <url>/posts/9520183a.html</url>
+    <content><![CDATA[<h4 id="常用MySQL点"><a href="#常用MySQL点" class="headerlink" title="常用MySQL点"></a>常用MySQL点</h4><p>1.连接数据库</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;* 连接与断开服务器 *&#x2F;</span><br><span class="line">mysql -h 地址 -P 端口 -u 用户名 -p 密码</span><br><span class="line"></span><br><span class="line">&#x2F;*显示正在运行线程*&#x2F;</span><br><span class="line">show processlist</span><br></pre></td></tr></table></figure>
+
+
+
+<ol start="2">
+<li>数据库增删改查</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;* 数据操作 *&#x2F; ------------------</span><br><span class="line">-- 增</span><br><span class="line">    INSERT [INTO] 表名 [(字段列表)] VALUES (值列表)[, (值列表), ...]</span><br><span class="line">        -- 如果要插入的值列表包含所有字段并且顺序一致，则可以省略字段列表。</span><br><span class="line">        -- 可同时插入多条数据记录！</span><br><span class="line">        REPLACE 与 INSERT 完全一样，可互换。</span><br><span class="line">    INSERT [INTO] 表名 SET 字段名&#x3D;值[, 字段名&#x3D;值, ...]</span><br><span class="line">-- 查</span><br><span class="line">    SELECT 字段列表 FROM 表名[ 其他子句]</span><br><span class="line">        -- 可来自多个表的多个字段</span><br><span class="line">        -- 其他子句可以不使用</span><br><span class="line">        -- 字段列表可以用*代替，表示所有字段</span><br><span class="line">-- 删</span><br><span class="line">    DELETE FROM 表名[ 删除条件子句]</span><br><span class="line">        没有条件子句，则会删除全部</span><br><span class="line">-- 改</span><br><span class="line">    UPDATE 表名 SET 字段名&#x3D;新值[, 字段名&#x3D;新值] [更新条件]</span><br><span class="line">    </span><br><span class="line">-- 新增字段[修改字段类型注释长度]</span><br><span class="line">[]表示可选</span><br><span class="line">ALTER TABLE 表名 ADD COLUMN 字段名 字段类型(长度值) [NOT NULL] DEFAULT 默认值 comment &#39;注释&#39; ;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;例子</span><br><span class="line">ALTER TABLE contract_templates ADD COLUMN contract_category_id int(11) NOT NULL DEFAULT 0 comment &#39;范本分类ID&#39; ;</span><br></pre></td></tr></table></figure>
+
+<p>3.数据类型</p>
+<ol>
+<li>数值类型</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">类型         字节     范围（有符号位）</span><br><span class="line"> tinyint     1字节    -128 ~ 127      无符号位：0 ~ 255</span><br><span class="line"> smallint    2字节    -32768 ~ 32767 </span><br><span class="line"> mediumint   3字节    -8388608 ~ 8388607</span><br><span class="line"> int         4字节    -2147483648 ~ 2147483647</span><br><span class="line"> bigint      8字节    -9233372036854775808 ~ 9223372036854775807</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;* 注意 *&#x2F;</span><br><span class="line">int(3&#x2F;11):3或者11代表的是显示字符的长度，允许的最大值是INT整数所允许的最大值</span><br><span class="line">长度不足是会自动帮你补全</span><br><span class="line">例如：int(3):输入10 &#x3D;&gt;补全010</span><br><span class="line">&#x2F;*mysql无符号和有符号的区别*&#x2F;</span><br><span class="line">无符号unsigned 表示设置的的数据为0或者正数；</span><br><span class="line">有符号则可以是负数 -；</span><br><span class="line">内存占比 有符号 0-255 无符号 -127~127</span><br></pre></td></tr></table></figure>
+<ol>
+<li><p>字符串类型</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">char    定长字符串，速度快，但浪费空间</span><br><span class="line">varchar 变长字符串，速度慢，但节省空间</span><br><span class="line">M表示能存储的最大长度，此长度是字符数，非字节数。</span><br><span class="line"></span><br><span class="line">char,最多255个字符，与编码无关。</span><br><span class="line">varchar,最多65535字符，与编码有关。</span><br><span class="line"></span><br><span class="line">一条有效记录最大不能超过65535个字节。</span><br><span class="line">utf8 最大为21844个字符，gbk 最大为32766个字符，latin1 最大为65532个字符</span><br><span class="line">varchar 是变长的，需要利用存储空间保存 varchar 的长度，如果数据小于255个字节，则采用一个字节来保存长度，反之需要两个字节来保存。</span><br><span class="line"></span><br><span class="line">varchar 的最大有效长度由最大行大小和使用的字符集确定</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ol>
+<ol start="2">
+<li><p>日期类型</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">datetime    8字节   日期及时间  1000-01-01 00:00:00 到 9999-12-31 23:59:59</span><br><span class="line">date        3字节   日期         1000-01-01 到 9999-12-31</span><br><span class="line">timestamp   4字节   时间戳        19700101000000 到 2038-01-19 03:14:07</span><br><span class="line">time        3字节   时间         -838:59:59 到 838:59:59</span><br><span class="line">year        1字节   年份         1901 - 2155</span><br></pre></td></tr></table></figure>
+
+<p>支持时间格式</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">datetime    YYYY-MM-DD hh:mm:ss</span><br><span class="line">timestamp   YY-MM-DD hh:mm:ss</span><br><span class="line">            YYYYMMDDhhmmss</span><br><span class="line">            YYMMDDhhmmss</span><br><span class="line">            YYYYMMDDhhmmss</span><br><span class="line">            YYMMDDhhmmss</span><br><span class="line">date        YYYY-MM-DD</span><br><span class="line">            YY-MM-DD</span><br><span class="line">            YYYYMMDD</span><br><span class="line">            YYMMDD</span><br><span class="line">            YYYYMMDD</span><br><span class="line">            YYMMDD</span><br><span class="line">time        hh:mm:ss</span><br><span class="line">            hhmmss</span><br><span class="line">            hhmmss</span><br><span class="line">year        YYYY</span><br><span class="line">            YY</span><br><span class="line">            YYYY</span><br><span class="line">            YY</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ol>
+<ol start="3">
+<li><p>枚举和集合类型</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">enum(val1, val2, val3...)</span><br><span class="line">    在已知的值中进行单选。最大数量为65535.</span><br><span class="line">    枚举值在保存时，以2个字节的整型(smallint)保存。每个枚举值，按保存的位置顺序，从1开始逐一递增。</span><br><span class="line">    表现为字符串类型，存储却是整型。</span><br><span class="line">    NULL值的索引是NULL。</span><br><span class="line">    空字符串错误值的索引值是0。</span><br><span class="line"></span><br><span class="line">-- 集合（set） ----------</span><br><span class="line">set(val1, val2, val3...)</span><br><span class="line">    create table tab ( gender set(&#39;男&#39;, &#39;女&#39;, &#39;无&#39;) );</span><br><span class="line">    insert into tab values (&#39;男, 女&#39;);</span><br><span class="line">    最多可以有64个不同的成员。以bigint存储，共8个字节。采取位运算的形式。</span><br><span class="line">    当创建表时，SET成员值的尾部空格将自动被删除。</span><br></pre></td></tr></table></figure>
+
+<h5 id="选用角度"><a href="#选用角度" class="headerlink" title="选用角度"></a>选用角度</h5><figure class="highlight php"><table><tr><td class="code"><pre><span class="line">-- PHP角度</span><br><span class="line"><span class="number">1.</span> 功能满足</span><br><span class="line"><span class="number">2.</span> 存储空间尽量小，处理效率更高</span><br><span class="line"><span class="number">3.</span> 考虑兼容问题</span><br></pre></td></tr></table></figure>
+
+<h5 id="IP存储"><a href="#IP存储" class="headerlink" title="IP存储"></a>IP存储</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1. 只需存储，可用字符串</span><br><span class="line">2. 如果需计算，查找等，可存储为4个字节的无符号int，即unsigned</span><br><span class="line">    1) PHP函数转换</span><br><span class="line">        ip2long可转换为整型，但会出现携带符号问题。需格式化为无符号的整型。</span><br><span class="line">        利用sprintf函数格式化字符串</span><br><span class="line">        sprintf(&quot;%u&quot;, ip2long(&#39;192.168.3.134&#39;));</span><br><span class="line">        然后用long2ip将整型转回IP字符串</span><br><span class="line">    2) MySQL函数转换(无符号整型，UNSIGNED)</span><br><span class="line">        INET_ATON(&#39;127.0.0.1&#39;) 将IP转为整型</span><br><span class="line">        INET_NTOA(2130706433) 将整型转为IP</span><br></pre></td></tr></table></figure>
+
+<h5 id="主从表区分"><a href="#主从表区分" class="headerlink" title="主从表区分"></a>主从表区分</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">FOREIGN KEY 外键约束</span><br><span class="line">-- 用于限制主表与从表数据完整性。</span><br><span class="line">alter table t1 add constraint &#96;t1_t2_fk&#96; foreign key (t1_id) references t2(id);</span><br><span class="line"></span><br><span class="line">-- 将表t1的t1_id外键关联到表t2的id字段。</span><br><span class="line">-- 每个外键都有一个名字，可以通过 constraint 指定</span><br><span class="line"></span><br><span class="line">-- 存在外键的表，称之为从表（子表），外键指向的表，称之为主表（父表）</span><br><span class="line"></span><br><span class="line">-- 注意，外键只被InnoDB存储引擎所支持。其他引擎是不支持的。</span><br></pre></td></tr></table></figure>
+
+<h5 id="三大范式"><a href="#三大范式" class="headerlink" title="三大范式"></a>三大范式</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">-- Normal Format, NF</span><br><span class="line">    - 每个表保存一个实体信息</span><br><span class="line">    - 每个具有一个ID字段作为主键</span><br><span class="line">    - ID主键 + 原子表</span><br><span class="line">-- 1NF, 第一范式</span><br><span class="line">	字段不能再分，就满足第一范式。</span><br><span class="line">-- 2NF, 第二范式</span><br><span class="line">    满足第一范式的前提下，不能出现部分依赖。</span><br><span class="line">    消除符合主键就可以避免部分依赖。增加单列关键字。</span><br><span class="line">-- 3NF, 第三范式</span><br><span class="line">    满足第二范式的前提下，不能出现传递依赖。</span><br><span class="line">    某个字段依赖于主键，而有其他字段依赖于该字段。这就是传递依赖。</span><br><span class="line">    将一个实体信息的数据放在一个表内实现。</span><br></pre></td></tr></table></figure></li>
+</ol>
+]]></content>
+      <categories>
+        <category>Mysql</category>
+      </categories>
+      <tags>
+        <tag>Mysql</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>微信公众测试号[生成菜单等]接入流程</title>
     <url>/posts/277e2557.html</url>
     <content><![CDATA[<h4 id="NATAPP内网穿透"><a href="#NATAPP内网穿透" class="headerlink" title="NATAPP内网穿透"></a>NATAPP内网穿透</h4><h5 id="下载地址：根据不同环境下载"><a href="#下载地址：根据不同环境下载" class="headerlink" title="下载地址：根据不同环境下载"></a><a href="https://natapp.cn/#download" target="_blank" rel="noopener">下载地址</a>：根据不同环境下载</h5><h5 id="安装教程，点击这里：以window为例进行安装"><a href="#安装教程，点击这里：以window为例进行安装" class="headerlink" title="安装教程，点击这里：以window为例进行安装"></a><a href="https://natapp.cn/article/natapp_newbie" target="_blank" rel="noopener">安装教程，点击这里</a>：以window为例进行安装</h5><blockquote>
 <p>注意点：每次关闭NATAPP后生成的外网地址是不一样的，如需测试请更换测试号上的URL地址</p>
@@ -58,7 +117,7 @@
 <h4 id="关于网页-H5-微信授权登录"><a href="#关于网页-H5-微信授权登录" class="headerlink" title="关于网页[H5]微信授权登录"></a>关于网页[H5]微信授权登录</h4><p><a href="https://developers.weixin.qq.com/doc/offiaccount/OA_Web_Apps/Wechat_webpage_authorization.html" target="_blank" rel="noopener">文档….点这里</a></p>
 <p><a href="https://www.cnblogs.com/sunshq/p/5132811.html" target="_blank" rel="noopener">demo案例</a></p>
 <p><a href="https://mp.weixin.qq.com/debug/cgi-bin/sandboxinfo?action=showinfo&t=sandbox/index" target="_blank" rel="noopener">沙盒地址</a></p>
-<h6 id="微信授权登录步骤"><a href="#微信授权登录步骤" class="headerlink" title="微信授权登录步骤"></a>微信授权登录步骤</h6><blockquote>
+<h4 id="微信授权登录步骤"><a href="#微信授权登录步骤" class="headerlink" title="微信授权登录步骤"></a>微信授权登录步骤</h4><blockquote>
 <p>APPID与APPSECRET已经获取到的情况下，进行以下步骤</p>
 </blockquote>
 <blockquote>
@@ -93,10 +152,8 @@
 
 <figure class="highlight json"><table><tr><td class="code"><pre><span class="line">&#123;   </span><br><span class="line">  <span class="attr">"openid"</span>:<span class="string">" OPENID"</span>,</span><br><span class="line">  <span class="attr">"nickname"</span>: NICKNAME,</span><br><span class="line">  <span class="attr">"sex"</span>:<span class="string">"1"</span>,</span><br><span class="line">  <span class="attr">"province"</span>:<span class="string">"PROVINCE"</span>,</span><br><span class="line">  <span class="attr">"city"</span>:<span class="string">"CITY"</span>,</span><br><span class="line">  <span class="attr">"country"</span>:<span class="string">"COUNTRY"</span>,</span><br><span class="line">  <span class="attr">"headimgurl"</span>:       <span class="string">"http://thirdwx.qlogo.cn/mmopen/g3MonUZtNHkdmzicIlibx6iaFqAc56vxLSUfpb6n5WKSYVY0ChQKkiaJSgQ1dZuTOgvLLrhJbERQQ4eMsv84eavHiaiceqxibJxCfHe/46"</span>,</span><br><span class="line">  <span class="attr">"privilege"</span>:[ <span class="string">"PRIVILEGE1"</span> <span class="string">"PRIVILEGE2"</span>     ],</span><br><span class="line">  <span class="attr">"unionid"</span>: <span class="string">"o6_bmasdasdsad6_2sgVt7hMZOPfL"</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-</li>
+<h4 id="实际使用："><a href="#实际使用：" class="headerlink" title="实际使用："></a>实际使用：</h4> <figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="comment">//获取到用户信息存入redis</span></span><br><span class="line"><span class="comment">//参考直播项目</span></span><br><span class="line">$url=https:<span class="comment">//api.weixin.qq.com/sns/userinfo?access_token=ACCESS_TOKEN&amp;openid=OPENID&amp;lang=zh_CN</span></span><br><span class="line">$result = file_get_contents($url);</span><br><span class="line">$data = json_decode($result,<span class="keyword">true</span>);</span><br><span class="line">Cache::store(<span class="string">'redis'</span>)-&gt;set($openid,$result);</span><br></pre></td></tr></table></figure></li>
 </ol>
-<h6 id="实际使用："><a href="#实际使用：" class="headerlink" title="实际使用："></a>实际使用：</h6><figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="comment">//获取到用户信息存入redis</span></span><br><span class="line"><span class="comment">//参考直播项目</span></span><br><span class="line">$url=https:<span class="comment">//api.weixin.qq.com/sns/userinfo?access_token=ACCESS_TOKEN&amp;openid=OPENID&amp;lang=zh_CN</span></span><br><span class="line">$result = file_get_contents($url);</span><br><span class="line">$data = json_decode($result,<span class="keyword">true</span>);</span><br><span class="line">Cache::store(<span class="string">'redis'</span>)-&gt;set($openid,$result);</span><br></pre></td></tr></table></figure>
-
 ]]></content>
       <categories>
         <category>wechat</category>
@@ -510,10 +567,6 @@
 <ul>
 <li>出现原因：</li>
 </ul>
-<h4 id="高阶函数"><a href="#高阶函数" class="headerlink" title="高阶函数"></a>高阶函数</h4><ul>
-<li>map()<br><img src="/" alt="" class="lazyload" data-src="https://ae01.alicdn.com/kf/Ud494650802a7469bb9152783e267ce7ep.jpg"><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="string">function</span> <span class="string">pow(x)</span> <span class="string">&#123;</span></span><br><span class="line">    <span class="string">return</span> <span class="string">x</span> <span class="string">*</span> <span class="string">x;</span></span><br><span class="line"><span class="string">&#125;</span></span><br><span class="line"><span class="string">var</span> <span class="string">arr</span> <span class="string">=</span> <span class="string">[1,</span> <span class="number">2</span><span class="string">,</span> <span class="number">3</span><span class="string">,</span> <span class="number">4</span><span class="string">,</span> <span class="number">5</span><span class="string">,</span> <span class="number">6</span><span class="string">,</span> <span class="number">7</span><span class="string">,</span> <span class="number">8</span><span class="string">,</span> <span class="number">9</span><span class="string">];</span></span><br><span class="line"><span class="string">var</span> <span class="string">results</span> <span class="string">=</span> <span class="string">arr.map(pow);</span> <span class="string">//</span> <span class="string">[1,</span> <span class="number">4</span><span class="string">,</span> <span class="number">9</span><span class="string">,</span> <span class="number">16</span><span class="string">,</span> <span class="number">25</span><span class="string">,</span> <span class="number">36</span><span class="string">,</span> <span class="number">49</span><span class="string">,</span> <span class="number">64</span><span class="string">,</span> <span class="number">81</span><span class="string">]</span></span><br><span class="line"><span class="string">console.log(results);//1,4,9,16,25,36,49,64,81</span></span><br></pre></td></tr></table></figure></li>
-<li>reduce()</li>
-</ul>
 <h4 id="箭头函数-胖箭头函数"><a href="#箭头函数-胖箭头函数" class="headerlink" title="箭头函数[胖箭头函数]"></a>箭头函数[胖箭头函数]</h4><h5 id="出现原因："><a href="#出现原因：" class="headerlink" title="出现原因："></a>出现原因：</h5><blockquote>
 <p>解决传统函数语法的灵活性</p>
 <p>一种函数表达式的简写</p>
@@ -527,12 +580,23 @@
 <blockquote>
 <p><a href="https://blog.csdn.net/w390058785/article/details/82884032" target="_blank" rel="noopener">两个例子明白箭头函数this指向</a></p>
 </blockquote>
+<blockquote>
+<p>箭头函数内的this值继承自外围作用域。运行时它会首先到它的父作用域找，如果父作用域还是箭头函数，那么接着向上找，直到找到我们要的this指向。</p>
+</blockquote>
+<blockquote>
+<p>箭头函数的this在声明时指向<code>window</code>，在调用时指向声明时所在的上下文<code>this</code></p>
+</blockquote>
 <ul>
 <li><p>节省大量代码</p>
 </li>
 <li><p>解决输入function () {}错误导致的错误</p>
 </li>
 </ul>
+<p><a href="[https://es6.ruanyifeng.com/?search=%E7%AE%AD%E5%A4%B4%E5%87%BD%E6%95%B0&x=0&y=0#docs/function#%E7%AE%AD%E5%A4%B4%E5%87%BD%E6%95%B0](https://es6.ruanyifeng.com/?search=箭头函数&x=0&y=0#docs/function#箭头函数)">阮一峰之箭头函数this讲解</a></p>
+<blockquote>
+<p><code>箭头函数this</code>对象，就是定义时所在的对象，而不是使用时所在的对象。</p>
+</blockquote>
+<p><img src="/" alt="箭头函数this" class="lazyload" data-src="https://ae01.alicdn.com/kf/U9e9aeeeaf3a54652a32c3b9d1941ead2B.jpg"></p>
 <h5 id="用法："><a href="#用法：" class="headerlink" title="用法："></a>用法：</h5><figure class="highlight js"><table><tr><td class="code"><pre><span class="line">ES5写法：求和</span><br><span class="line"><span class="keyword">var</span> sum = <span class="function"><span class="keyword">function</span>(<span class="params">x, y</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> x + y</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <blockquote>
@@ -549,7 +613,7 @@
 
 <h5 id="箭头函数主要使用模式："><a href="#箭头函数主要使用模式：" class="headerlink" title="箭头函数主要使用模式："></a>箭头函数主要使用模式：</h5><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">//  一个参数对应一个表达式</span></span><br><span class="line">param =&gt; expression;<span class="comment">// 例如 x =&gt; x+2;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 多个参数对应一个表达式</span></span><br><span class="line">(param [, param]) =&gt; expression; <span class="comment">//例如 (x,y) =&gt; (x + y);</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 一个参数对应多个表示式</span></span><br><span class="line">param =&gt; &#123;statements;&#125; <span class="comment">//例如 x = &gt; &#123; x++; return x;&#125;;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//  多个参数对应多个表达式</span></span><br><span class="line">([param] [, param]) =&gt; &#123;statements&#125; <span class="comment">// 例如 (x,y) =&gt; &#123; x++;y++;return x*y;&#125;;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//表达式里没有参数</span></span><br><span class="line">() =&gt; expression; <span class="comment">//例如var flag = (() =&gt; 2)(); flag等于2</span></span><br><span class="line"></span><br><span class="line">() =&gt; &#123;statements;&#125; <span class="comment">//例如 var flag = (() =&gt; &#123;return 1;&#125;)(); flag就等于1</span></span><br><span class="line"></span><br><span class="line"> <span class="comment">//传入一个表达式，返回一个对象</span></span><br><span class="line">([param]) =&gt; (&#123; <span class="attr">key</span>: value &#125;);</span><br><span class="line"><span class="comment">//例如  var fuc = (x) =&gt; (&#123;key:x&#125;)</span></span><br><span class="line">        <span class="keyword">var</span> object = fuc(<span class="number">1</span>);</span><br><span class="line">        alert(object);<span class="comment">//&#123;key:1&#125;</span></span><br></pre></td></tr></table></figure>
 
-<h5 id="关于this指向问题"><a href="#关于this指向问题" class="headerlink" title="关于this指向问题"></a>关于this指向问题</h5><p><a href="http://caibaojian.com/js-call-stack.html" target="_blank" rel="noopener">执行上下文详解</a></p>
+<h4 id="关于this指向问题"><a href="#关于this指向问题" class="headerlink" title="关于this指向问题"></a>关于this指向问题</h4><p><a href="http://caibaojian.com/js-call-stack.html" target="_blank" rel="noopener">执行上下文详解</a></p>
 <blockquote>
 <p>执行上下文：评估和执行 <a href="http://caibaojian.com/t/javascript" target="_blank" rel="noopener">JavaScript</a> 代码的环境的抽象概念</p>
 </blockquote>
@@ -564,7 +628,7 @@
 <blockquote>
 <p>注意！全局上下文有且只有一个，程序中其他任意的上下文都可以访问全局上下文</p>
 </blockquote>
-<h5 id="this绑定："><a href="#this绑定：" class="headerlink" title="this绑定："></a>this绑定：</h5><blockquote>
+<h4 id="this绑定："><a href="#this绑定：" class="headerlink" title="this绑定："></a>this绑定：</h4><blockquote>
 <p>在全局执行上下文中，<code>this</code> 的值指向全局对象。(在浏览器中，<code>this</code>引用 Window 对象)。</p>
 </blockquote>
 <blockquote>
@@ -574,23 +638,12 @@
 </blockquote>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> foo = &#123;</span><br><span class="line">  baz: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="keyword">this</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">foo.baz();   <span class="comment">// 'this' 引用 'foo', 因为 'baz' 被</span></span><br><span class="line">             <span class="comment">// 对象 'foo' 调用</span></span><br><span class="line"><span class="keyword">let</span> bar = foo.baz;</span><br><span class="line">bar();       <span class="comment">// 'this' 指向全局 window 对象，因为</span></span><br><span class="line">             <span class="comment">// 没有指定引用对象</span></span><br></pre></td></tr></table></figure>
 
-<h5 id="作用域"><a href="#作用域" class="headerlink" title="作用域"></a><a href="https://www.cnblogs.com/henyulee/p/8484122.html" target="_blank" rel="noopener">作用域</a></h5><ol>
+<h4 id="作用域"><a href="#作用域" class="headerlink" title="作用域"></a><a href="https://www.cnblogs.com/henyulee/p/8484122.html" target="_blank" rel="noopener">作用域</a></h4><ol>
 <li>全局作用域</li>
 <li>局部作用域</li>
 </ol>
 <p><img src="/" alt="" class="lazyload" data-src="https://ae01.alicdn.com/kf/Uefb8cf0254ad44a1af49a8ee3382c130L.jpg"></p>
 <p><img src="/" alt="" class="lazyload" data-src="https://ae01.alicdn.com/kf/Ud44f335e8e764663aa1f29a38e4f9210S.jpg"></p>
-<h5 id="ES6箭头函数"><a href="#ES6箭头函数" class="headerlink" title="ES6箭头函数"></a>ES6箭头函数</h5><blockquote>
-<p>箭头函数内的this值继承自外围作用域。运行时它会首先到它的父作用域找，如果父作用域还是箭头函数，那么接着向上找，直到找到我们要的this指向。</p>
-</blockquote>
-<blockquote>
-<p>箭头函数的this在声明时指向<code>window</code>，在调用时指向声明时所在的上下文<code>this</code></p>
-</blockquote>
-<p><a href="[https://es6.ruanyifeng.com/?search=%E7%AE%AD%E5%A4%B4%E5%87%BD%E6%95%B0&x=0&y=0#docs/function#%E7%AE%AD%E5%A4%B4%E5%87%BD%E6%95%B0](https://es6.ruanyifeng.com/?search=箭头函数&x=0&y=0#docs/function#箭头函数)">阮一峰之箭头函数this讲解</a></p>
-<blockquote>
-<p><code>箭头函数this</code>对象，就是定义时所在的对象，而不是使用时所在的对象。</p>
-</blockquote>
-<p><img src="/" alt="" class="lazyload" data-src="https://ae01.alicdn.com/kf/U9e9aeeeaf3a54652a32c3b9d1941ead2B.jpg"></p>
 ]]></content>
       <categories>
         <category>ES6</category>
@@ -707,7 +760,7 @@
       </categories>
   </entry>
   <entry>
-    <title>ThinkPHP5手记</title>
+    <title>ThinkPHP5.1手记</title>
     <url>/posts/3ec68ba4.html</url>
     <content><![CDATA[<blockquote class="blockquote-center"></blockquote>
 <div class="note success">
@@ -737,10 +790,39 @@
 <li>http_build_query 可以将一维或多维 数组/对象 进行 url_encode 编码，并返回编码后的字符串。</li>
 <li>无论传入的数据是数组还是 object，解码后都将转换为数组。<br><a href="https://www.jianshu.com/p/5e9239e44eb8" target="_blank" rel="noopener">具体了解，戳这里！</a></li>
 </ul>
-<h4 id="记微信支付回调方法扣除库存和更新状态失败"><a href="#记微信支付回调方法扣除库存和更新状态失败" class="headerlink" title="记微信支付回调方法扣除库存和更新状态失败"></a>记微信支付回调方法扣除库存和更新状态失败</h4><h4 id="TP5-1依赖注入"><a href="#TP5-1依赖注入" class="headerlink" title="TP5.1依赖注入"></a>TP5.1依赖注入</h4><figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 执行应用并响应</span></span><br><span class="line"> Container::get(<span class="string">'app'</span>)-&gt;run()-&gt;send();</span><br></pre></td></tr></table></figure>
-<ul>
-<li></li>
+<h4 id="记微信支付回调方法扣除库存和更新状态失败"><a href="#记微信支付回调方法扣除库存和更新状态失败" class="headerlink" title="记微信支付回调方法扣除库存和更新状态失败"></a>记微信支付回调方法扣除库存和更新状态失败</h4><ul>
+<li>没有证书所导致【未验证】<h4 id="关于使用param（）-获取-参数-会多出-一个-控制器-方法名-这样的一个参数出来？"><a href="#关于使用param（）-获取-参数-会多出-一个-控制器-方法名-这样的一个参数出来？" class="headerlink" title="关于使用param（） 获取 参数 会多出 一个 /控制器/方法名 这样的一个参数出来？"></a>关于使用<a href="https://www.kancloud.cn/manual/thinkphp5_1/353987" target="_blank" rel="noopener">param</a>（） 获取 参数 会多出 一个 /控制器/方法名 这样的一个参数出来？</h4></li>
 </ul>
+<figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="string">'/admin/index/login_html'</span> =&gt; string <span class="string">''</span> (length=<span class="number">0</span>) 出现这个出来</span><br><span class="line"><span class="string">'username'</span> =&gt; string <span class="string">'1'</span> (length=<span class="number">1</span>)</span><br><span class="line"><span class="string">'password'</span> =&gt; string <span class="string">'1'</span> (length=<span class="number">1</span>)</span><br></pre></td></tr></table></figure>
+
+<p>解决：</p>
+<blockquote>
+<p>首先确定下使用TP5.1框架具体版本号：{$Think.VERSION} ；</p>
+<p>目前使用版本号５.1.32 LTS</p>
+</blockquote>
+<blockquote>
+<p>几经周转在<a href="https://www.kancloud.cn/manual/thinkphp5_1/353987" target="_blank" rel="noopener">文档</a>输入变量中看到如下内容</p>
+</blockquote>
+<p><img src="/" alt="image.png" class="lazyload" data-src="https://i.loli.net/2020/03/26/vWBKh9kdqfrTDiR.png"></p>
+<blockquote>
+<p> 查看更新日志</p>
+</blockquote>
+<p><img src="/" alt="image.png" class="lazyload" data-src="https://i.loli.net/2020/03/26/DiIjmznpfb1GJku.png"></p>
+<blockquote>
+<p>对比代码</p>
+</blockquote>
+<p><img src="/" alt="image.png" class="lazyload" data-src="https://i.loli.net/2020/03/26/6lXTnaHiA3vtxK4.png"></p>
+<blockquote>
+<p><a href="https://gitee.com/liu21st/framework/blob/5.1/library/think/Request.php#" target="_blank" rel="noopener">更新代码地址</a>：Requset类更换</p>
+<p>经尝试更新Request类还是无效！！！</p>
+</blockquote>
+<blockquote>
+<p>最终解决方法如下：</p>
+</blockquote>
+<figure class="highlight php"><table><tr><td class="code"><pre><span class="line">修改伪静态：  RewriteRule ^(.*)$ index.php [L,E=PATH_INFO:$<span class="number">1</span>]</span><br></pre></td></tr></table></figure>
+<h4 id="TP项目redis设置定时任务写成bat文件加入window任务计划"><a href="#TP项目redis设置定时任务写成bat文件加入window任务计划" class="headerlink" title="TP项目redis设置定时任务写成bat文件加入window任务计划"></a>TP项目redis设置定时任务写成bat文件加入window任务计划</h4><figure class="highlight groovy"><table><tr><td class="code"><pre><span class="line">bat</span><br><span class="line"><span class="comment">//前提条件已安装本地redis服务【window执行任务计划比较少，多为linux上执行xshell脚步】</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//bat文件示例：</span></span><br><span class="line"><span class="meta">@echo</span> off</span><br><span class="line">cd <span class="string">D:</span><span class="regexp">/phpstudy_pro/</span>WWW<span class="regexp">/efa/</span><span class="keyword">public</span><span class="regexp">/  /</span>/项目路径</span><br><span class="line">php index.php[入口文件] index<span class="regexp">/redis_go_up/</span>index[参数：模块<span class="regexp">/控制器/</span>方法]</span><br><span class="line">::pause<span class="comment">//是否暂停显示弹窗执行状态</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//之后在 任务计划程序 中创建一个基础任务计划</span></span><br><span class="line"><span class="comment">//创建完成选择你所写好的脚步bat文件夹确认即可</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="/" alt="image.png" class="lazyload" data-src="https://i.loli.net/2020/03/19/tLPRHFWQuO1DGon.png"></p>
 ]]></content>
       <categories>
         <category>ThinkPHP5</category>
