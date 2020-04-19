@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.phpcoder.club/posts/888d2e2.html</loc>
+    
+    <lastmod>2020-04-19T03:41:11.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.phpcoder.club/posts/b9df10c9.html</loc>
+    
+    <lastmod>2020-04-19T03:41:11.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.phpcoder.club/posts/42b82995.html</loc>
     
     <lastmod>2020-03-28T04:17:09.000Z</lastmod>
@@ -44,14 +58,14 @@
   </url>
   
   <url>
-    <loc>https://www.phpcoder.club/search/index.html</loc>
+    <loc>https://www.phpcoder.club/link/index.html</loc>
     
     <lastmod>2020-03-22T06:03:42.535Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://www.phpcoder.club/link/index.html</loc>
+    <loc>https://www.phpcoder.club/search/index.html</loc>
     
     <lastmod>2020-03-22T06:03:42.535Z</lastmod>
     
@@ -65,14 +79,14 @@
   </url>
   
   <url>
-    <loc>https://www.phpcoder.club/gallery/index.html</loc>
+    <loc>https://www.phpcoder.club/categories/index.html</loc>
     
     <lastmod>2020-03-22T06:03:42.534Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://www.phpcoder.club/categories/index.html</loc>
+    <loc>https://www.phpcoder.club/gallery/index.html</loc>
     
     <lastmod>2020-03-22T06:03:42.534Z</lastmod>
     
@@ -114,14 +128,14 @@
   </url>
   
   <url>
-    <loc>https://www.phpcoder.club/posts/7a17374d.html</loc>
+    <loc>https://www.phpcoder.club/posts/c0add594.html</loc>
     
     <lastmod>2020-02-20T03:49:36.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://www.phpcoder.club/posts/c0add594.html</loc>
+    <loc>https://www.phpcoder.club/posts/7a17374d.html</loc>
     
     <lastmod>2020-02-20T03:49:36.000Z</lastmod>
     
@@ -205,20 +219,6 @@
   </url>
   
   <url>
-    <loc>https://www.phpcoder.club/posts/895444f1.html</loc>
-    
-    <lastmod>2019-07-25T01:57:50.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.phpcoder.club/posts/cded68c5.html</loc>
-    
-    <lastmod>2019-07-11T16:27:11.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://www.phpcoder.club/posts/78cea6d8.html</loc>
     
     <lastmod>2019-07-11T14:58:01.000Z</lastmod>
@@ -233,16 +233,23 @@
   </url>
   
   <url>
-    <loc>https://www.phpcoder.club/posts/888d2e2.html</loc>
+    <loc>https://www.phpcoder.club/posts/5a9ca69a.html</loc>
     
-    <lastmod>2019-07-11T14:32:11.000Z</lastmod>
+    <lastmod>2019-07-11T13:31:10.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://www.phpcoder.club/posts/5a9ca69a.html</loc>
+    <loc>https://www.phpcoder.club/posts/895444f1.html</loc>
     
-    <lastmod>2019-07-11T13:31:10.000Z</lastmod>
+    <lastmod>2019-04-19T04:57:50.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.phpcoder.club/posts/cded68c5.html</loc>
+    
+    <lastmod>2019-04-19T04:27:11.000Z</lastmod>
     
   </url>
   

@@ -1,6 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Git问题汇总</title>
+    <url>/posts/b9df10c9.html</url>
+    <content><![CDATA[<blockquote class="blockquote-center">工作中遇到的问题集合</blockquote>
+
+
+<h3 id="git-pull时出现冲突"><a href="#git-pull时出现冲突" class="headerlink" title="git pull时出现冲突"></a>git pull时出现冲突</h3><blockquote>
+<p>git fetch –all //只是下载代码到本地，不进行合并操作<br> git reset –hard origin/master  //把HEAD指向最新下载的版本</p>
+</blockquote>
+<h3 id="git-merge-出现以下错误"><a href="#git-merge-出现以下错误" class="headerlink" title="git merge 出现以下错误"></a>git merge 出现以下错误</h3><p><img src="/" alt="image.png" class="lazyload" data-src="https://phpcoder-1259614901.cos.ap-guangzhou.myqcloud.com/phpcoder/git%E6%97%A5%E5%B8%B8%E6%93%8D%E4%BD%9C/3098875-477e115aad7f2129.png"></p>
+<blockquote>
+<p>git merge 分支名 –allow-unrelated-histories</p>
+</blockquote>
+<h3 id="git-pull-出现以下错误"><a href="#git-pull-出现以下错误" class="headerlink" title="git pull 出现以下错误"></a>git pull 出现以下错误</h3><div class="note danger">
+            <p>fatal: refusing to merge unrelated histories<br>拒绝合并不相关历史</p>
+          </div>
+
+<blockquote>
+<p>解决：git pull –allow-unrelated-histories</p>
+</blockquote>
+<h3 id="git-clone报错"><a href="#git-clone报错" class="headerlink" title="git clone报错"></a>git clone报错</h3><p><img src="/" alt="image.png" class="lazyload" data-src="https://phpcoder-1259614901.cos.ap-guangzhou.myqcloud.com/phpcoder/git%E6%97%A5%E5%B8%B8%E6%93%8D%E4%BD%9C/3098875-bb5704ee6a442f76.png"></p>
+<p><a href="https://www.jianshu.com/p/f5295c74ee39" target="_blank" rel="noopener">使用Git clone代码失败的解决方法</a></p>
+<div class="note danger">
+            <p>error: RPC failed; curl 56 OpenSSL SSL_read: SSL_ERROR_SYSCALL, errno 10054<br>fatal: The remote end hung up unexpectedly<br>fatal: early EOF<br>fatal: index-pack failed</p>
+          </div>
+<ul>
+<li>因为Git限制了推送数据的大小导致的错误。</li>
+<li>解决方法：重新设置通信缓存大小</li>
+</ul>
+<blockquote>
+<p>git config http.postBuffer 524288000<br>git config –global http.postBuffer 524288000</p>
+</blockquote>
+<h3 id="git-clone执行完设置通信缓存大小报错"><a href="#git-clone执行完设置通信缓存大小报错" class="headerlink" title="git clone执行完设置通信缓存大小报错"></a>git clone执行完设置通信缓存大小报错</h3><div class="note danger">
+            <p>git config http.sslVerify “false”<br>fatal: not in a git directory</p>
+          </div>
+<blockquote>
+<p> git config –global http.sslVerify false</p>
+</blockquote>
+<h3 id="git-status-分支比主分支提交超前"><a href="#git-status-分支比主分支提交超前" class="headerlink" title="git status 分支比主分支提交超前"></a>git status 分支比主分支提交超前</h3><div class="note danger">
+            <p>git Your branch is ahead of ‘gitee/master’ by 1 commit.<br>[git您的分支比“ gitee / master”提前1次提交。]</p>
+          </div>
+
+<blockquote>
+<p>解决：git push gitee HEAD:master 或者  git push gitee HEAD</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>Git</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Mysql简单常用</title>
     <url>/posts/9520183a.html</url>
     <content><![CDATA[<h4 id="常用MySQL点"><a href="#常用MySQL点" class="headerlink" title="常用MySQL点"></a>常用MySQL点</h4><p>1.连接数据库</p>
@@ -1524,7 +1577,7 @@ sourceMap 异常解析
       </tags>
   </entry>
   <entry>
-    <title>Hexo提交百度(待定)和Google收录站点</title>
+    <title>百度[待定]Google收录站点</title>
     <url>/posts/895444f1.html</url>
     <content><![CDATA[<blockquote class="blockquote-center">hexo站点地图收录</blockquote>
 
@@ -1553,27 +1606,23 @@ sourceMap 异常解析
 <ul>
 <li>下载Google验证文件，放到themes/next/source目录中</li>
 <li>执行生成和部署命令验证即可<figure class="highlight 1c"><table><tr><td class="code"><pre><span class="line">hexo g <span class="meta">&amp;&amp; hexo d</span></span><br></pre></td></tr></table></figure>
-<h4 id="由于我已经验证过所以会自动完成站点的验证"><a href="#由于我已经验证过所以会自动完成站点的验证" class="headerlink" title="由于我已经验证过所以会自动完成站点的验证"></a>由于我已经验证过所以会自动完成站点的验证</h4><img src="/" alt="完成验证站点" class="lazyload" data-src="https://i.loli.net/2020/03/22/BFmlkvKgjAnSJM3.png"></li>
+<h4 id="已完成站点的验证"><a href="#已完成站点的验证" class="headerlink" title="已完成站点的验证"></a>已完成站点的验证</h4><img src="/" alt="完成验证站点" class="lazyload" data-src="https://i.loli.net/2020/03/22/BFmlkvKgjAnSJM3.png"></li>
 </ul>
-<h4 id="3-添加站点地图"><a href="#3-添加站点地图" class="headerlink" title="3.添加站点地图"></a>3.添加站点地图</h4><p><img src="/" alt="步骤如下" class="lazyload" data-src="https://i.loli.net/2020/03/22/Bhnc6ZENiY5ysVP.png"></p>
-<h4 id="出现问题："><a href="#出现问题：" class="headerlink" title="出现问题："></a>出现问题：</h4><blockquote>
-<p>添加完成后站点地图状态一直是无法读取[但是解决完后状态一直是无法读取]</p>
-</blockquote>
+<h4 id="3-添加站点地图"><a href="#3-添加站点地图" class="headerlink" title="3.添加站点地图"></a>3.添加站点地图</h4><p><img src="/" alt="image.png" class="lazyload" data-src="https://i.loli.net/2020/04/19/siW8KpgHxNZ5EkY.png"></p>
 <p><img src="/" alt="解决问题" class="lazyload" data-src="https://i.loli.net/2020/03/22/m1IbcSigMnUXFBq.png"></p>
-<h4 id="效果如下："><a href="#效果如下：" class="headerlink" title="效果如下："></a>效果如下：</h4><p><img src="/" alt="搜索结果" class="lazyload" data-src="https://i.loli.net/2020/03/22/PnUwceVThIbOu3q.png"></p>
-<p><a href="https://www.93bok.com/Hexo%E6%8F%90%E4%BA%A4%E7%99%BE%E5%BA%A6%E5%92%8CGoogle%E6%94%B6%E5%BD%95%E7%AB%99%E7%82%B9/" target="_blank" rel="noopener">参考文章+部分图片来源</a></p>
+<h4 id="效果如下："><a href="#效果如下：" class="headerlink" title="效果如下："></a>效果如下：</h4><p><img src="/" alt="image.png" class="lazyload" data-src="https://i.loli.net/2020/04/19/koHOjgxBQNtFdeT.png"></p>
 ]]></content>
       <categories>
-        <category>Google-sitemap</category>
+        <category>Baidu-Google</category>
       </categories>
       <tags>
-        <tag>Google-sitemap</tag>
+        <tag>Baidu-Google</tag>
       </tags>
   </entry>
   <entry>
     <title>Hexo问题汇总</title>
     <url>/posts/cded68c5.html</url>
-    <content><![CDATA[<h3 id="升级HEXO和更新Butterfly主题版本"><a href="#升级HEXO和更新Butterfly主题版本" class="headerlink" title="升级HEXO和更新Butterfly主题版本"></a>升级HEXO和更新Butterfly主题版本</h3><h4 id="升级hexo"><a href="#升级hexo" class="headerlink" title="升级hexo"></a>升级hexo</h4><ul>
+    <content><![CDATA[<h3 id="升级HEXO和Butterfly主题"><a href="#升级HEXO和Butterfly主题" class="headerlink" title="升级HEXO和Butterfly主题"></a>升级HEXO和Butterfly主题</h3><h4 id="升级hexo"><a href="#升级hexo" class="headerlink" title="升级hexo"></a>升级hexo</h4><ul>
 <li><p>在博客根目录下  [D:\blogs] </p>
 </li>
 <li><p>运行以下代码 Hexo版本升级可以通过npm实现</p>
@@ -1605,18 +1654,15 @@ sourceMap 异常解析
 </li>
 </ul>
 <h4 id="升级butterfly主题"><a href="#升级butterfly主题" class="headerlink" title="升级butterfly主题"></a>升级butterfly主题</h4><div class="note success">
-            <p>為了主題的平滑升級, Butterfly 使用了 data files特性。<br>推薦把主題默認的配置文件_config.yml複製到 Hexo 工作目錄下的source/_data/butterfly.yml，如果source/_data的目錄不存在那就創建一個。<br>注意，如果你創建了butterfly.yml, 它將會替換主題默認配置文件_config.yml裏的配置項 (不是合併而是替換), 之後你就只需要通過git pull的方式就可以平滑地升級 theme-butterfly了。</p>
-          </div>
-<h4 id="操作如下"><a href="#操作如下" class="headerlink" title="操作如下"></a>操作如下</h4><div class="note success">
-            <p>进入主题目录路径  [D:\blogs\themes\Butterfly]<br>使用 git bash here 工具<br>使用 git pull 进项拉取新项目<br>复制_config.yml到Hexo 工作目錄下的source/_data/butterfly.yml进行替换<br>hexo cl &amp;&amp; hexo s </p>
+            <p>进入主题目录路径  [D:\blogs\themes\Butterfly]<br>使用 git bash here 工具<br>使用 git pull 进项拉取新项目<br>复制_config.yml到Hexo 工作目錄下的source/_data/butterfly.yml进行内容替换<br>hexo cl &amp;&amp; hexo s </p>
           </div>
 
-<h3 id="hexo-发布之后-gitpage-自定义域名失效"><a href="#hexo-发布之后-gitpage-自定义域名失效" class="headerlink" title="hexo 发布之后 gitpage 自定义域名失效"></a>hexo 发布之后 gitpage 自定义域名失效</h3><ul>
+<h3 id="hexo-deploy导致自定义域名失效"><a href="#hexo-deploy导致自定义域名失效" class="headerlink" title="hexo deploy导致自定义域名失效"></a>hexo deploy导致自定义域名失效</h3><ul>
 <li>起因：每次配置 custom domain 之后，再次 hexo deploy 之后，custom domain 会被重置失效。<a id="more"></a>
-<h4 id="方法：在-hexo-生成的博客的-source-目录下新建一个-CNAME-文件，然后在这个文件中填入你的域名，"><a href="#方法：在-hexo-生成的博客的-source-目录下新建一个-CNAME-文件，然后在这个文件中填入你的域名，" class="headerlink" title="方法：在 hexo 生成的博客的 source 目录下新建一个 CNAME 文件，然后在这个文件中填入你的域名，"></a>方法：在 hexo 生成的博客的 source 目录下新建一个 CNAME 文件，然后在这个文件中填入你的域名，</h4><h4 id="这样就不会每次发布之后，gitpage-里的-custom-domain-都被重置掉啦。"><a href="#这样就不会每次发布之后，gitpage-里的-custom-domain-都被重置掉啦。" class="headerlink" title="这样就不会每次发布之后，gitpage 里的 custom domain 都被重置掉啦。"></a>这样就不会每次发布之后，gitpage 里的 custom domain 都被重置掉啦。</h4></li>
+<h4 id="在-hexo-生成的博客的-source-目录下新建一个-CNAME-文件，然后在这个文件中填入你的域名，"><a href="#在-hexo-生成的博客的-source-目录下新建一个-CNAME-文件，然后在这个文件中填入你的域名，" class="headerlink" title="在 hexo 生成的博客的 source 目录下新建一个 CNAME 文件，然后在这个文件中填入你的域名，"></a>在 hexo 生成的博客的 source 目录下新建一个 CNAME 文件，然后在这个文件中填入你的域名，</h4><h4 id="这样就不会每次发布之后，gitpage-里的-custom-domain-都被重置掉啦。"><a href="#这样就不会每次发布之后，gitpage-里的-custom-domain-都被重置掉啦。" class="headerlink" title="这样就不会每次发布之后，gitpage 里的 custom domain 都被重置掉啦。"></a>这样就不会每次发布之后，gitpage 里的 custom domain 都被重置掉啦。</h4><h4 id="使用-gitpage-功能将博客托管在了-github-上，并配置-CNAME-将自己的域名解析了过去，"><a href="#使用-gitpage-功能将博客托管在了-github-上，并配置-CNAME-将自己的域名解析了过去，" class="headerlink" title="使用 gitpage 功能将博客托管在了 github 上，并配置 CNAME 将自己的域名解析了过去，"></a>使用 gitpage 功能将博客托管在了 github 上，并配置 CNAME 将自己的域名解析了过去，</h4><h4 id="在-github-的仓库设置中开始-custom-domain-的功能，这时候就可以直接使用自己的域名访问啦。"><a href="#在-github-的仓库设置中开始-custom-domain-的功能，这时候就可以直接使用自己的域名访问啦。" class="headerlink" title="在 github 的仓库设置中开始 custom domain 的功能，这时候就可以直接使用自己的域名访问啦。"></a>在 github 的仓库设置中开始 custom domain 的功能，这时候就可以直接使用自己的域名访问啦。</h4></li>
 </ul>
 <p><img src="/" alt="添加路径" class="lazyload" data-src="https://phpcoder-1259614901.cos.ap-guangzhou.myqcloud.com/phpcoder/hexo/3098875-db6877df60ef748e.png"></p>
-<h4 id="使用-gitpage-功能将博客托管在了-github-上，并配置-CNAME-将自己的域名解析了过去，"><a href="#使用-gitpage-功能将博客托管在了-github-上，并配置-CNAME-将自己的域名解析了过去，" class="headerlink" title="使用 gitpage 功能将博客托管在了 github 上，并配置 CNAME 将自己的域名解析了过去，"></a>使用 gitpage 功能将博客托管在了 github 上，并配置 CNAME 将自己的域名解析了过去，</h4><h4 id="在-github-的仓库设置中开始-custom-domain-的功能，这时候就可以直接使用自己的域名访问啦。"><a href="#在-github-的仓库设置中开始-custom-domain-的功能，这时候就可以直接使用自己的域名访问啦。" class="headerlink" title="在 github 的仓库设置中开始 custom domain 的功能，这时候就可以直接使用自己的域名访问啦。"></a>在 github 的仓库设置中开始 custom domain 的功能，这时候就可以直接使用自己的域名访问啦。</h4><p><img src="/" alt="配置github page域名" class="lazyload" data-src="https://phpcoder-1259614901.cos.ap-guangzhou.myqcloud.com/phpcoder/hexo/3098875-c40da031137a0c4f.png"></p>
+<p><img src="/" alt="配置github page域名" class="lazyload" data-src="https://phpcoder-1259614901.cos.ap-guangzhou.myqcloud.com/phpcoder/hexo/3098875-c40da031137a0c4f.png"></p>
 ]]></content>
       <categories>
         <category>Hexo</category>
@@ -1739,68 +1785,59 @@ sourceMap 异常解析
   <entry>
     <title>git常见操作命令与问题</title>
     <url>/posts/888d2e2.html</url>
-    <content><![CDATA[<blockquote class="blockquote-center">自己工作git常见操作</blockquote>
-
-<h4 id="标准Git注解"><a href="#标准Git注解" class="headerlink" title="标准Git注解"></a>标准Git注解</h4><p>第1行：提交修改内容的摘要<br>第2行：空行<br>第3行以后：修改的理由</p>
-<h4 id="初始化git"><a href="#初始化git" class="headerlink" title="初始化git"></a>初始化git</h4><figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">git init</span></span><br></pre></td></tr></table></figure>
+    <content><![CDATA[<h3 id="标准Git提交注解"><a href="#标准Git提交注解" class="headerlink" title="标准Git提交注解"></a>标准Git提交注解</h3><p>第1行：提交修改内容的摘要<br>第2行：空行<br>第3行以后：修改的理由</p>
+<h3 id="初始化远程仓库"><a href="#初始化远程仓库" class="headerlink" title="初始化远程仓库"></a>初始化远程仓库</h3><figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">git init</span></span><br></pre></td></tr></table></figure>
 <p><img src="/" alt="image.png" class="lazyload" data-src="https://phpcoder-1259614901.cos.ap-guangzhou.myqcloud.com/phpcoder/git%E6%97%A5%E5%B8%B8%E6%93%8D%E4%BD%9C/3098875-aa08eb0c8eea9641.png"></p>
 <a id="more"></a>
-<h4 id="连接git"><a href="#连接git" class="headerlink" title="连接git"></a>连接git</h4><figure class="highlight dockerfile"><table><tr><td class="code"><pre><span class="line">git remote <span class="keyword">add</span><span class="bash"> l链接别名 git地址链接</span></span><br></pre></td></tr></table></figure>
+<h3 id="连接远程仓库"><a href="#连接远程仓库" class="headerlink" title="连接远程仓库"></a>连接远程仓库</h3><figure class="highlight dockerfile"><table><tr><td class="code"><pre><span class="line">git remote <span class="keyword">add</span><span class="bash"> l链接别名 git地址链接</span></span><br></pre></td></tr></table></figure>
 <p><img src="/" alt="image.png" class="lazyload" data-src="https://phpcoder-1259614901.cos.ap-guangzhou.myqcloud.com/phpcoder/git%E6%97%A5%E5%B8%B8%E6%93%8D%E4%BD%9C/3098875-84b3a36deb70c062.png"></p>
-<h4 id="克隆git分支"><a href="#克隆git分支" class="headerlink" title="克隆git分支"></a>克隆git分支</h4><figure class="highlight crmsh"><table><tr><td class="code"><pre><span class="line">git <span class="keyword">clone</span> <span class="title">-b</span> 分支名  git链接地址//克隆特定分支</span><br><span class="line">git <span class="keyword">clone</span> <span class="title">分支名 git</span>链接地址 //默认克隆<span class="literal">master</span>分支</span><br></pre></td></tr></table></figure>
-<h4 id="查看本地git分支"><a href="#查看本地git分支" class="headerlink" title="查看本地git分支"></a>查看本地git分支</h4><figure class="highlight livecodeserver"><table><tr><td class="code"><pre><span class="line">git branch -<span class="keyword">a</span><span class="comment"> //查看全部地址分支</span></span><br></pre></td></tr></table></figure>
+<h3 id="克隆远程分支"><a href="#克隆远程分支" class="headerlink" title="克隆远程分支"></a>克隆远程分支</h3><figure class="highlight crmsh"><table><tr><td class="code"><pre><span class="line">git <span class="keyword">clone</span> <span class="title">-b</span> 分支名  git链接地址//克隆特定分支</span><br><span class="line">git <span class="keyword">clone</span> <span class="title">分支名 git</span>链接地址 //默认克隆<span class="literal">master</span>分支</span><br></pre></td></tr></table></figure>
+<h3 id="查看本地分支"><a href="#查看本地分支" class="headerlink" title="查看本地分支"></a>查看本地分支</h3><figure class="highlight livecodeserver"><table><tr><td class="code"><pre><span class="line">git branch -<span class="keyword">a</span><span class="comment"> //查看全部地址分支</span></span><br></pre></td></tr></table></figure>
 <p><img src="/" alt="image.png" class="lazyload" data-src="https://phpcoder-1259614901.cos.ap-guangzhou.myqcloud.com/phpcoder/git%E6%97%A5%E5%B8%B8%E6%93%8D%E4%BD%9C/3098875-ef916c40ab81e016.png"></p>
-<h4 id="删除本地git分支"><a href="#删除本地git分支" class="headerlink" title="删除本地git分支"></a>删除本地git分支</h4><figure class="highlight armasm"><table><tr><td class="code"><pre><span class="line"><span class="symbol">git</span> <span class="keyword">branch </span>-d/-D 分支名</span><br></pre></td></tr></table></figure>
-<h4 id="查看git状态"><a href="#查看git状态" class="headerlink" title="查看git状态"></a>查看git状态</h4><figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">git status</span></span><br></pre></td></tr></table></figure>
-<h4 id="切换分支git"><a href="#切换分支git" class="headerlink" title="切换分支git"></a>切换分支git</h4><figure class="highlight properties"><table><tr><td class="code"><pre><span class="line"><span class="attr">git</span> <span class="string">checkout 分支名</span></span><br><span class="line"><span class="attr">gitcheckout</span> <span class="string">-b 分支名  // 新建本地分支并切换到当期分支</span></span><br></pre></td></tr></table></figure>
-<h4 id="保存当前正在敲的工作区git代码—-在当前分支上进行暂存工作区代码"><a href="#保存当前正在敲的工作区git代码—-在当前分支上进行暂存工作区代码" class="headerlink" title="保存当前正在敲的工作区git代码—-在当前分支上进行暂存工作区代码"></a>保存当前正在敲的工作区git代码—-在当前分支上进行暂存工作区代码</h4><figure class="highlight cmake"><table><tr><td class="code"><pre><span class="line">git stash</span><br><span class="line">用下面这个代替</span><br><span class="line">推荐给每个stash加一个<span class="keyword">message</span>，用于记录版本</span><br><span class="line">git stash save <span class="string">"注释"</span></span><br></pre></td></tr></table></figure>
-<h4 id="查看当前正在敲的工作区git代码"><a href="#查看当前正在敲的工作区git代码" class="headerlink" title="查看当前正在敲的工作区git代码"></a>查看当前正在敲的工作区git代码</h4><figure class="highlight applescript"><table><tr><td class="code"><pre><span class="line">git stash <span class="built_in">list</span></span><br></pre></td></tr></table></figure>
-<h4 id="移除stash"><a href="#移除stash" class="headerlink" title="移除stash"></a>移除stash</h4><figure class="highlight angelscript"><table><tr><td class="code"><pre><span class="line">$ git stash list</span><br><span class="line"><span class="symbol">stash@</span>&#123;<span class="number">0</span>&#125;: WIP on master: <span class="number">049</span>d078 added the index file</span><br><span class="line"><span class="symbol">stash@</span>&#123;<span class="number">1</span>&#125;: WIP on master: c264051 Revert <span class="string">"added file_size"</span></span><br><span class="line"><span class="symbol">stash@</span>&#123;<span class="number">2</span>&#125;: WIP on master: <span class="number">21</span>d80a5 added number to log</span><br><span class="line">$ git stash drop <span class="symbol">stash@</span>&#123;<span class="number">0</span>&#125;</span><br><span class="line">Dropped <span class="symbol">stash@</span>&#123;<span class="number">0</span>&#125; (<span class="number">364e91f</span>3f268f0900bc3ee613f9f733e82aaed43)</span><br></pre></td></tr></table></figure>
-<h4 id="查看指定stash的diff"><a href="#查看指定stash的diff" class="headerlink" title="查看指定stash的diff"></a>查看指定stash的diff</h4><figure class="highlight dart"><table><tr><td class="code"><pre><span class="line">git stash <span class="keyword">show</span> 文件名</span><br></pre></td></tr></table></figure>
-<h4 id="查看远程连接"><a href="#查看远程连接" class="headerlink" title="查看远程连接"></a>查看远程连接</h4><figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">git remode -v</span></span><br></pre></td></tr></table></figure>
+<h3 id="删除本地分支"><a href="#删除本地分支" class="headerlink" title="删除本地分支"></a>删除本地分支</h3><figure class="highlight armasm"><table><tr><td class="code"><pre><span class="line"><span class="symbol">git</span> <span class="keyword">branch </span>-d/-D 分支名</span><br></pre></td></tr></table></figure>
+<h3 id="查看分支状态"><a href="#查看分支状态" class="headerlink" title="查看分支状态"></a>查看分支状态</h3><figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">git status</span></span><br></pre></td></tr></table></figure>
+<h3 id="切换分支"><a href="#切换分支" class="headerlink" title="切换分支"></a>切换分支</h3><figure class="highlight properties"><table><tr><td class="code"><pre><span class="line"><span class="attr">git</span> <span class="string">checkout 分支名</span></span><br><span class="line"><span class="attr">gitcheckout</span> <span class="string">-b 分支名  // 新建本地分支并切换到当期分支</span></span><br></pre></td></tr></table></figure>
+<h3 id="暂存当前工作区代码"><a href="#暂存当前工作区代码" class="headerlink" title="暂存当前工作区代码"></a>暂存当前工作区代码</h3><figure class="highlight cmake"><table><tr><td class="code"><pre><span class="line">git stash</span><br><span class="line">用下面这个代替</span><br><span class="line">推荐给每个stash加一个<span class="keyword">message</span>，用于记录版本</span><br><span class="line">git stash save <span class="string">"注释"</span></span><br></pre></td></tr></table></figure>
+<h3 id="查看当前暂存工作区代码"><a href="#查看当前暂存工作区代码" class="headerlink" title="查看当前暂存工作区代码"></a>查看当前暂存工作区代码</h3><figure class="highlight applescript"><table><tr><td class="code"><pre><span class="line">git stash <span class="built_in">list</span></span><br></pre></td></tr></table></figure>
+<h3 id="移除stash"><a href="#移除stash" class="headerlink" title="移除stash"></a>移除stash</h3><figure class="highlight angelscript"><table><tr><td class="code"><pre><span class="line">$ git stash list</span><br><span class="line"><span class="symbol">stash@</span>&#123;<span class="number">0</span>&#125;: WIP on master: <span class="number">049</span>d078 added the index file</span><br><span class="line"><span class="symbol">stash@</span>&#123;<span class="number">1</span>&#125;: WIP on master: c264051 Revert <span class="string">"added file_size"</span></span><br><span class="line"><span class="symbol">stash@</span>&#123;<span class="number">2</span>&#125;: WIP on master: <span class="number">21</span>d80a5 added number to log</span><br><span class="line">$ git stash drop <span class="symbol">stash@</span>&#123;<span class="number">0</span>&#125;</span><br><span class="line">Dropped <span class="symbol">stash@</span>&#123;<span class="number">0</span>&#125; (<span class="number">364e91f</span>3f268f0900bc3ee613f9f733e82aaed43)</span><br></pre></td></tr></table></figure>
+<h3 id="查看指定stash的对比"><a href="#查看指定stash的对比" class="headerlink" title="查看指定stash的对比"></a>查看指定stash的对比</h3><figure class="highlight dart"><table><tr><td class="code"><pre><span class="line">git stash <span class="keyword">show</span> 文件名</span><br></pre></td></tr></table></figure>
+<h3 id="查看远程连接"><a href="#查看远程连接" class="headerlink" title="查看远程连接"></a>查看远程连接</h3><figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">git remode -v</span></span><br></pre></td></tr></table></figure>
 <p><img src="/" alt="image.png" class="lazyload" data-src="https://phpcoder-1259614901.cos.ap-guangzhou.myqcloud.com/phpcoder/git%E6%97%A5%E5%B8%B8%E6%93%8D%E4%BD%9C/3098875-dbe574874e1c02e6.png"></p>
-<h4 id="删除远程连接"><a href="#删除远程连接" class="headerlink" title="删除远程连接"></a>删除远程连接</h4><figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">git remote rm github</span></span><br></pre></td></tr></table></figure>
-<h4 id="重置远程连接git"><a href="#重置远程连接git" class="headerlink" title="重置远程连接git"></a>重置远程连接git</h4><figure class="highlight dsconfig"><table><tr><td class="code"><pre><span class="line"><span class="string">git </span><span class="string">remte </span><span class="built_in">set-url</span> <span class="string">origin </span><span class="string">URL</span></span><br></pre></td></tr></table></figure>
-<h4 id="新建远程分支并把它PUSH远程仓库"><a href="#新建远程分支并把它PUSH远程仓库" class="headerlink" title="新建远程分支并把它PUSH远程仓库"></a>新建远程分支并把它PUSH远程仓库</h4><figure class="highlight angelscript"><table><tr><td class="code"><pre><span class="line"><span class="number">1.</span>切换到当前分支</span><br><span class="line">git checkout master <span class="comment">//进入develop分支</span></span><br><span class="line"><span class="number">2.</span>根据当前分支新建一个分支</span><br><span class="line">git checkout -b dev <span class="comment">//以master为源创建本地分支dev</span></span><br><span class="line"><span class="number">3.</span>推送到远程分支</span><br><span class="line">git push origin dev <span class="comment">//将本地fromdevelop分支作为远程dev分支</span></span><br></pre></td></tr></table></figure>
-<h4 id="删除远程git分支"><a href="#删除远程git分支" class="headerlink" title="删除远程git分支"></a>删除远程git分支</h4><figure class="highlight maxima"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">push</span> --<span class="built_in">delete</span> 链接别名[<span class="built_in">origin</span>]  远程分支名</span><br></pre></td></tr></table></figure>
+<h3 id="删除远程连接"><a href="#删除远程连接" class="headerlink" title="删除远程连接"></a>删除远程连接</h3><figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">git remote rm github</span></span><br></pre></td></tr></table></figure>
+<h3 id="重置远程连接git"><a href="#重置远程连接git" class="headerlink" title="重置远程连接git"></a>重置远程连接git</h3><figure class="highlight dsconfig"><table><tr><td class="code"><pre><span class="line"><span class="string">git </span><span class="string">remte </span><span class="built_in">set-url</span> <span class="string">origin </span><span class="string">URL</span></span><br></pre></td></tr></table></figure>
+<h3 id="新建远程分支-推送远程仓库"><a href="#新建远程分支-推送远程仓库" class="headerlink" title="新建远程分支,推送远程仓库"></a>新建远程分支,推送远程仓库</h3><figure class="highlight angelscript"><table><tr><td class="code"><pre><span class="line"><span class="number">1.</span>切换到当前分支</span><br><span class="line">git checkout master <span class="comment">//在主分支进入develop分支</span></span><br><span class="line"><span class="number">2.</span>根据当前分支新建一个分支</span><br><span class="line">git checkout -b dev <span class="comment">//以master为源创建本地分支dev</span></span><br><span class="line"><span class="number">3.</span>推送到远程分支</span><br><span class="line">git push origin dev <span class="comment">//将本地fromdevelop分支作为远程dev分支</span></span><br></pre></td></tr></table></figure>
+<h3 id="删除远程git分支"><a href="#删除远程git分支" class="headerlink" title="删除远程git分支"></a>删除远程git分支</h3><figure class="highlight maxima"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">push</span> --<span class="built_in">delete</span> 链接别名[<span class="built_in">origin</span>]  远程分支名</span><br></pre></td></tr></table></figure>
 <p><img src="/" alt="image.png" class="lazyload" data-src="https://phpcoder-1259614901.cos.ap-guangzhou.myqcloud.com/phpcoder/git%E6%97%A5%E5%B8%B8%E6%93%8D%E4%BD%9C/3098875-1b317fd2f097f390.png"></p>
-<h4 id="删除远程仓库文件"><a href="#删除远程仓库文件" class="headerlink" title="删除远程仓库文件"></a>删除远程仓库文件</h4><figure class="highlight ada"><table><tr><td class="code"><pre><span class="line">git rm -r <span class="comment">--cached 文件夹/文件名</span></span><br></pre></td></tr></table></figure>
-<h4 id="git-rebase-使用场景和方法"><a href="#git-rebase-使用场景和方法" class="headerlink" title="git rebase 使用场景和方法"></a>git rebase 使用场景和方法</h4><p><a href="https://www.jianshu.com/p/f7ed3dd0d2d8" target="_blank" rel="noopener">git rebase出处</a></p>
-<h5 id="不同分支之间的合并"><a href="#不同分支之间的合并" class="headerlink" title="不同分支之间的合并"></a>不同分支之间的合并</h5><div class="note success">
+<h3 id="删除远程仓库文件"><a href="#删除远程仓库文件" class="headerlink" title="删除远程仓库文件"></a>删除远程仓库文件</h3><figure class="highlight ada"><table><tr><td class="code"><pre><span class="line">git rm -r <span class="comment">--cached 文件夹/文件名</span></span><br></pre></td></tr></table></figure>
+<h3 id="git-rebase"><a href="#git-rebase" class="headerlink" title="git rebase"></a><a href="https://www.jianshu.com/p/f7ed3dd0d2d8" target="_blank" rel="noopener">git rebase</a></h3><h3 id="不同分支合并"><a href="#不同分支合并" class="headerlink" title="不同分支合并"></a>不同分支合并</h3><div class="note success">
             <p>开发新功能在分支上，测试完成后合并到主分支上<br>一般步骤如下：</p>
           </div>
 
-<figure class="highlight angelscript"><table><tr><td class="code"><pre><span class="line"><span class="number">1.</span>新建新分支</span><br><span class="line">git checkout -b feature</span><br><span class="line"></span><br><span class="line"><span class="number">2.</span>开发新功能[以文件代替]</span><br><span class="line">vim newFunc.go</span><br><span class="line">git add newFunc.go</span><br><span class="line">git commit -m <span class="string">'add new func'</span></span><br><span class="line"></span><br><span class="line"><span class="number">3.</span>查看提交日志和分支情况</span><br><span class="line">git log --oneline --graph</span><br><span class="line">git branch</span><br><span class="line"></span><br><span class="line"><span class="number">4.</span>合并分支</span><br><span class="line">有两种方法「有冲突自行解决在提交保存」</span><br><span class="line"><span class="number">4.1</span>:切换到主分支master,使用git merge feature「易造成分支历史日志混乱」</span><br><span class="line"></span><br><span class="line"><span class="number">4.2</span>:使用git rebase</span><br><span class="line"></span><br><span class="line"><span class="number">4.2</span><span class="number">.1</span>:切换到新功能分支下</span><br><span class="line"><span class="number">4.2</span><span class="number">.2</span>:在分支上执行「git rebase master」</span><br><span class="line">解释：以master为基础，将feature分支上的修改增加到master分支上，并生成新的版本。</span><br><span class="line">git rebase master</span><br><span class="line"><span class="number">4.2</span><span class="number">.3</span>:产生冲突时候并解决后 使用 git rebase --<span class="keyword">continue</span>继续完成之前的操作</span><br><span class="line"><span class="number">4.2</span><span class="number">.4</span>:查看提交历史日志[自己衡量是否需要]</span><br><span class="line"><span class="number">4.2</span><span class="number">.5</span>:合并至主分支上面去</span><br><span class="line">    切换到主分支上 git checkout master</span><br><span class="line">    执行 git merge feature</span><br><span class="line"><span class="number">4.2</span><span class="number">.6</span>:删除本地分支 git branch -d  分支名</span><br><span class="line">      删除远程分支 git push --delete 链接别名[origin]  远程分支名</span><br></pre></td></tr></table></figure>
+<p><img src="/" alt="git merge" class="lazyload" data-src="https://image-static.segmentfault.com/416/036/4160367930-5e993c6eb9dae_articlex"></p>
+<figure class="highlight maxima"><table><tr><td class="code"><pre><span class="line"><span class="number">1</span>.新建新分支</span><br><span class="line">    git checkout -b <span class="built_in">feature</span></span><br><span class="line"><span class="number">2</span>.开发新功能[以文件代替]</span><br><span class="line">    vim newFunc.<span class="built_in">go</span></span><br><span class="line">    git add newFunc.<span class="built_in">go</span></span><br><span class="line">    git commit -m 'add <span class="built_in">new</span> func'</span><br><span class="line"><span class="number">3</span>.查看提交日志和分支情况</span><br><span class="line">    git <span class="built_in">log</span> --oneline --graph</span><br><span class="line">    git branch</span><br><span class="line"><span class="number">4</span>.合并分支</span><br><span class="line">有两种方法「有冲突自行解决在提交保存」</span><br><span class="line"><span class="number">4.1</span>:切换到主分支master,使用git merge <span class="built_in">feature</span>「易造成分支历史日志混乱」</span><br></pre></td></tr></table></figure>
+<p><img src="/" alt="冲突修复演示" class="lazyload" data-src="https://image-static.segmentfault.com/192/666/1926668606-5e993ca79e6fe_articlex"></p>
+<p><img src="/" alt="git rebase 使用" class="lazyload" data-src="https://image-static.segmentfault.com/412/998/4129986506-5e993cbad5235_articlex"></p>
+<figure class="highlight crmsh"><table><tr><td class="code"><pre><span class="line"><span class="number">4.2</span>:使用git rebase合并分支  </span><br><span class="line"><span class="number">1</span>:切换到新功能分支下</span><br><span class="line"><span class="number">2</span>:在分支上执行「git rebase <span class="literal">master</span>」</span><br><span class="line">解释：以<span class="literal">master</span>为基础，将feature分支上的修改增加到<span class="literal">master</span>分支上，并生成新的版本。</span><br><span class="line">git rebase <span class="literal">master</span></span><br><span class="line"><span class="number">3</span>:解决产生冲突 </span><br><span class="line">    使用git rebase --continue继续完成之前的操作</span><br><span class="line"><span class="number">4</span>:查看提交历史日志[自己衡量是否需要]</span><br><span class="line"><span class="number">5</span>:合并至主分支上面去</span><br><span class="line">    切换到主分支上 git checkout <span class="literal">master</span></span><br><span class="line">    执行 git merge feature</span><br><span class="line"><span class="number">6</span>:删除本地分支 git branch -d  分支名</span><br><span class="line">    删除远程分支 git push --delete 链接别名[origin]  远程分支名</span><br></pre></td></tr></table></figure>
 
 
-<h4 id="拉取git分支（远程新建分支）"><a href="#拉取git分支（远程新建分支）" class="headerlink" title="拉取git分支（远程新建分支）"></a>拉取git分支（远程新建分支）</h4><figure class="highlight properties"><table><tr><td class="code"><pre><span class="line"><span class="attr">1.</span></span><br><span class="line"><span class="attr">git</span> <span class="string">fetch origin（连接别名） master（分支）</span></span><br><span class="line"><span class="attr">git</span> <span class="string">add.</span></span><br><span class="line"><span class="attr">git</span> <span class="string">commit -m 注释</span></span><br><span class="line"><span class="attr">git</span> <span class="string">push</span></span><br><span class="line"><span class="attr">完成远程新建分支</span></span><br><span class="line"><span class="attr">2.</span></span><br><span class="line"><span class="attr">git</span> <span class="string">branch 分支名</span></span><br><span class="line"><span class="attr">git</span> <span class="string">push origin(链接别名) 分支名</span></span><br></pre></td></tr></table></figure>
+<h3 id="拉取远程分支远-程新建分支"><a href="#拉取远程分支远-程新建分支" class="headerlink" title="拉取远程分支远[程新建分支]"></a>拉取远程分支远[程新建分支]</h3><figure class="highlight properties"><table><tr><td class="code"><pre><span class="line"><span class="attr">1.</span></span><br><span class="line"><span class="attr">git</span> <span class="string">fetch origin（连接别名） master（分支）</span></span><br><span class="line"><span class="attr">git</span> <span class="string">add.</span></span><br><span class="line"><span class="attr">git</span> <span class="string">commit -m 注释</span></span><br><span class="line"><span class="attr">git</span> <span class="string">push</span></span><br><span class="line"><span class="attr">完成远程新建分支</span></span><br><span class="line"><span class="attr">2.</span></span><br><span class="line"><span class="attr">git</span> <span class="string">branch 分支名</span></span><br><span class="line"><span class="attr">git</span> <span class="string">push origin(链接别名) 分支名</span></span><br></pre></td></tr></table></figure>
 <p><img src="/" alt="image.png" class="lazyload" data-src="https://phpcoder-1259614901.cos.ap-guangzhou.myqcloud.com/phpcoder/git%E6%97%A5%E5%B8%B8%E6%93%8D%E4%BD%9C/3098875-f8359479aa69fc43.png"></p>
-<h4 id="解决冲突"><a href="#解决冲突" class="headerlink" title="解决冲突"></a>解决冲突</h4><p><a href="https://www.jianshu.com/p/b69f6dc03f55" target="_blank" rel="noopener">查看解决冲突</a></p>
-<h4 id="回滚"><a href="#回滚" class="headerlink" title="回滚"></a>回滚</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">git <span class="keyword">reset</span> <span class="comment">--hard HEAD^ 回到上一个版本</span></span><br><span class="line">git <span class="keyword">reset</span> <span class="comment">--hard HEAD~10 回到第10个之前</span></span><br><span class="line">git reflog 用来记录你的每一次命令</span><br><span class="line">git <span class="keyword">reset</span> <span class="comment">--hard 版本号</span></span><br><span class="line"></span><br><span class="line">已经Git push 上去，回滚</span><br><span class="line">用git revert来撤销已经提交的更改，而git <span class="keyword">reset</span>用来撤销没有提交的更改</span><br><span class="line">git revert <span class="keyword">HEAD</span>~<span class="number">3</span> //丢弃最近的三个<span class="keyword">commit</span>，把状态恢复到最近的第四个<span class="keyword">commit</span>，并且提交一个新的<span class="keyword">commit</span>来记录这次改变</span><br><span class="line">git revert -n <span class="keyword">master</span>~<span class="number">5.</span>.master~<span class="number">2</span></span><br><span class="line">//丢弃从最近的第五个<span class="keyword">commit</span>（包含）到第二个（不包含）,但是不自动生成<span class="keyword">commit</span>，这个revert仅仅修改working tree和<span class="keyword">index</span>。</span><br></pre></td></tr></table></figure>
-<h4 id="修改最近上一次commit的注释信息"><a href="#修改最近上一次commit的注释信息" class="headerlink" title="修改最近上一次commit的注释信息"></a>修改最近上一次commit的注释信息</h4><figure class="highlight pgsql"><table><tr><td class="code"><pre><span class="line">git <span class="keyword">commit</span> <span class="comment">--amend</span></span><br></pre></td></tr></table></figure>
-<h4 id="查看版本号信息「提交历史」"><a href="#查看版本号信息「提交历史」" class="headerlink" title="查看版本号信息「提交历史」"></a>查看版本号信息「提交历史」</h4><figure class="highlight properties"><table><tr><td class="code"><pre><span class="line"><span class="attr">git</span> <span class="string">shortlog 用户提交哪些组，再次显示简洁的主题行</span></span><br><span class="line"><span class="attr">git</span> <span class="string">reflog</span></span><br><span class="line"><span class="attr">git</span> <span class="string">log --oneline --graph</span></span><br></pre></td></tr></table></figure>
-<h4 id="忽略-idea文件夹下文件"><a href="#忽略-idea文件夹下文件" class="headerlink" title="忽略.idea文件夹下文件"></a>忽略.idea文件夹下文件</h4><figure class="highlight jboss-cli"><table><tr><td class="code"><pre><span class="line">git rm -r <span class="params">--cached</span> <span class="string">.idea</span></span><br><span class="line">删除idea缓存</span><br><span class="line"><span class="string">.gitignore</span>中添加<span class="string">.idea</span></span><br></pre></td></tr></table></figure>
-<h4 id="git-pull时出现冲突-放弃本地修改，使远程库内容强制覆盖本地代码"><a href="#git-pull时出现冲突-放弃本地修改，使远程库内容强制覆盖本地代码" class="headerlink" title="git pull时出现冲突 放弃本地修改，使远程库内容强制覆盖本地代码"></a>git pull时出现冲突 放弃本地修改，使远程库内容强制覆盖本地代码</h4><figure class="highlight jboss-cli"><table><tr><td class="code"><pre><span class="line">git fetch <span class="params">--all</span> <span class="string">//</span>只是下载代码到本地，不进行合并操作</span><br><span class="line">git reset <span class="params">--hard</span> origin/master  <span class="string">//</span>把HEAD指向最新下载的版本</span><br></pre></td></tr></table></figure>
+<h3 id="查看解决冲突"><a href="#查看解决冲突" class="headerlink" title="查看解决冲突"></a><a href="https://www.jianshu.com/p/b69f6dc03f55" target="_blank" rel="noopener">查看解决冲突</a></h3><h3 id="回滚版本"><a href="#回滚版本" class="headerlink" title="回滚版本"></a>回滚版本</h3><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">git <span class="keyword">reset</span> <span class="comment">--hard HEAD^ 回到上一个版本</span></span><br><span class="line">git <span class="keyword">reset</span> <span class="comment">--hard HEAD~10 回到第10个之前</span></span><br><span class="line">git reflog 用来记录你的每一次命令</span><br><span class="line">git <span class="keyword">reset</span> <span class="comment">--hard 版本号</span></span><br><span class="line"></span><br><span class="line">已经Git push 上去，回滚</span><br><span class="line">用git revert来撤销已经提交的更改，而git <span class="keyword">reset</span>用来撤销没有提交的更改</span><br><span class="line">git revert <span class="keyword">HEAD</span>~<span class="number">3</span> //丢弃最近的三个<span class="keyword">commit</span>，把状态恢复到最近的第四个<span class="keyword">commit</span>，并且提交一个新的<span class="keyword">commit</span>来记录这次改变</span><br><span class="line">git revert -n <span class="keyword">master</span>~<span class="number">5.</span>.master~<span class="number">2</span></span><br><span class="line">//丢弃从最近的第五个<span class="keyword">commit</span>（包含）到第二个（不包含）,但是不自动生成<span class="keyword">commit</span>，这个revert仅仅修改working tree和<span class="keyword">index</span>。</span><br></pre></td></tr></table></figure>
+<h3 id="修改上一次commit内容"><a href="#修改上一次commit内容" class="headerlink" title="修改上一次commit内容"></a>修改上一次commit内容</h3><figure class="highlight pgsql"><table><tr><td class="code"><pre><span class="line">git <span class="keyword">commit</span> <span class="comment">--amend</span></span><br></pre></td></tr></table></figure>
+<h3 id="查看提交历史信息"><a href="#查看提交历史信息" class="headerlink" title="查看提交历史信息"></a>查看提交历史信息</h3><figure class="highlight properties"><table><tr><td class="code"><pre><span class="line"><span class="attr">git</span> <span class="string">shortlog 用户提交哪些组，再次显示简洁的主题行</span></span><br><span class="line"><span class="attr">git</span> <span class="string">reflog</span></span><br><span class="line"><span class="attr">git</span> <span class="string">log --oneline --graph</span></span><br></pre></td></tr></table></figure>
+<h3 id="忽略-idea文件夹下文件"><a href="#忽略-idea文件夹下文件" class="headerlink" title="忽略.idea文件夹下文件"></a>忽略.idea文件夹下文件</h3><figure class="highlight jboss-cli"><table><tr><td class="code"><pre><span class="line">git rm -r <span class="params">--cached</span> <span class="string">.idea</span></span><br><span class="line">删除idea缓存</span><br><span class="line"><span class="string">.gitignore</span>中添加<span class="string">.idea</span></span><br></pre></td></tr></table></figure>
 
-<h4 id="git-设置不用每次都输入-账号密码"><a href="#git-设置不用每次都输入-账号密码" class="headerlink" title="git 设置不用每次都输入 账号密码"></a>git 设置不用每次都输入 账号密码</h4><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">执行一下 这个命令：</span><br><span class="line">git config --global credential.helper store</span><br><span class="line">然后，下次再输入一次 账号密码 就可以了。</span><br><span class="line"></span><br><span class="line">windown下修改拉取仓库代码登录账号密码</span><br><span class="line">[<span class="string">具体</span>](<span class="link">https://blog.csdn.net/qq_29298577/article/details/84314200</span>)</span><br><span class="line">控制面板 -----&gt; 用户账户------&gt; 管理windows凭据------&gt;找到对应的地址修改登录名称和密码即可</span><br></pre></td></tr></table></figure>
+<h3 id="设置一次性账号密码"><a href="#设置一次性账号密码" class="headerlink" title="设置一次性账号密码"></a>设置一次性账号密码</h3><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">执行一下 这个命令：</span><br><span class="line">git config --global credential.helper store</span><br><span class="line">然后，下次再输入一次 账号密码 就可以了。</span><br><span class="line"></span><br><span class="line">windown下修改拉取仓库代码登录账号密码</span><br><span class="line">[<span class="string">具体</span>](<span class="link">https://blog.csdn.net/qq_29298577/article/details/84314200</span>)</span><br><span class="line">控制面板 -----&gt; 用户账户------&gt; 管理windows凭据------&gt;找到对应的地址修改登录名称和密码即可</span><br></pre></td></tr></table></figure>
 
-<h4 id="git-merge-出现以下错误"><a href="#git-merge-出现以下错误" class="headerlink" title="git merge 出现以下错误"></a>git merge 出现以下错误</h4><p><img src="/" alt="image.png" class="lazyload" data-src="https://phpcoder-1259614901.cos.ap-guangzhou.myqcloud.com/phpcoder/git%E6%97%A5%E5%B8%B8%E6%93%8D%E4%BD%9C/3098875-477e115aad7f2129.png"></p>
-<figure class="highlight livecodeserver"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">merge</span> 分支名 <span class="comment">--allow-unrelated-histories</span></span><br></pre></td></tr></table></figure>
-<h4 id="git-pull使用"><a href="#git-pull使用" class="headerlink" title="git pull使用"></a>git pull使用</h4><figure class="highlight livecodeserver"><table><tr><td class="code"><pre><span class="line">git pull = git fetch + git <span class="built_in">merge</span> FETCH_HEAD </span><br><span class="line"></span><br><span class="line">git pull <span class="comment">--rebase =  git fetch + git rebase FETCH_HEAD 「推荐使用」</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="git-pull-出现以下错误"><a href="#git-pull-出现以下错误" class="headerlink" title="git pull 出现以下错误"></a>git pull 出现以下错误</h4><figure class="highlight livecodeserver"><table><tr><td class="code"><pre><span class="line">拒绝合并不相关历史</span><br><span class="line">fatal: refusing <span class="built_in">to</span> <span class="built_in">merge</span> unrelated histories</span><br><span class="line">git pull <span class="comment">--allow-unrelated-histories</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="git-clone报错"><a href="#git-clone报错" class="headerlink" title="git clone报错"></a>git clone报错</h4><p><img src="/" alt="image.png" class="lazyload" data-src="https://phpcoder-1259614901.cos.ap-guangzhou.myqcloud.com/phpcoder/git%E6%97%A5%E5%B8%B8%E6%93%8D%E4%BD%9C/3098875-bb5704ee6a442f76.png"></p>
-<p><a href="https://www.jianshu.com/p/f5295c74ee39" target="_blank" rel="noopener">使用Git clone代码失败的解决方法</a></p>
-<figure class="highlight routeros"><table><tr><td class="code"><pre><span class="line">error: RPC failed; curl 56 OpenSSL SSL_read: SSL_ERROR_SYSCALL, errno 10054</span><br><span class="line">fatal: The remote end hung up unexpectedly</span><br><span class="line">fatal: early EOF</span><br><span class="line">fatal: index-pack failed</span><br><span class="line">因为Git限制了推送数据的大小导致的错误。</span><br><span class="line"></span><br><span class="line">解决方法：重新设置通信缓存大小</span><br><span class="line">git<span class="built_in"> config </span>http.postBuffer 524288000</span><br><span class="line">git<span class="built_in"> config </span>--global http.postBuffer 524288000</span><br><span class="line"></span><br><span class="line">之后执行</span><br><span class="line"> git<span class="built_in"> config </span>http.sslVerify <span class="string">"false"</span></span><br><span class="line">出现错误：fatal: <span class="keyword">not</span> <span class="keyword">in</span> a git directory</span><br><span class="line">在执行</span><br><span class="line">git<span class="built_in"> config </span>--global http.sslVerify <span class="literal">false</span></span><br></pre></td></tr></table></figure>
+<h3 id="git-pull使用"><a href="#git-pull使用" class="headerlink" title="git pull使用"></a>git pull使用</h3><figure class="highlight livecodeserver"><table><tr><td class="code"><pre><span class="line">git pull = git fetch + git <span class="built_in">merge</span> FETCH_HEAD </span><br><span class="line"></span><br><span class="line">git pull <span class="comment">--rebase =  git fetch + git rebase FETCH_HEAD 「推荐使用」</span></span><br></pre></td></tr></table></figure>
 
 <p>还在补充中ing……</p>
 ]]></content>
       <categories>
-        <category>git</category>
+        <category>Git</category>
       </categories>
       <tags>
-        <tag>git操作命令</tag>
+        <tag>Git</tag>
       </tags>
   </entry>
   <entry>
