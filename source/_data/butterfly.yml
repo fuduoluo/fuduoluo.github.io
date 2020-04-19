@@ -8,7 +8,7 @@ menu:
   Hogwarts: / || fa fa-home
   Gryffindor: /archives/ || fa fa-archive
   Ravenclaw: /tags/ || fa fa-tags
-  Slytherin: /categories/ || fa fa-folder-open
+  Slytherin: /categories/ || fa fa-fw fa-battery-three-quarters
   Hitchpac: /link/ || fa fa-link
   9 and 3/4: /about/ || fa fa-heart
     # - Music || /music/ || fa fa-music

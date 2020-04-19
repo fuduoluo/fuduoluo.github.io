@@ -1,13 +1,13 @@
 ---
-title: Hexo提交百度(待定)和Google收录站点
+title: 百度[待定]Google收录站点
 permalink: 'posts/:abbrlink.html'
 copyright: true
-categories: Google-sitemap
-tags: Google-sitemap
+categories: Baidu-Google
+tags: Baidu-Google
 top: true
 abbrlink: 895444f1
 date: 2019-07-25 09:57:50
-updated: 2019-07-25 09:57:50
+updated: 2019-04-19 12:57:50
 subtitle:
 cover: https://i.loli.net/2020/03/20/LOYJRzZjaHg618A.png
 top_img: https://i.loli.net/2020/03/20/LOYJRzZjaHg618A.png
@@ -59,19 +59,14 @@ baidusitemap:
 ```
 hexo g && hexo d
 ```
-#### 由于我已经验证过所以会自动完成站点的验证
+#### 已完成站点的验证
 ![完成验证站点](https://i.loli.net/2020/03/22/BFmlkvKgjAnSJM3.png)
 
 #### 3.添加站点地图
-![步骤如下](https://i.loli.net/2020/03/22/Bhnc6ZENiY5ysVP.png)
-
-#### 出现问题：
-> 添加完成后站点地图状态一直是无法读取[但是解决完后状态一直是无法读取]
+![image.png](https://i.loli.net/2020/04/19/siW8KpgHxNZ5EkY.png)
 
 ![解决问题](https://i.loli.net/2020/03/22/m1IbcSigMnUXFBq.png)
 
-
 #### 效果如下：
-![搜索结果](https://i.loli.net/2020/03/22/PnUwceVThIbOu3q.png)
+![image.png](https://i.loli.net/2020/04/19/koHOjgxBQNtFdeT.png)
 
-[参考文章+部分图片来源](https://www.93bok.com/Hexo%E6%8F%90%E4%BA%A4%E7%99%BE%E5%BA%A6%E5%92%8CGoogle%E6%94%B6%E5%BD%95%E7%AB%99%E7%82%B9/)

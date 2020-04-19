@@ -1,15 +1,15 @@
 ---
-title: 微信公众测试号接入流程
+title: 微信公众测试号[生成菜单等]接入流程
 permalink: 'posts/:abbrlink.html'
-top_img: （除非特定需要，可以不寫）
+top_img: https://i.loli.net/2020/03/20/LkXy5aFSPhH2wtV.png
 comments: true
-toc: https://i.loli.net/2020/03/20/LkXy5aFSPhH2wtV.png
+toc: false
 toc_number: 是否顯示toc數字 （除非特定文章設置，可以不寫）
 copyright: true
 cover: https://i.loli.net/2020/03/20/LkXy5aFSPhH2wtV.png
 abbrlink: '277e2557'
 date: 2020-03-23 18:26:54
-updated: 2020-03-23 18:26:54
+updated: 2020-03-28 12:16:54
 tags: wechat
 categories: wechat
 keywords:

@@ -1,5 +1,5 @@
 ---
-title: ThinkPHP5手记
+title: ThinkPHP5.1手记
 permalink: 'posts/:abbrlink.html'
 top_img: https://box.kancloud.cn/2015-12-12_566b6a10506a4.png
 comments: true
@@ -12,7 +12,7 @@ keywords: ThinkPHP5
 description: ThinkPHP5日常手记
 abbrlink: 3ec68ba4
 date: 2019-12-27 20:29:21
-updated: 2020-02-20 11:49:36
+updated: 2020-03-28 11:52:36
 tags:
 ---
 
@@ -111,12 +111,58 @@ fa中使用 ----> %s - 字符串
 [具体了解，戳这里！](https://www.jianshu.com/p/5e9239e44eb8)
 
 #### 记微信支付回调方法扣除库存和更新状态失败
+- 没有证书所导致【未验证】
+#### 关于使用[param](https://www.kancloud.cn/manual/thinkphp5_1/353987)（） 获取 参数 会多出 一个 /控制器/方法名 这样的一个参数出来？
 
-#### TP5.1依赖注入
+```php
+'/admin/index/login_html' => string '' (length=0) 出现这个出来
+'username' => string '1' (length=1)
+'password' => string '1' (length=1)
 ```
-// 执行应用并响应
- Container::get('app')->run()->send();
+
+解决：
+
+> 首先确定下使用TP5.1框架具体版本号：{$Think.VERSION} ；
+>
+> 目前使用版本号５.1.32 LTS
+
+> 几经周转在[文档](https://www.kancloud.cn/manual/thinkphp5_1/353987)输入变量中看到如下内容
+
+![image.png](https://i.loli.net/2020/03/26/vWBKh9kdqfrTDiR.png)
+
+>  查看更新日志
+
+![image.png](https://i.loli.net/2020/03/26/DiIjmznpfb1GJku.png)
+
+> 对比代码
+
+![image.png](https://i.loli.net/2020/03/26/6lXTnaHiA3vtxK4.png)
+
+> [更新代码地址](https://gitee.com/liu21st/framework/blob/5.1/library/think/Request.php#)：Requset类更换
+>
+> 经尝试更新Request类还是无效！！！
+
+> 最终解决方法如下：
+
+```php
+修改伪静态：  RewriteRule ^(.*)$ index.php [L,E=PATH_INFO:$1]
 ```
-- 
+#### TP项目redis设置定时任务写成bat文件加入window任务计划
+
+```
+bat
+//前提条件已安装本地redis服务【window执行任务计划比较少，多为linux上执行xshell脚步】
+
+//bat文件示例：
+@echo off
+cd D:/phpstudy_pro/WWW/efa/public/  //项目路径
+php index.php[入口文件] index/redis_go_up/index[参数：模块/控制器/方法]
+::pause//是否暂停显示弹窗执行状态
+
+//之后在 任务计划程序 中创建一个基础任务计划
+//创建完成选择你所写好的脚步bat文件夹确认即可
+```
+
+![image.png](https://i.loli.net/2020/03/19/tLPRHFWQuO1DGon.png)
 
 

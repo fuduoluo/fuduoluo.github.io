@@ -9,7 +9,7 @@ copyright: true
 cover: https://i.loli.net/2020/03/20/laLpVHNxdgWDsJf.png
 abbrlink: 42b82995
 date: 2020-01-19 14:40:36
-updated: 2020-02-20 11:27:09
+updated: 2020-03-28 12:17:09
 tags: ES6
 categories: ES6
 keywords: ES6
@@ -320,21 +320,6 @@ https://www.cnblogs.com/douyage/p/8630529.html
 {% endnote %}
 - 出现原因：
 
-
-#### 高阶函数
-- map()
-![](https://ae01.alicdn.com/kf/Ud494650802a7469bb9152783e267ce7ep.jpg)
-```
-function pow(x) {
-    return x * x;
-}
-var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-var results = arr.map(pow); // [1, 4, 9, 16, 25, 36, 49, 64, 81]
-console.log(results);//1,4,9,16,25,36,49,64,81
-```
-- reduce()
-
-
 #### 箭头函数[胖箭头函数]
 
 ##### 出现原因：
@@ -349,10 +334,19 @@ console.log(results);//1,4,9,16,25,36,49,64,81
 
 > [两个例子明白箭头函数this指向](https://blog.csdn.net/w390058785/article/details/82884032)
 
+> 箭头函数内的this值继承自外围作用域。运行时它会首先到它的父作用域找，如果父作用域还是箭头函数，那么接着向上找，直到找到我们要的this指向。
+
+> 箭头函数的this在声明时指向`window`，在调用时指向声明时所在的上下文`this`
 
 - 节省大量代码
 
 - 解决输入function () {}错误导致的错误
+
+[阮一峰之箭头函数this讲解]([https://es6.ruanyifeng.com/?search=%E7%AE%AD%E5%A4%B4%E5%87%BD%E6%95%B0&x=0&y=0#docs/function#%E7%AE%AD%E5%A4%B4%E5%87%BD%E6%95%B0](https://es6.ruanyifeng.com/?search=箭头函数&x=0&y=0#docs/function#箭头函数))
+
+> `箭头函数this`对象，就是定义时所在的对象，而不是使用时所在的对象。
+
+![箭头函数this](https://ae01.alicdn.com/kf/U9e9aeeeaf3a54652a32c3b9d1941ead2B.jpg)
 
 ##### 用法：
 
@@ -421,7 +415,7 @@ param => {statements;} //例如 x = > { x++; return x;};
         alert(object);//{key:1}
 ```
 
-##### 关于this指向问题
+#### 关于this指向问题
 
 [执行上下文详解](http://caibaojian.com/js-call-stack.html)
 
@@ -439,7 +433,7 @@ param => {statements;} //例如 x = > { x++; return x;};
 
 > 注意！全局上下文有且只有一个，程序中其他任意的上下文都可以访问全局上下文
 
-##### this绑定：
+#### this绑定：
 
 > 在全局执行上下文中，`this` 的值指向全局对象。(在浏览器中，`this`引用 Window 对象)。
 
@@ -462,7 +456,7 @@ bar();       // 'this' 指向全局 window 对象，因为
              // 没有指定引用对象
 ```
 
-##### [作用域](https://www.cnblogs.com/henyulee/p/8484122.html)
+#### [作用域](https://www.cnblogs.com/henyulee/p/8484122.html)
 
 1. 全局作用域
 2. 局部作用域
@@ -470,15 +464,3 @@ bar();       // 'this' 指向全局 window 对象，因为
 ![](https://ae01.alicdn.com/kf/Uefb8cf0254ad44a1af49a8ee3382c130L.jpg)
 
 ![](https://ae01.alicdn.com/kf/Ud44f335e8e764663aa1f29a38e4f9210S.jpg)
-
-##### ES6箭头函数
-
-> 箭头函数内的this值继承自外围作用域。运行时它会首先到它的父作用域找，如果父作用域还是箭头函数，那么接着向上找，直到找到我们要的this指向。
-
-> 箭头函数的this在声明时指向`window`，在调用时指向声明时所在的上下文`this`
-
-[阮一峰之箭头函数this讲解]([https://es6.ruanyifeng.com/?search=%E7%AE%AD%E5%A4%B4%E5%87%BD%E6%95%B0&x=0&y=0#docs/function#%E7%AE%AD%E5%A4%B4%E5%87%BD%E6%95%B0](https://es6.ruanyifeng.com/?search=箭头函数&x=0&y=0#docs/function#箭头函数))
-
-> `箭头函数this`对象，就是定义时所在的对象，而不是使用时所在的对象。
-
-![](https://ae01.alicdn.com/kf/U9e9aeeeaf3a54652a32c3b9d1941ead2B.jpg)

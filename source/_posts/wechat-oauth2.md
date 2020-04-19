@@ -8,7 +8,7 @@ copyright: true
 cover: https://i.loli.net/2020/03/20/LkXy5aFSPhH2wtV.png
 abbrlink: f281c357
 date: 2020-03-20 09:15:19
-updated: 2020-03-20 09:15:19
+updated: 2020-03-28 12:05:19
 tags: wechat
 categories: wechat
 subtitle: 
@@ -28,7 +28,7 @@ description: 微信登录步骤
 
 [沙盒地址](https://mp.weixin.qq.com/debug/cgi-bin/sandboxinfo?action=showinfo&t=sandbox/index)
 
-###### 微信授权登录步骤
+#### 微信授权登录步骤
 
 > APPID与APPSECRET已经获取到的情况下，进行以下步骤
 
@@ -92,14 +92,13 @@ description: 微信登录步骤
    }
    ```
 
-###### 实际使用：
+    #### 实际使用：
 
-```php
-//获取到用户信息存入redis
-//参考直播项目
-$url=https://api.weixin.qq.com/sns/userinfo?access_token=ACCESS_TOKEN&openid=OPENID&lang=zh_CN
-$result = file_get_contents($url);
-$data = json_decode($result,true);
-Cache::store('redis')->set($openid,$result);
-```
-
+    ```php
+    //获取到用户信息存入redis
+    //参考直播项目
+    $url=https://api.weixin.qq.com/sns/userinfo?access_token=ACCESS_TOKEN&openid=OPENID&lang=zh_CN
+    $result = file_get_contents($url);
+    $data = json_decode($result,true);
+    Cache::store('redis')->set($openid,$result);
+    ```
