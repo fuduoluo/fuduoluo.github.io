@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.phpcoder.club/posts/26caa4da.html</loc>
+    
+    <lastmod>2020-04-22T02:05:43.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.phpcoder.club/posts/888d2e2.html</loc>
     
     <lastmod>2020-04-19T03:41:11.000Z</lastmod>
@@ -72,14 +79,14 @@
   </url>
   
   <url>
-    <loc>https://www.phpcoder.club/about/index.html</loc>
+    <loc>https://www.phpcoder.club/categories/index.html</loc>
     
     <lastmod>2020-03-22T06:03:42.534Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://www.phpcoder.club/categories/index.html</loc>
+    <loc>https://www.phpcoder.club/about/index.html</loc>
     
     <lastmod>2020-03-22T06:03:42.534Z</lastmod>
     
