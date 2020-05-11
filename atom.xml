@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>LaputCat</title>
+  <title>爱笑的猫</title>
   
-  <subtitle>LaputCat</subtitle>
+  <subtitle>爱笑的猫</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://www.phpcoder.club/"/>
+  <link href="https://www.laputcat.top/"/>
   <updated>2020-04-22T02:05:43.000Z</updated>
-  <id>https://www.phpcoder.club/</id>
+  <id>https://www.laputcat.top/</id>
   
   <author>
-    <name>Gryffindor&#39;s LaputCat</name>
+    <name>爱笑的猫</name>
     
   </author>
   
@@ -18,8 +18,8 @@
   
   <entry>
     <title>如何清理微信缓存</title>
-    <link href="https://www.phpcoder.club/posts/26caa4da.html"/>
-    <id>https://www.phpcoder.club/posts/26caa4da.html</id>
+    <link href="https://www.laputcat.top/posts/26caa4da.html"/>
+    <id>https://www.laputcat.top/posts/26caa4da.html</id>
     <published>2020-04-22T02:05:43.000Z</published>
     <updated>2020-04-22T02:05:43.000Z</updated>
     
@@ -32,17 +32,17 @@
     </summary>
     
     
-      <category term="Cookie" scheme="https://www.phpcoder.club/categories/Cookie/"/>
+      <category term="Cookie" scheme="https://www.laputcat.top/categories/Cookie/"/>
     
     
-      <category term="Cookie" scheme="https://www.phpcoder.club/tags/Cookie/"/>
+      <category term="Cookie" scheme="https://www.laputcat.top/tags/Cookie/"/>
     
   </entry>
   
   <entry>
     <title>Git问题汇总</title>
-    <link href="https://www.phpcoder.club/posts/b9df10c9.html"/>
-    <id>https://www.phpcoder.club/posts/b9df10c9.html</id>
+    <link href="https://www.laputcat.top/posts/b9df10c9.html"/>
+    <id>https://www.laputcat.top/posts/b9df10c9.html</id>
     <published>2020-04-19T03:04:30.000Z</published>
     <updated>2020-04-19T03:41:11.000Z</updated>
     
@@ -55,17 +55,17 @@
     </summary>
     
     
-      <category term="Git" scheme="https://www.phpcoder.club/categories/Git/"/>
+      <category term="Git" scheme="https://www.laputcat.top/categories/Git/"/>
     
     
-      <category term="Git" scheme="https://www.phpcoder.club/tags/Git/"/>
+      <category term="Git" scheme="https://www.laputcat.top/tags/Git/"/>
     
   </entry>
   
   <entry>
     <title>Mysql简单常用</title>
-    <link href="https://www.phpcoder.club/posts/9520183a.html"/>
-    <id>https://www.phpcoder.club/posts/9520183a.html</id>
+    <link href="https://www.laputcat.top/posts/9520183a.html"/>
+    <id>https://www.laputcat.top/posts/9520183a.html</id>
     <published>2020-03-28T04:06:12.000Z</published>
     <updated>2020-03-28T04:06:12.000Z</updated>
     
@@ -78,17 +78,17 @@
     </summary>
     
     
-      <category term="Mysql" scheme="https://www.phpcoder.club/categories/Mysql/"/>
+      <category term="Mysql" scheme="https://www.laputcat.top/categories/Mysql/"/>
     
     
-      <category term="Mysql" scheme="https://www.phpcoder.club/tags/Mysql/"/>
+      <category term="Mysql" scheme="https://www.laputcat.top/tags/Mysql/"/>
     
   </entry>
   
   <entry>
     <title>微信公众测试号[生成菜单等]接入流程</title>
-    <link href="https://www.phpcoder.club/posts/277e2557.html"/>
-    <id>https://www.phpcoder.club/posts/277e2557.html</id>
+    <link href="https://www.laputcat.top/posts/277e2557.html"/>
+    <id>https://www.laputcat.top/posts/277e2557.html</id>
     <published>2020-03-23T10:26:54.000Z</published>
     <updated>2020-03-28T04:16:54.000Z</updated>
     
@@ -101,17 +101,17 @@
     </summary>
     
     
-      <category term="wechat" scheme="https://www.phpcoder.club/categories/wechat/"/>
+      <category term="wechat" scheme="https://www.laputcat.top/categories/wechat/"/>
     
     
-      <category term="wechat" scheme="https://www.phpcoder.club/tags/wechat/"/>
+      <category term="wechat" scheme="https://www.laputcat.top/tags/wechat/"/>
     
   </entry>
   
   <entry>
     <title>关于网页[H5]微信授权登录</title>
-    <link href="https://www.phpcoder.club/posts/f281c357.html"/>
-    <id>https://www.phpcoder.club/posts/f281c357.html</id>
+    <link href="https://www.laputcat.top/posts/f281c357.html"/>
+    <id>https://www.laputcat.top/posts/f281c357.html</id>
     <published>2020-03-20T01:15:19.000Z</published>
     <updated>2020-03-28T04:05:19.000Z</updated>
     
@@ -124,17 +124,17 @@
     </summary>
     
     
-      <category term="wechat" scheme="https://www.phpcoder.club/categories/wechat/"/>
+      <category term="wechat" scheme="https://www.laputcat.top/categories/wechat/"/>
     
     
-      <category term="wechat" scheme="https://www.phpcoder.club/tags/wechat/"/>
+      <category term="wechat" scheme="https://www.laputcat.top/tags/wechat/"/>
     
   </entry>
   
   <entry>
     <title>Vue的钩子函数</title>
-    <link href="https://www.phpcoder.club/posts/8192d00f.html"/>
-    <id>https://www.phpcoder.club/posts/8192d00f.html</id>
+    <link href="https://www.laputcat.top/posts/8192d00f.html"/>
+    <id>https://www.laputcat.top/posts/8192d00f.html</id>
     <published>2020-02-24T01:44:03.000Z</published>
     <updated>2020-02-24T01:44:03.000Z</updated>
     
@@ -147,17 +147,17 @@
     </summary>
     
     
-      <category term="vue" scheme="https://www.phpcoder.club/categories/vue/"/>
+      <category term="vue" scheme="https://www.laputcat.top/categories/vue/"/>
     
     
-      <category term="vue" scheme="https://www.phpcoder.club/tags/vue/"/>
+      <category term="vue" scheme="https://www.laputcat.top/tags/vue/"/>
     
   </entry>
   
   <entry>
     <title>Vue Router之基础</title>
-    <link href="https://www.phpcoder.club/posts/49bed910.html"/>
-    <id>https://www.phpcoder.club/posts/49bed910.html</id>
+    <link href="https://www.laputcat.top/posts/49bed910.html"/>
+    <id>https://www.laputcat.top/posts/49bed910.html</id>
     <published>2020-02-23T09:41:25.000Z</published>
     <updated>2020-02-23T09:41:25.000Z</updated>
     
@@ -170,17 +170,17 @@
     </summary>
     
     
-      <category term="vue" scheme="https://www.phpcoder.club/categories/vue/"/>
+      <category term="vue" scheme="https://www.laputcat.top/categories/vue/"/>
     
     
-      <category term="vue" scheme="https://www.phpcoder.club/tags/vue/"/>
+      <category term="vue" scheme="https://www.laputcat.top/tags/vue/"/>
     
   </entry>
   
   <entry>
     <title>vue组件-插槽</title>
-    <link href="https://www.phpcoder.club/posts/4595edb9.html"/>
-    <id>https://www.phpcoder.club/posts/4595edb9.html</id>
+    <link href="https://www.laputcat.top/posts/4595edb9.html"/>
+    <id>https://www.laputcat.top/posts/4595edb9.html</id>
     <published>2020-02-21T02:52:59.000Z</published>
     <updated>2020-02-21T02:52:59.000Z</updated>
     
@@ -193,17 +193,17 @@
     </summary>
     
     
-      <category term="vue" scheme="https://www.phpcoder.club/categories/vue/"/>
+      <category term="vue" scheme="https://www.laputcat.top/categories/vue/"/>
     
     
-      <category term="vue" scheme="https://www.phpcoder.club/tags/vue/"/>
+      <category term="vue" scheme="https://www.laputcat.top/tags/vue/"/>
     
   </entry>
   
   <entry>
     <title>Vue组件-如何绑定原生事件至组件</title>
-    <link href="https://www.phpcoder.club/posts/48944071.html"/>
-    <id>https://www.phpcoder.club/posts/48944071.html</id>
+    <link href="https://www.laputcat.top/posts/48944071.html"/>
+    <id>https://www.laputcat.top/posts/48944071.html</id>
     <published>2020-02-20T08:09:08.000Z</published>
     <updated>2020-02-20T08:09:08.000Z</updated>
     
@@ -216,17 +216,17 @@
     </summary>
     
     
-      <category term="vue" scheme="https://www.phpcoder.club/categories/vue/"/>
+      <category term="vue" scheme="https://www.laputcat.top/categories/vue/"/>
     
     
-      <category term="vue" scheme="https://www.phpcoder.club/tags/vue/"/>
+      <category term="vue" scheme="https://www.laputcat.top/tags/vue/"/>
     
   </entry>
   
   <entry>
     <title>Vue组件-自定义事件</title>
-    <link href="https://www.phpcoder.club/posts/5fcafa01.html"/>
-    <id>https://www.phpcoder.club/posts/5fcafa01.html</id>
+    <link href="https://www.laputcat.top/posts/5fcafa01.html"/>
+    <id>https://www.laputcat.top/posts/5fcafa01.html</id>
     <published>2020-02-20T01:15:45.000Z</published>
     <updated>2020-02-20T01:15:45.000Z</updated>
     
@@ -239,17 +239,17 @@
     </summary>
     
     
-      <category term="vue" scheme="https://www.phpcoder.club/categories/vue/"/>
+      <category term="vue" scheme="https://www.laputcat.top/categories/vue/"/>
     
     
-      <category term="vue" scheme="https://www.phpcoder.club/tags/vue/"/>
+      <category term="vue" scheme="https://www.laputcat.top/tags/vue/"/>
     
   </entry>
   
   <entry>
     <title>ES6</title>
-    <link href="https://www.phpcoder.club/posts/42b82995.html"/>
-    <id>https://www.phpcoder.club/posts/42b82995.html</id>
+    <link href="https://www.laputcat.top/posts/42b82995.html"/>
+    <id>https://www.laputcat.top/posts/42b82995.html</id>
     <published>2020-01-19T06:40:36.000Z</published>
     <updated>2020-03-28T04:17:09.000Z</updated>
     
@@ -268,17 +268,17 @@
     </summary>
     
     
-      <category term="ES6" scheme="https://www.phpcoder.club/categories/ES6/"/>
+      <category term="ES6" scheme="https://www.laputcat.top/categories/ES6/"/>
     
     
-      <category term="ES6" scheme="https://www.phpcoder.club/tags/ES6/"/>
+      <category term="ES6" scheme="https://www.laputcat.top/tags/ES6/"/>
     
   </entry>
   
   <entry>
     <title>永久激活PHPstorm编辑器</title>
-    <link href="https://www.phpcoder.club/posts/7a17374d.html"/>
-    <id>https://www.phpcoder.club/posts/7a17374d.html</id>
+    <link href="https://www.laputcat.top/posts/7a17374d.html"/>
+    <id>https://www.laputcat.top/posts/7a17374d.html</id>
     <published>2020-01-15T06:49:36.000Z</published>
     <updated>2020-02-20T03:49:36.000Z</updated>
     
@@ -291,17 +291,17 @@
     </summary>
     
     
-      <category term="PHPSTORM IDE" scheme="https://www.phpcoder.club/categories/PHPSTORM-IDE/"/>
+      <category term="PHPSTORM IDE" scheme="https://www.laputcat.top/categories/PHPSTORM-IDE/"/>
     
     
-      <category term="PHPSTORM" scheme="https://www.phpcoder.club/tags/PHPSTORM/"/>
+      <category term="PHPSTORM" scheme="https://www.laputcat.top/tags/PHPSTORM/"/>
     
   </entry>
   
   <entry>
     <title>微信小程序</title>
-    <link href="https://www.phpcoder.club/posts/538b2da9.html"/>
-    <id>https://www.phpcoder.club/posts/538b2da9.html</id>
+    <link href="https://www.laputcat.top/posts/538b2da9.html"/>
+    <id>https://www.laputcat.top/posts/538b2da9.html</id>
     <published>2019-12-30T02:04:16.000Z</published>
     <updated>2019-12-30T02:04:16.000Z</updated>
     
@@ -314,15 +314,15 @@
     </summary>
     
     
-      <category term="wechat" scheme="https://www.phpcoder.club/categories/wechat/"/>
+      <category term="wechat" scheme="https://www.laputcat.top/categories/wechat/"/>
     
     
   </entry>
   
   <entry>
     <title>ThinkPHP5.1手记</title>
-    <link href="https://www.phpcoder.club/posts/3ec68ba4.html"/>
-    <id>https://www.phpcoder.club/posts/3ec68ba4.html</id>
+    <link href="https://www.laputcat.top/posts/3ec68ba4.html"/>
+    <id>https://www.laputcat.top/posts/3ec68ba4.html</id>
     <published>2019-12-27T12:29:21.000Z</published>
     <updated>2020-03-28T03:52:36.000Z</updated>
     
@@ -335,15 +335,15 @@
     </summary>
     
     
-      <category term="ThinkPHP5" scheme="https://www.phpcoder.club/categories/ThinkPHP5/"/>
+      <category term="ThinkPHP5" scheme="https://www.laputcat.top/categories/ThinkPHP5/"/>
     
     
   </entry>
   
   <entry>
     <title>Xampp汇总</title>
-    <link href="https://www.phpcoder.club/posts/2da0cc6f.html"/>
-    <id>https://www.phpcoder.club/posts/2da0cc6f.html</id>
+    <link href="https://www.laputcat.top/posts/2da0cc6f.html"/>
+    <id>https://www.laputcat.top/posts/2da0cc6f.html</id>
     <published>2019-12-26T03:01:26.000Z</published>
     <updated>2020-03-20T01:12:26.000Z</updated>
     
@@ -362,15 +362,15 @@
     </summary>
     
     
-      <category term="Xampp" scheme="https://www.phpcoder.club/categories/Xampp/"/>
+      <category term="Xampp" scheme="https://www.laputcat.top/categories/Xampp/"/>
     
     
   </entry>
   
   <entry>
     <title>前端常用代码块</title>
-    <link href="https://www.phpcoder.club/posts/5066d279.html"/>
-    <id>https://www.phpcoder.club/posts/5066d279.html</id>
+    <link href="https://www.laputcat.top/posts/5066d279.html"/>
+    <id>https://www.laputcat.top/posts/5066d279.html</id>
     <published>2019-12-04T02:52:37.000Z</published>
     <updated>2019-12-04T02:52:37.000Z</updated>
     
@@ -391,17 +391,17 @@
     </summary>
     
     
-      <category term="codeBlock" scheme="https://www.phpcoder.club/categories/codeBlock/"/>
+      <category term="codeBlock" scheme="https://www.laputcat.top/categories/codeBlock/"/>
     
     
-      <category term="codeBlock" scheme="https://www.phpcoder.club/tags/codeBlock/"/>
+      <category term="codeBlock" scheme="https://www.laputcat.top/tags/codeBlock/"/>
     
   </entry>
   
   <entry>
     <title>centos7 宝塔[LNMP] 访问swoole服务问题</title>
-    <link href="https://www.phpcoder.club/posts/593ef122.html"/>
-    <id>https://www.phpcoder.club/posts/593ef122.html</id>
+    <link href="https://www.laputcat.top/posts/593ef122.html"/>
+    <id>https://www.laputcat.top/posts/593ef122.html</id>
     <published>2019-11-02T10:09:37.000Z</published>
     <updated>2019-11-02T10:09:37.000Z</updated>
     
@@ -414,17 +414,17 @@
     </summary>
     
     
-      <category term="Swoole" scheme="https://www.phpcoder.club/categories/Swoole/"/>
+      <category term="Swoole" scheme="https://www.laputcat.top/categories/Swoole/"/>
     
     
-      <category term="swoole nginx httpserver" scheme="https://www.phpcoder.club/tags/swoole-nginx-httpserver/"/>
+      <category term="swoole nginx httpserver" scheme="https://www.laputcat.top/tags/swoole-nginx-httpserver/"/>
     
   </entry>
   
   <entry>
     <title>CakePHP学习</title>
-    <link href="https://www.phpcoder.club/posts/cf2bd071.html"/>
-    <id>https://www.phpcoder.club/posts/cf2bd071.html</id>
+    <link href="https://www.laputcat.top/posts/cf2bd071.html"/>
+    <id>https://www.laputcat.top/posts/cf2bd071.html</id>
     <published>2019-10-29T09:16:25.000Z</published>
     <updated>2019-10-29T09:16:25.000Z</updated>
     
@@ -442,17 +442,17 @@
     </summary>
     
     
-      <category term="cakephp" scheme="https://www.phpcoder.club/categories/cakephp/"/>
+      <category term="cakephp" scheme="https://www.laputcat.top/categories/cakephp/"/>
     
     
-      <category term="cakephp" scheme="https://www.phpcoder.club/tags/cakephp/"/>
+      <category term="cakephp" scheme="https://www.laputcat.top/tags/cakephp/"/>
     
   </entry>
   
   <entry>
     <title>编译安装Swoole ,PHP问题汇总</title>
-    <link href="https://www.phpcoder.club/posts/5d473dd.html"/>
-    <id>https://www.phpcoder.club/posts/5d473dd.html</id>
+    <link href="https://www.laputcat.top/posts/5d473dd.html"/>
+    <id>https://www.laputcat.top/posts/5d473dd.html</id>
     <published>2019-10-29T09:12:01.000Z</published>
     <updated>2019-10-29T09:12:01.000Z</updated>
     
@@ -473,17 +473,17 @@
     </summary>
     
     
-      <category term="Swoole" scheme="https://www.phpcoder.club/categories/Swoole/"/>
+      <category term="Swoole" scheme="https://www.laputcat.top/categories/Swoole/"/>
     
     
-      <category term="Swoole" scheme="https://www.phpcoder.club/tags/Swoole/"/>
+      <category term="Swoole" scheme="https://www.laputcat.top/tags/Swoole/"/>
     
   </entry>
   
   <entry>
     <title>Linux IO模型</title>
-    <link href="https://www.phpcoder.club/posts/8601bab2.html"/>
-    <id>https://www.phpcoder.club/posts/8601bab2.html</id>
+    <link href="https://www.laputcat.top/posts/8601bab2.html"/>
+    <id>https://www.laputcat.top/posts/8601bab2.html</id>
     <published>2019-10-29T08:55:50.000Z</published>
     <updated>2019-10-29T08:55:50.000Z</updated>
     
@@ -554,17 +554,17 @@
     </summary>
     
     
-      <category term="IO" scheme="https://www.phpcoder.club/categories/IO/"/>
+      <category term="IO" scheme="https://www.laputcat.top/categories/IO/"/>
     
     
-      <category term="IO阻塞线程同步" scheme="https://www.phpcoder.club/tags/IO%E9%98%BB%E5%A1%9E%E7%BA%BF%E7%A8%8B%E5%90%8C%E6%AD%A5/"/>
+      <category term="IO阻塞线程同步" scheme="https://www.laputcat.top/tags/IO%E9%98%BB%E5%A1%9E%E7%BA%BF%E7%A8%8B%E5%90%8C%E6%AD%A5/"/>
     
   </entry>
   
   <entry>
     <title>编译安装Mysql</title>
-    <link href="https://www.phpcoder.club/posts/2ce8eb6c.html"/>
-    <id>https://www.phpcoder.club/posts/2ce8eb6c.html</id>
+    <link href="https://www.laputcat.top/posts/2ce8eb6c.html"/>
+    <id>https://www.laputcat.top/posts/2ce8eb6c.html</id>
     <published>2019-10-29T08:37:25.000Z</published>
     <updated>2019-10-29T08:37:25.000Z</updated>
     
@@ -581,17 +581,17 @@
     </summary>
     
     
-      <category term="Mysql" scheme="https://www.phpcoder.club/categories/Mysql/"/>
+      <category term="Mysql" scheme="https://www.laputcat.top/categories/Mysql/"/>
     
     
-      <category term="Mysql编译安装" scheme="https://www.phpcoder.club/tags/Mysql%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85/"/>
+      <category term="Mysql编译安装" scheme="https://www.laputcat.top/tags/Mysql%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85/"/>
     
   </entry>
   
   <entry>
     <title>归纳总结PHP面试(笔试)</title>
-    <link href="https://www.phpcoder.club/posts/5c07421a.html"/>
-    <id>https://www.phpcoder.club/posts/5c07421a.html</id>
+    <link href="https://www.laputcat.top/posts/5c07421a.html"/>
+    <id>https://www.laputcat.top/posts/5c07421a.html</id>
     <published>2019-09-09T12:09:44.000Z</published>
     <updated>2019-09-09T12:09:44.000Z</updated>
     
@@ -607,17 +607,17 @@
     </summary>
     
     
-      <category term="PHP-interview" scheme="https://www.phpcoder.club/categories/PHP-interview/"/>
+      <category term="PHP-interview" scheme="https://www.laputcat.top/categories/PHP-interview/"/>
     
     
-      <category term="PHP面试笔试题" scheme="https://www.phpcoder.club/tags/PHP%E9%9D%A2%E8%AF%95%E7%AC%94%E8%AF%95%E9%A2%98/"/>
+      <category term="PHP面试笔试题" scheme="https://www.laputcat.top/tags/PHP%E9%9D%A2%E8%AF%95%E7%AC%94%E8%AF%95%E9%A2%98/"/>
     
   </entry>
   
   <entry>
     <title>PHP常用代码(文章)</title>
-    <link href="https://www.phpcoder.club/posts/f488806d.html"/>
-    <id>https://www.phpcoder.club/posts/f488806d.html</id>
+    <link href="https://www.laputcat.top/posts/f488806d.html"/>
+    <id>https://www.laputcat.top/posts/f488806d.html</id>
     <published>2019-09-05T13:58:37.000Z</published>
     <updated>2019-12-04T04:01:07.000Z</updated>
     
@@ -631,17 +631,17 @@
     </summary>
     
     
-      <category term="PHP" scheme="https://www.phpcoder.club/categories/PHP/"/>
+      <category term="PHP" scheme="https://www.laputcat.top/categories/PHP/"/>
     
     
-      <category term="PHP常用代码块" scheme="https://www.phpcoder.club/tags/PHP%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E5%9D%97/"/>
+      <category term="PHP常用代码块" scheme="https://www.laputcat.top/tags/PHP%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E5%9D%97/"/>
     
   </entry>
   
   <entry>
     <title>360解读PHP面试题</title>
-    <link href="https://www.phpcoder.club/posts/263d185a.html"/>
-    <id>https://www.phpcoder.club/posts/263d185a.html</id>
+    <link href="https://www.laputcat.top/posts/263d185a.html"/>
+    <id>https://www.laputcat.top/posts/263d185a.html</id>
     <published>2019-08-31T17:34:28.000Z</published>
     <updated>2019-08-31T17:34:28.000Z</updated>
     
@@ -659,17 +659,17 @@
     </summary>
     
     
-      <category term="PHP" scheme="https://www.phpcoder.club/categories/PHP/"/>
+      <category term="PHP" scheme="https://www.laputcat.top/categories/PHP/"/>
     
     
-      <category term="360解读PHP面试" scheme="https://www.phpcoder.club/tags/360%E8%A7%A3%E8%AF%BBPHP%E9%9D%A2%E8%AF%95/"/>
+      <category term="360解读PHP面试" scheme="https://www.laputcat.top/tags/360%E8%A7%A3%E8%AF%BBPHP%E9%9D%A2%E8%AF%95/"/>
     
   </entry>
   
   <entry>
     <title>百度[待定]Google收录站点</title>
-    <link href="https://www.phpcoder.club/posts/895444f1.html"/>
-    <id>https://www.phpcoder.club/posts/895444f1.html</id>
+    <link href="https://www.laputcat.top/posts/895444f1.html"/>
+    <id>https://www.laputcat.top/posts/895444f1.html</id>
     <published>2019-07-25T01:57:50.000Z</published>
     <updated>2019-04-19T04:57:50.000Z</updated>
     
@@ -690,17 +690,17 @@
     </summary>
     
     
-      <category term="Baidu-Google" scheme="https://www.phpcoder.club/categories/Baidu-Google/"/>
+      <category term="Baidu-Google" scheme="https://www.laputcat.top/categories/Baidu-Google/"/>
     
     
-      <category term="Baidu-Google" scheme="https://www.phpcoder.club/tags/Baidu-Google/"/>
+      <category term="Baidu-Google" scheme="https://www.laputcat.top/tags/Baidu-Google/"/>
     
   </entry>
   
   <entry>
     <title>Hexo问题汇总</title>
-    <link href="https://www.phpcoder.club/posts/cded68c5.html"/>
-    <id>https://www.phpcoder.club/posts/cded68c5.html</id>
+    <link href="https://www.laputcat.top/posts/cded68c5.html"/>
+    <id>https://www.laputcat.top/posts/cded68c5.html</id>
     <published>2019-07-11T16:27:11.000Z</published>
     <updated>2019-04-19T04:27:11.000Z</updated>
     
@@ -749,17 +749,17 @@
     </summary>
     
     
-      <category term="Hexo" scheme="https://www.phpcoder.club/categories/Hexo/"/>
+      <category term="Hexo" scheme="https://www.laputcat.top/categories/Hexo/"/>
     
     
-      <category term="Hexo" scheme="https://www.phpcoder.club/tags/Hexo/"/>
+      <category term="Hexo" scheme="https://www.laputcat.top/tags/Hexo/"/>
     
   </entry>
   
   <entry>
     <title>图片占位自适应</title>
-    <link href="https://www.phpcoder.club/posts/78cea6d8.html"/>
-    <id>https://www.phpcoder.club/posts/78cea6d8.html</id>
+    <link href="https://www.laputcat.top/posts/78cea6d8.html"/>
+    <id>https://www.laputcat.top/posts/78cea6d8.html</id>
     <published>2019-07-11T14:58:01.000Z</published>
     <updated>2019-07-11T14:58:01.000Z</updated>
     
@@ -772,17 +772,17 @@
     </summary>
     
     
-      <category term="Css" scheme="https://www.phpcoder.club/categories/Css/"/>
+      <category term="Css" scheme="https://www.laputcat.top/categories/Css/"/>
     
     
-      <category term="Css" scheme="https://www.phpcoder.club/tags/Css/"/>
+      <category term="Css" scheme="https://www.laputcat.top/tags/Css/"/>
     
   </entry>
   
   <entry>
     <title>requireJS入门学习</title>
-    <link href="https://www.phpcoder.club/posts/5422b83b.html"/>
-    <id>https://www.phpcoder.club/posts/5422b83b.html</id>
+    <link href="https://www.laputcat.top/posts/5422b83b.html"/>
+    <id>https://www.laputcat.top/posts/5422b83b.html</id>
     <published>2019-07-11T14:43:59.000Z</published>
     <updated>2019-07-11T14:43:59.000Z</updated>
     
@@ -795,17 +795,17 @@
     </summary>
     
     
-      <category term="requireJS" scheme="https://www.phpcoder.club/categories/requireJS/"/>
+      <category term="requireJS" scheme="https://www.laputcat.top/categories/requireJS/"/>
     
     
-      <category term="requireJS入门与使用" scheme="https://www.phpcoder.club/tags/requireJS%E5%85%A5%E9%97%A8%E4%B8%8E%E4%BD%BF%E7%94%A8/"/>
+      <category term="requireJS入门与使用" scheme="https://www.laputcat.top/tags/requireJS%E5%85%A5%E9%97%A8%E4%B8%8E%E4%BD%BF%E7%94%A8/"/>
     
   </entry>
   
   <entry>
     <title>git常见操作命令与问题</title>
-    <link href="https://www.phpcoder.club/posts/888d2e2.html"/>
-    <id>https://www.phpcoder.club/posts/888d2e2.html</id>
+    <link href="https://www.laputcat.top/posts/888d2e2.html"/>
+    <id>https://www.laputcat.top/posts/888d2e2.html</id>
     <published>2019-07-11T14:32:11.000Z</published>
     <updated>2020-04-19T03:41:11.000Z</updated>
     
@@ -820,17 +820,17 @@
     </summary>
     
     
-      <category term="Git" scheme="https://www.phpcoder.club/categories/Git/"/>
+      <category term="Git" scheme="https://www.laputcat.top/categories/Git/"/>
     
     
-      <category term="Git" scheme="https://www.phpcoder.club/tags/Git/"/>
+      <category term="Git" scheme="https://www.laputcat.top/tags/Git/"/>
     
   </entry>
   
   <entry>
     <title>vagrant虚拟机安装centos和宝塔</title>
-    <link href="https://www.phpcoder.club/posts/5a9ca69a.html"/>
-    <id>https://www.phpcoder.club/posts/5a9ca69a.html</id>
+    <link href="https://www.laputcat.top/posts/5a9ca69a.html"/>
+    <id>https://www.laputcat.top/posts/5a9ca69a.html</id>
     <published>2019-07-11T13:31:10.000Z</published>
     <updated>2019-07-11T13:31:10.000Z</updated>
     
@@ -843,17 +843,17 @@
     </summary>
     
     
-      <category term="vagrant" scheme="https://www.phpcoder.club/categories/vagrant/"/>
+      <category term="vagrant" scheme="https://www.laputcat.top/categories/vagrant/"/>
     
     
-      <category term="vagrant" scheme="https://www.phpcoder.club/tags/vagrant/"/>
+      <category term="vagrant" scheme="https://www.laputcat.top/tags/vagrant/"/>
     
   </entry>
   
   <entry>
     <title>Vue Cli 3 与 TP5 前后端分离访问[未跨域]</title>
-    <link href="https://www.phpcoder.club/posts/c0add594.html"/>
-    <id>https://www.phpcoder.club/posts/c0add594.html</id>
+    <link href="https://www.laputcat.top/posts/c0add594.html"/>
+    <id>https://www.laputcat.top/posts/c0add594.html</id>
     <published>2019-07-11T13:03:56.000Z</published>
     <updated>2020-02-20T03:49:36.000Z</updated>
     
@@ -872,10 +872,10 @@
     </summary>
     
     
-      <category term="vue" scheme="https://www.phpcoder.club/categories/vue/"/>
+      <category term="vue" scheme="https://www.laputcat.top/categories/vue/"/>
     
     
-      <category term="vue" scheme="https://www.phpcoder.club/tags/vue/"/>
+      <category term="vue" scheme="https://www.laputcat.top/tags/vue/"/>
     
   </entry>
   
