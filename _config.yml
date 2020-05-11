@@ -3,24 +3,24 @@
 ## Source: https://github.com/hexojs/hexo/
 # Site
 # 博客的标题
-title: LaputCat
+title: 爱笑的猫
 
 # banner显示的子标题
-subtitle: LaputCat 
+subtitle: 爱笑的猫 
 
 # 博客介绍（同时用于seo）
-description: Gryffindor LaputCat Wizard Growth
+description: 爱笑的猫 
 
 # banner显示的简短介绍
-subtitle_desc: LaputCat, LaputCat blog, PHP, 前端开发, 全栈开发
+subtitle_desc: 爱笑的猫, blog, PHP, 前端开发, 全栈开发
 
 # seo关键字
-keywords: LaputCat, LaputCat blog, PHP, 前端, 程序员,VUE, 前端开发, 全栈开发, node.js, javascript
+keywords: 爱笑的猫 blog, PHP, 前端, 程序员,VUE, 前端开发, 全栈开发, node.js, javascript
 
 # 站长信息
 
-author: Gryffindor's LaputCat 
-link: https://www.phpcoder.club/
+author: 爱笑的猫 
+link: https://www.laputcat.top/
   
 # 个人介绍  
 introduction: 
@@ -64,7 +64,7 @@ error_page_bg: https://images.unsplash.com/photo-1542434684-41a0bf4e6cd3?ixlib=r
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://www.phpcoder.club/
+url: https://www.laputcat.top/
 root: /
 permalink: posts/:abbrlink.html
 abbrlink:
@@ -162,7 +162,7 @@ search:
   field: post
   format: html
   limit: 10000
-urlforgoogle: https://www.phpcoder.club/
+urlforgoogle: https://www.laputcat.top/
 # 自动生成sitemap
 sitemap:
   path: sitemap.xml

@@ -290,9 +290,9 @@ footer_copyright:
   enable: true
 
 ICP:
-  enable: false
-  url:
-  text:
+  enable: true
+  url: http://www.beian.miit.gov.cn/state/outPortal/loginPortal.action#
+  text: 闽ICP备20008453
   icon: /img/icp.png
 
 ####   Analysis    ####
@@ -532,7 +532,7 @@ aside:
 
 # 網站公告
 announcement:
-  content:  Gryffindor's LaputCat Graduated!
+  content:  爱笑的猫!
 
 # busuanzi count for PV / UV in site
 # 訪問人數
@@ -560,7 +560,7 @@ translate:
   #延遲時間,若不在前, 要設定延遲翻譯時間, 如100表示100ms,默認為0
   translateDelay: 0
   #博客網址
-  cookieDomain: "https://www.phpcoder.club/"
+  cookieDomain: "https://www.laputcat.top/"
   #當文字是簡體時，按鈕顯示的文字
   msgToTraditionalChinese: "繁"
   #當文字是繁體時，按鈕顯示的文字
