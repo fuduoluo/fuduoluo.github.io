@@ -371,7 +371,7 @@ related_post:
 
 # figcaption
 # 圖片描述文字
-photofigcaption: 爱笑的猫
+photofigcaption: true
 
 # anchor
 # when you scroll in post, the url will update according to header id.
@@ -630,7 +630,7 @@ fancybox:
 # 可選 top-left / top-center / top-right / bottom-left / bottom-center / bottom-right
 snackbar:
   enable: true
-  position: bottom-left
+  position: top-right
   bg_light: '#49b1f5' #light mode時彈窗背景
   bg_dark: '#2d3035' #dark mode時彈窗背景
 
