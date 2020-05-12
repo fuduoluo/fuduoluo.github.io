@@ -1,3 +1,21 @@
+class4:
+  class_name: 友情鏈接
+  link_list:
+    1:
+      name:  DaleInTeach
+      link: https://dale-.github.io/
+      avatar: http://www.sunnyos.com/public/home/images/default.jpg
+      descr: 酷酷前端小女孩
+    2:
+      name:  BookJ
+      link: http://html5book.bluej.cn/#/
+      avatar: http://html5book.bluej.cn/book_logo.png
+      descr: 一本讲求技术情怀的书
+    3:
+      name:  ZhangYi
+      link: http://codewithzhangyi.com/
+      avatar: http://html5book.bluej.cn/book_logo.png
+      descr: 一个简单的代码爱好者💻，数学专业，数学建模竞赛 国赛/美赛 奖牌收割者
 class:
   class_name: 前端導航
   link_list:
@@ -42,23 +60,5 @@ class3:
       link: http://www.sunnyos.com/
       avatar: http://www.sunnyos.com/public/home/images/default.jpg
       descr: 讲述一个程序员代码史记
-class4:
-  class_name: 友情鏈接
-  link_list:
-    1:
-      name:  DaleInTeach
-      link: https://dale-.github.io/
-      avatar: http://www.sunnyos.com/public/home/images/default.jpg
-      descr: 酷酷前端小女孩
-    2:
-      name:  BookJ
-      link: http://html5book.bluej.cn/#/
-      avatar: http://html5book.bluej.cn/book_logo.png
-      descr: 一本讲求技术情怀的书
-    3:
-      name:  ZhangYi
-      link: http://codewithzhangyi.com/
-      avatar: http://html5book.bluej.cn/book_logo.png
-      descr: 一个简单的代码爱好者💻，数学专业，数学建模竞赛 国赛/美赛 奖牌收割者
     
       
