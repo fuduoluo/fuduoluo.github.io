@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>爱笑的猫</title>
+  <title>爱笑の猫</title>
   
-  <subtitle>爱笑的猫</subtitle>
+  <subtitle>爱笑の猫</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.laputcat.top/"/>
@@ -10,7 +10,7 @@
   <id>https://www.laputcat.top/</id>
   
   <author>
-    <name>爱笑的猫</name>
+    <name>爱笑の猫</name>
     
   </author>
   
