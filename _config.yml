@@ -3,23 +3,23 @@
 ## Source: https://github.com/hexojs/hexo/
 # Site
 # 博客的标题
-title: 爱笑的猫
+title: 爱笑の猫
 
 # banner显示的子标题
-subtitle: 爱笑的猫 
+subtitle: 爱笑の猫 
 
 # 博客介绍（同时用于seo）
-description: 爱笑的猫 
+description: 爱笑の猫正在寻找快乐的鱼
 
 # banner显示的简短介绍
-subtitle_desc: 爱笑的猫, blog, PHP, 前端开发, 全栈开发
+subtitle_desc: 爱笑の猫, blog, PHP, 前端开发, 全栈开发
 
 # seo关键字
-keywords: 爱笑的猫 blog, PHP, 前端, 程序员,VUE, 前端开发, 全栈开发, node.js, javascript
+keywords: 爱笑の猫 blog, PHP, 前端, 程序员,VUE, 前端开发, 全栈开发, node.js, javascript
 
 # 站长信息
 
-author: 爱笑的猫 
+author: 爱笑の猫 
 link: https://www.laputcat.top/
   
 # 个人介绍  
@@ -103,7 +103,7 @@ relative_link: #把链接改为与根目录的相对位址
 future: true
 highlight: #代码块的设置
   enable: true
-  line_number: true
+  line_number: false
   auto_detect: true
   tab_replace:
   

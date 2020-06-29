@@ -1,5 +1,5 @@
 ---
-title: 编译安装Swoole ,PHP问题汇总
+title: Swoole编译安装和TP5接入使用等问题
 permalink: 'posts/:abbrlink.html'
 copyright: true
 abbrlink: 5d473dd
@@ -11,8 +11,10 @@ subtitle:
 cover: https://i.loli.net/2020/03/22/QIoP2rFjqyBeNcv.png
 ---
 
+![swoole新手入门手册](http://noobcourse.php20.cn/NoobCourse/Introduction.html)
+
 {% note success %}
-编译安装Swoole ,PHP问题汇总
+Swoole编译安装和TP5接入使用等问题
 {% endnote %}
 
 {% note danger %}

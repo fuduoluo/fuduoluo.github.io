@@ -5,8 +5,8 @@ copyright: true
 abbrlink: f488806d
 date: 2019-09-05 21:58:37
 updated: 2019-12-04 12:01:07
-cover: https://i.loli.net/2020/03/20/WQloq82g1XpcEYi.jpg
-top_img: https://i.loli.net/2020/03/20/WQloq82g1XpcEYi.jpg
+cover: http://image.laputcat.top/blog/php.jpg
+top_img: http://image.laputcat.top/blog/php.jpg
 categories: PHP
 tags: PHP常用代码块
 subtitle:

@@ -1,11 +1,11 @@
-class4:
+class1:
   class_name: 友情鏈接
   link_list:
     1:
       name:  DaleInTeach
       link: https://dale-.github.io/
-      avatar: http://www.sunnyos.com/public/home/images/default.jpg
-      descr: 酷酷前端小女孩
+      avatar: https://dale-.github.io/css/images/pose.jpg
+      descr: Dale|前端工作者
     2:
       name:  BookJ
       link: http://html5book.bluej.cn/#/
@@ -14,26 +14,8 @@ class4:
     3:
       name:  ZhangYi
       link: http://codewithzhangyi.com/
-      avatar: http://html5book.bluej.cn/book_logo.png
+      avatar: http://codewithzhangyi.com/images/background/001.jpg
       descr: 一个简单的代码爱好者💻，数学专业，数学建模竞赛 国赛/美赛 奖牌收割者
-class:
-  class_name: 前端導航
-  link_list:
-    1:
-      name: Web前端导航
-      link: http://www.alloyteam.com/nav/
-      avatar: http://www.alloyteam.com/nav/static/images/alloyteam-favicon.jpg
-      descr: web开发必备导航网址
-    2:
-      name: google前端开发基础
-      link: http://wf.uisdc.com/cn/
-      avatar: http://wf.uisdc.com/cn/imgs/developers-logo.svg
-      descr: Google前端开发基础实践手册
-    3:
-      name:  V2EX
-      link: https://www.v2ex.com/
-      avatar: https://www.v2ex.com/static/img/v2ex@2x.png
-      descr: V2EX = way to explore 是一个关于分享和探索的地方
 class2:
   class_name: 代码规范
   link_list:
@@ -51,11 +33,6 @@ class3:
   class_name: 没放盐的鸡汤
   link_list:
     1:
-      name:  loomob
-      link: https://loomob.com
-      avatar: https://xxxxx/avatar.png
-      descr: LOOMOB,平面设计师,前端UI,龙砚庭博客,橘子书
-    2:
       name:  毒鸡汤和黑科技
       link: http://www.sunnyos.com/
       avatar: http://www.sunnyos.com/public/home/images/default.jpg

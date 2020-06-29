@@ -1,12 +1,12 @@
 ---
-title: Mysql简单常用
+title: Mysql常用语句
 permalink: 'posts/:abbrlink.html'
-top_img: 'https://i.loli.net/2020/03/20/mCo37Ate5FDxjE1.jpg'
+top_img: http://image.laputcat.top/blog/mysql.png
 comments: true
 toc: 是否顯示toc （除非特定文章設置，可以不寫）
 toc_number: 是否顯示toc數字 （除非特定文章設置，可以不寫）
 copyright: true
-cover: 'https://i.loli.net/2020/03/20/mCo37Ate5FDxjE1.jpg'
+cover: http://image.laputcat.top/blog/mysql.png
 tags: Mysql
 categories: Mysql
 description: Mysql常用知识点

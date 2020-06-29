@@ -18,6 +18,15 @@ cover:  縮略圖
 ---
 
 <blockquote class="blockquote-center"></blockquote>
+<span id="inline-yellow">黄色色块</span>
+
+<span id="inline-green">绿色色块</span>
+
+<p id="div-border-left-red">左边框红色块级</p>
+
+<p id="div-border-right-red">右边框红色块级</p>
+
+<p id="div-border-top-blue">上边框蓝色块级</p>
 {% note success %}
 成功
 {% endnote %}

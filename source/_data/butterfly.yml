@@ -5,12 +5,12 @@
 # xxx || icon:
 #   xxx || 連結 || icon
 menu:
-  Hogwarts: / || fa fa-home
-  Gryffindor: /archives/ || fa fa-archive
-  Ravenclaw: /tags/ || fa fa-tags
-  Slytherin: /categories/ || fa fa-fw fa-battery-three-quarters
-  Hitchpac: /link/ || fa fa-link
-  9 and 3/4: /about/ || fa fa-heart
+  首页: / || fa fa-home
+  归档: /archives/ || fa fa-archive
+  标签: /tags/ || fa fa-tags
+  分类: /categories/ || fa fa-fw fa-battery-three-quarters
+  友链: /link/ || fa fa-link
+  关于: /about/ || fa fa-heart
     # - Music || /music/ || fa fa-music
     # - Movie || /movies/ || fa fa-film
 # PWA
@@ -32,7 +32,7 @@ highlight_copy: true #代碼複製按鈕
 highlight_lang: false #代碼語言顯示
 highlight_shrink: false # true 全部代碼框不展開，需點擊 '>' 打開 / false 代碼框展開，有'>'點擊按鈕 | none 代碼框展開，不顯示 '>' 按鈕
 
-code_word_wrap: false
+code_word_wrap: ture
 
 # copy setting
 # 是否禁止複製（如果禁止，highlight_copy的功能將無效)
@@ -46,7 +46,7 @@ copy:
 #   icon: link || the description
 # ---------------
 social:
-  fa fa-github: https://github.com/fuduoluo/fuduoluo.github.io || Github
+  fa fa-github-square: https://github.com/fuduoluo/fuduoluo.github.io || Github
   fa fa-envelope: https://www.jianshu.com/u/6a400231bb6e  || Email
   fa fa-rss: /atom.xml || RSS
 
@@ -100,16 +100,16 @@ mermaid:
 
 # Favicon
 # ---------------
-favicon: /img/favicon.ico
+favicon: /img/cat.png
 
 # Post info settings
 # ---------------
 avatar:
-  img: https://www.gravatar.com/avatar/06818ca4361a28447cffdd2daaed2799?s=160
+  img: http://image.laputcat.top/blog/06818ca4361a28447cffdd2daaed2799.jpeg
   effect: true # 頭像會一直轉圈
 
 # the banner image of index
-index_img: https://p.pstatp.com/origin/ff7b0000b4345ae33839
+index_img: http://image.laputcat.top/blog/ff7b0000b4345ae33839.jpg
 
 # if the banner of page not setting,it will show the top_img
 default_top_img: https://images.pexels.com/photos/889096/pexels-photo-889096.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500
@@ -366,7 +366,7 @@ reward:
 # 推薦文章
 related_post:
   enable: true
-  limit: 6 # 顯示推薦文章數目
+  limit: 3 # 顯示推薦文章數目
   date_type: created # or created or updated 文章日期顯示創建日或者更新日
 
 # figcaption
@@ -383,20 +383,20 @@ anchor: true
 # Theme color for customize
 # Notice: color value must in double quotes like "#000" or may cause error!
 # ---------------
-# theme_color:
-#   enable: true
-#   main: "#49B1F5"
-#   paginator: "#00c4b6"
-#   button_hover: "#FF7242"
-#   text_selection: "#00c4b6"
-#   link_color: "#99a9bf"
-#   meta_color: "#858585"
-#   hr_color: "#A4D8FA"
-#   code_foreground: "#F47466"
-#   code_background: "rgba(27, 31, 35, .05)"
-#   toc_color: "#00c4b6"
-#   blockquote_padding_color: "#49b1f5"
-#   blockquote_background_color: "#49b1f5"
+theme_color:
+   enable: true
+   main: "#49B1F5"
+   paginator: "#00c4b6"
+   button_hover: "#FF7242"
+   text_selection: "#00c4b6"
+   link_color: "#99a9bf"
+   meta_color: "#858585"
+   hr_color: "#A4D8FA"
+   code_foreground: "#F47466"
+   code_background: "rgba(27, 31, 35, .05)"
+   toc_color: "#00c4b6"
+   blockquote_padding_color: "#49b1f5"
+   blockquote_background_color: "#49b1f5"
 
 # 主頁設置
 # 默認top_img全屏，site_info在中間
@@ -481,8 +481,8 @@ display_mode: light
 beautify:
   enable: true
   field: post # site/post
-  title-prefix-icon: '\f0c1'
-  title-prefix-icon-color: '#F47466'
+  title-prefix-icon: '\f0e7'
+  title-prefix-icon-color: '#ffb821'
 
 # 全局字體
 font:
@@ -511,12 +511,12 @@ subtitle:
   loop: true
   # source調用第三方服務
   # source: false 關閉調用
-  # source: 1  調用搏天api的隨機語錄（簡體） https://api.btstu.cn/
+  source: 1  調用搏天api的隨機語錄（簡體） https://api.btstu.cn/
   # source: 2  調用一言網的一句話（簡體） https://hitokoto.cn/
   # source: 3  調用一句網（簡體） http://yijuzhan.com/
   # source: 4  調用今日詩詞（簡體） https://www.jinrishici.com/
   # subtitle 會先顯示 source , 再顯示 sub 的內容
-  source: false
+  # source: false
   # (如果有英文逗號' , '，請使用轉義字符 &#44;)
   # 如果關閉打字效果，subtitle只會顯示sub的第一行文字
   sub:
@@ -646,7 +646,7 @@ instantpage:
 # https://github.com/vinta/pangu.js
 # 中英文之間添加空格
 pangu:
-  enable: false
+  enable: true
   field: page # page/post
 
 # Note (Bootstrap Callout)

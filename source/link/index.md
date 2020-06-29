@@ -7,7 +7,7 @@ top_img: https://cdn.jsdelivr.net/gh/BNDong/Cnblogs-Theme-SimpleMemory@master/im
 
 #### My Blob's infomations
 - name: Blog 名字： LaputCat
-- address: Blog 地址： https://www.phpcoder.club
-- avatar: Blog 頭像： https://www.gravatar.com/avatar/06818ca4361a28447cffdd2daaed2799?s=160
+- address: Blog 地址： https://www.laputcat.top
+- avatar: Blog 頭像： http://image.laputcat.top/blog/avatar.jpeg
 - info: Blog 簡介： Work your ass off
 - comment: 如果需要交換友鏈,請留言
