@@ -146,8 +146,10 @@ theme: Butterfly
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/fuduoluo/fuduoluo.github.io
-  branch: master
+  # repo: https://github.com/fuduoluo/fuduoluo.github.io
+  repo: https://gitee.com/s_lindan/blog.git
+  branch: hexo
+  # branch: master
 # Extensions
 ## Plugins: http://hexo.io/plugins/
 # RSS订阅插件
