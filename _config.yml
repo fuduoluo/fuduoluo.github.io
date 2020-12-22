@@ -64,6 +64,7 @@ error_page_bg: https://images.unsplash.com/photo-1542434684-41a0bf4e6cd3?ixlib=r
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
+# url: http://s_lindan.gitee.io/blog/
 url: https://www.laputcat.top/
 root: /
 permalink: posts/:abbrlink.html
@@ -147,9 +148,9 @@ theme: Butterfly
 deploy:
   type: git
   # repo: https://github.com/fuduoluo/fuduoluo.github.io
-  repo: https://gitee.com/s_lindan/blog.git
-  branch: hexo
-  # branch: master
+  # repo: https://gitee.com/s_lindan/blog.git
+  repo: git@121.89.193.2:/home/git/hexo.git
+  branch: master
 # Extensions
 ## Plugins: http://hexo.io/plugins/
 # RSS订阅插件
