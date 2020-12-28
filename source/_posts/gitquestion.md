@@ -88,8 +88,8 @@ git Your branch is ahead of 'gitee/master' by 1 commit.
 ```
 $ git remote show origin
 * remote origin
-  Fetch URL: https://gitee.com/yingzilengfeng/cms.git
-  Push  URL: https://gitee.com/yingzilengfeng/cms.git
+  Fetch URL: https://gitee.com/xx/xx.git
+  Push  URL: https://gitee.com/xxx/xx.git
   HEAD branch: master
   Remote branches:
     dev-fu                 tracked
