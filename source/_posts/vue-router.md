@@ -1,6 +1,6 @@
 ---
 title: Vue Router之基础
-permalink: 'posts/:abbrlink.html'
+
 top_img: （除非特定需要，可以不寫）
 comments: true
 toc: 是否顯示toc （除非特定文章設置，可以不寫）
@@ -17,7 +17,7 @@ updated: 2020-02-23 17:41:25
 ---
 
 <blockquote class="blockquote-center"></blockquote>
-{% note success %}
+{% note success flat %}
 Vue Router 是 Vue.js 官方的路由管理器。它和 Vue.js 的核心深度集成，让构建单页面应用变得易如反掌
 {% endnote %}
 
@@ -25,7 +25,7 @@ Vue Router 是 Vue.js 官方的路由管理器。它和 Vue.js 的核心深度�
 
 #### Router使用
 
-{% note warning %}
+{% note warn flat %}
 任何组件内通过 this.$router 访问路由器
 当匹配到一个路由时，参数值会被设置到 this.$route.params
 {% endnote %}
@@ -95,7 +95,7 @@ const router = new VueRouter({
 ```
 #####  $route 对象
 
-{% note success %}
+{% note success flat %}
 复用组件时，对路由参数的变化作出响应的话，可以简单地 watch (监测变化) $route 对象
 {% endnote %}
 
@@ -120,7 +120,7 @@ beforeRouteUpdate (to, from, next) {
 
 #### 匹配优先级
 
-{% note warning %}
+{% note warn flat %}
 按照路由的定义顺序：谁先定义的，谁的优先级就最高。
 {% endnote %}
 
@@ -172,13 +172,13 @@ const router = new VueRouter({
 #### 编程式导航
 ##### router.push
 
-{% note success %}
+{% note success flat %}
 借助 router 的实例方法，通过编写代码来实现
 在 Vue 实例内部，你可以通过 $router 访问路由实例。因此你可以调用 this.$router.push
 router.push 方法：这个方法会向 history 栈添加一个新的记录，所以，当用户点击浏览器后退按钮时，则回到之前的 URL
 {% endnote %}
 
-{% note danger %}
+{% note danger flat %}
 注意：如果提供了 path，params 会被忽略，上述例子中的 query 并不属于这种情况。取而代之的是下面例子的做法，你需要提供路由的 name 或手写完整的带有参数的 path
 {% endnote %}
 
@@ -203,13 +203,13 @@ router.push({ path: '/user', params: { userId }}) // -> /user
 ```
 ##### router.replace
 
-{% note danger %}
+{% note danger flat %}
 唯一的不同就是，它不会向 history 添加新记录，而是跟它的方法名一样 —— 替换掉当前的 history 记录
 {% endnote %}
 
 ##### router.go 类似window.history.go(n)
 
-{% note success %}
+{% note success flat %}
 参数是一个整数，在 history 记录中向前或者后退多少步
 {% endnote %}
 ```
@@ -221,7 +221,7 @@ router.go(-1)
 
 ```
 #### 路由命名
-{% note success %}
+{% note success flat %}
 用于区分不同的路由，主要是起到标识作用
 {% endnote %}
 ```
@@ -241,7 +241,7 @@ const router = new VueRouter({
 router.push({ name: 'user', params: { userId: 123 }})
 ```
 #### 命名视图
-{% note success %}
+{% note success flat %}
 同时 (同级) 展示多个视图，而不是嵌套展示
 {% endnote %}
 
@@ -271,7 +271,7 @@ const router = new VueRouter({
 ```
 #### 重定向
 
-{% note success %}
+{% note success flat %}
 命名的路由
 动态返回重定向目标
 /a 的别名是 /b，意味着，当用户访问 /b 时，URL 会保持为 /b，但是路由匹配则为 /a，就像用户访问 /a 一样
@@ -329,7 +329,7 @@ const router = new VueRouter({
 ```
 ###### 函数模式
 
-{% note info %}
+{% note info  flat%}
 URL /search?q=vue 会将 {query: 'vue'} 作为属性传递给 SearchUser 组件
 {% endnote %}
 
@@ -343,7 +343,7 @@ const router = new VueRouter({
 ```
 #### H5的hsitory模式
 
-{% note danger %}
+{% note danger flat %}
 vue-router 默认 hash 模式 —— 使用 URL 的 hash 来模拟一个完整的 URL，于是当 URL 改变时，页面不会重新加载
 
 需要后端配置[https://router.vuejs.org/zh/guide/essentials/history-mode.html#%E5%90%8E%E7%AB%AF%E9%85%8D%E7%BD%AE%E4%BE%8B%E5%AD%90]

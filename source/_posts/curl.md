@@ -1,6 +1,6 @@
 ---
 title: PHP模拟发送CURL请求
-permalink: 'posts/:abbrlink.html'
+
 top_img: http://image.laputcat.top/blog/php.jpg
 comments: true
 toc: 是否顯示toc （除非特定文章設置，可以不寫）
@@ -17,7 +17,7 @@ description: 模拟发送CURL请求
 ---
 
 <blockquote class="blockquote-center">PHP使用Curl模拟发送请求</blockquote>
-{% note success %}
+{% note success flat %}
 主要用于第三方接口请求使用，接收请求数据接口返回数据。模拟发送POST请求
 {% endnote %}
 
@@ -72,7 +72,7 @@ description: 模拟发送CURL请求
 		return $data;
 	}
 ```
-{% note success %}
+{% note success flat %}
 模拟发送GET请求
 {% endnote %}
 ```

@@ -1,6 +1,6 @@
 ---
 title: 部署Hexo博客-阿里云
-permalink: 'posts/:abbrlink.html'
+
 top_img: 'https://ae01.alicdn.com/kf/U1707cec45ca84f7b824264cd722e3fd08.jpg'
 comments: true
 top: true
@@ -33,7 +33,7 @@ updated: 2020-12-21 23:38:55
 
 #### 本地服务搭建
 
-{% note primary %}
+{% note primary flat flat%}
 [参看：本地搭建流程](https://zhuanlan.zhihu.com/p/137022058)
 [参看：本地搭建流程](https://zhuanlan.zhihu.com/p/126243913)
 {% endnote %}
@@ -58,7 +58,7 @@ updated: 2020-12-21 23:38:55
 
 <span id="inline-yellow">迁移Hexo--搭建私有Git库</span>
 
-{% note success %}
+{% note success flat %}
 安装Git 查看版本号
 {% endnote %}
 
@@ -67,7 +67,7 @@ updated: 2020-12-21 23:38:55
 # git --version
 ```
 
-{% note success %}
+{% note success flat %}
 安装node.js 查看版本号
 {% endnote %}
 
@@ -80,7 +80,7 @@ updated: 2020-12-21 23:38:55
 
 ```
 
-{% note success %}
+{% note success flat %}
 创建git用户并配置仓库
 {% endnote %}
 
@@ -107,7 +107,7 @@ cd blog.git/hooks
 ```
 
 
-{% note success %}
+{% note success flat %}
 本地配置ssh连接远程端[-给git用户配置ssh免密公钥登录-]----难点
 {% endnote %}
 
@@ -153,7 +153,7 @@ $ssh git@xxx.xxx.xxx.xxx（阿里云公网IP）#法2
 ![本地连接参考](https://pic1.zhimg.com/80/v2-b5b4e218ee839ccd1f9c150a07d46160_720w.jpg)
 
 
-{% note success %}
+{% note success flat %}
 配置服务端Git仓库-配置完成后进行重启
 {% endnote %}
 
@@ -175,7 +175,7 @@ $chmod +x ~/hexo.git/hooks/post-receive
 $cd ~
 $sudo chmod -R 777 /home/www/hexo
 ```
-{% note success %}
+{% note success flat %}
 测试 Git 仓库是否可用
 {% endnote %}
 
@@ -183,7 +183,7 @@ $sudo chmod -R 777 /home/www/hexo
 git clone git@server_ip:/home/git/hexo.git
 ```
 
-{% note success %}
+{% note success flat %}
 修改hexo配置文件,部署到阿里云
 注意：root需要配置正常，以防上传的后css丢失
 {% endnote %}
@@ -196,7 +196,7 @@ deploy:
 ```
 
 
-{% note danger %}
+{% note danger flat %}
 配置Ningx注意点:
 {% endnote %}
 <span id="inline-yellow">配置完成域名映射和git仓库后一直访问失败</span>

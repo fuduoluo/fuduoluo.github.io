@@ -1,6 +1,6 @@
 ---
 title: 微信小程序
-permalink: 'posts/:abbrlink.html'
+
 top_img: https://img4.mukewang.com/5bbf2def000118ab06000336-240-180.jpg
 comments: true
 toc: 是否顯示toc （除非特定文章設置，可以不寫）
@@ -17,7 +17,7 @@ tags:
 ---
 
 <blockquote class="blockquote-center"></blockquote>
-{% note success %}
+{% note success flat %}
 记录微信小程序学习
 {% endnote %}
 

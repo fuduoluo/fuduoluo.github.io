@@ -1,6 +1,6 @@
 ---
 title: Vue的钩子函数
-permalink: 'posts/:abbrlink.html'
+
 top_img: （除非特定需要，可以不寫）
 comments: true
 toc: 是否顯示toc （除非特定文章設置，可以不寫）
@@ -22,7 +22,7 @@ updated: 2020-02-24 09:44:03
 
 [参考文章-详细介绍入口](https://segmentfault.com/a/1190000015727279)
 
-{% note danger %}
+{% note danger flat %}
 通俗理解：路由跳转是一个大的过程，这个大的过程分为跳转前中后等等细小的过程，在每一个过程中都有一函数，这个函数能让你操作一些其他的事儿的时机，这就是导航守卫
 记住 参数或查询的改变并不会触发进入/离开的导航守卫. 你可以通过观察 $route 对象来应对这些变化，或使用 beforeRouteUpdate 的组件内守卫
 {% endnote %}
@@ -41,7 +41,7 @@ updated: 2020-02-24 09:44:03
 
 ##### 使用方法
 
-{% note warning %}
+{% note warn flat %}
 确保要调用 next 方法，否则钩子就不会被 resolved。
 守卫是异步解析执行，此时导航在所有守卫 resolve 完之前一直处于 等待中
 {% endnote %}
@@ -62,7 +62,7 @@ updated: 2020-02-24 09:44:03
 
 ##### to from next 三个参数
 
-{% note warning %}
+{% note warn flat %}
 next()必须调用，否则不能进入路由(页面空白)
 {% endnote %}
 
@@ -94,7 +94,7 @@ next()必须调用，否则不能进入路由(页面空白)
 
 #### 组件内的守卫
 
-{% note warning %}
+{% note warn flat %}
 1.beforeRouteEnter 守卫 不能 访问 this，因为守卫在导航确认前被调用,因此即将登场的新组件还没被创建
 2.通过传一个回调给 next来访问组件实例
 {% endnote %}
@@ -160,7 +160,7 @@ const router = new VueRouter({
 ```
 #### [keep-alive](https://segmentfault.com/a/1190000015727279#item-3)
 
-{% note warning %}
+{% note warn flat %}
 内置组件keep-alive来缓存组件内部状态，避免重新渲染
 它自身不会渲染一个 DOM 元素，也不会出现在父组件链中。
 在被keep-alive包含的组件/路由中，会多出两个生命周期的钩子:activated 与 deactivated。
@@ -169,7 +169,7 @@ const router = new VueRouter({
 - activated:在组件第一次渲染时会被调用，之后在每次缓存组件被激活时调用。
 - deactivated：组件被停用(离开路由)时调用
 
-{% note warning %}
+{% note warn flat %}
 使用keep-alive可以将所有路径匹配到的路由组件都缓存起来，包括路由组件里面的组件，keep-alive大多数使用场景就是这种。
 {% endnote %}
 

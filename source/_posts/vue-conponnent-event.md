@@ -1,6 +1,6 @@
 ---
 title: Vue组件-如何绑定原生事件至组件
-permalink: "posts/:abbrlink.html"
+permalink: "posts/:abbrlink/"
 top_img: （除非特定需要，可以不寫）
 comments: true
 toc: 是否顯示toc （除非特定文章設置，可以不寫）
@@ -24,7 +24,7 @@ description: 解决组件通信方案
 ##### [参考文章：vue组件间通信六种方式差异](https://www.jianshu.com/p/c015141441f4)
 
 - $attrs/$listeners 具体使用例子
-  {% note success %}
+  {% note success flat %}
   \$attrs--继承所有的父组件属性（除了 prop 传递的属性、class 和 style ）
 
   inheritAttrs：默认值 true,继承所有的父组件属性（除 props 的特定绑定）作为普通的 HTML 特性应用在子组件的根元素上，如果你不希望组件的根元素继承特性设置 inheritAttrs: false,但是 class 属性会继承
@@ -87,7 +87,7 @@ description: 解决组件通信方案
                 }
             })
     ```
-    {% note primary %}
+    {% note primary flat %}
     [$listeners详解](https://cn.vuejs.org/v2/api/#vm-listeners)
     使用base-input时，传入的所有v-on事件都可以在$listeners对象中找到
     【包含了父作用域中的 (不含 .native 修饰器的) v-on 事件监听器】
@@ -95,7 +95,7 @@ description: 解决组件通信方案
     实质：只是转发了父组件传入的参数给input元素
     {% endnote %}
 #### 监听一个组件原生根元素上事件 native 修饰符
-    {% note warning %}
+    {% note warn flat %}
     普通元素无效
     {% endnote %}
     - 使用 v-on 的 .native 修饰符：

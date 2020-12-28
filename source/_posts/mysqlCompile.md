@@ -1,6 +1,6 @@
 ---
 title: 编译安装Mysql
-permalink: 'posts/:abbrlink.html'
+
 copyright: true
 categories: Mysql
 tags: Mysql编译安装

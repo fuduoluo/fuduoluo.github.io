@@ -6,8 +6,8 @@ top_img: https://cdn.jsdelivr.net/gh/BNDong/Cnblogs-Theme-SimpleMemory@master/im
 ---
 
 #### My Blob's infomations
-- name: Blog 名字： LaputCat
-- address: Blog 地址： https://www.laputcat.top
-- avatar: Blog 頭像： http://image.laputcat.top/blog/avatar.jpeg
-- info: Blog 簡介： Work your ass off
-- comment: 如果需要交換友鏈,請留言
+- name: Blog  LaputCat
+- address: Blog  https://www.laputcat.top
+- avatar: Blog  http://image.laputcat.top/blog/avatar.jpeg
+- info: Blog  Work your ass off
+- comment: 如果需要交換友鏈,請留言!!!

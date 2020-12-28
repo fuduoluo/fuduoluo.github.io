@@ -1,6 +1,6 @@
 ---
 title: 永久激活PHPstorm编辑器
-permalink: 'posts/:abbrlink.html'
+
 top_img: https://i.loli.net/2020/03/20/MbQ5TnxrIGt87zD.png
 comments: true
 toc: 是否顯示toc （除非特定文章設置，可以不寫）
@@ -16,19 +16,19 @@ keywords: PHPSTORM  IDE  tool
 description: active 
 ---
 
-{% note warning %}
+{% note warn flat %}
 本教程仅供学习使用，切勿商务用途。若有问题，后果自负。
 {% endnote %}
 
 #### 以下是激活window为例
 #### 下载压缩包
 作者提供下载地址
-{% note success %}
+{% note success flat %}
 下载链接: https://pan.baidu.com/s/19NNaNv7OeJ92mcSL_sA7Mw 
 提取码: 7fy6
 {% endnote %}
 以上链接失效的话尝试如下地址
-{% note success %}
+{% note success flat %}
 链接：https://pan.baidu.com/s/1P3nj76Tpop10oxZfTqWIDw 
 提取码：sxj9 
 {% endnote %}
@@ -40,7 +40,7 @@ description: active
 #### 打开phpstorm64.exe.vmoptionswe年添加压缩包路径
 ![image.png](https://i.loli.net/2020/03/22/7kGziqlhP9Mo5g4.png)
 
-{% note danger %}
+{% note danger flat %}
 以我本机为例，注意不要使用中文命名
 一定要自己确认好路径( 不要使用中文路径)，填错会导致IDE打不开!!!最好使用绝对路径。 
 一个vmoptions内只能有一个 -javaagent 参数。

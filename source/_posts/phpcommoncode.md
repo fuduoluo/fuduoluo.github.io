@@ -1,6 +1,6 @@
 ---
 title: PHP常用代码(文章)
-permalink: 'posts/:abbrlink.html'
+
 copyright: true
 abbrlink: f488806d
 date: 2019-09-05 21:58:37

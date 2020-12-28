@@ -1,6 +1,6 @@
 ---
 title: Linux IO模型
-permalink: 'posts/:abbrlink.html'
+
 copyright: true
 categories: IO
 tags: IO阻塞线程同步

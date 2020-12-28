@@ -1,6 +1,6 @@
 ---
 title: ThinkPHP5.1手记
-permalink: 'posts/:abbrlink.html'
+
 top_img: https://box.kancloud.cn/2015-12-12_566b6a10506a4.png
 comments: true
 toc: 是否顯示toc （除非特定文章設置，可以不寫）
@@ -17,7 +17,7 @@ tags:
 ---
 
 <blockquote class="blockquote-center"></blockquote>
-{% note success %}
+{% note success flat %}
 ThinkPHP V5.0——为API开发而设计的高性能框架
 {% endnote %}
 

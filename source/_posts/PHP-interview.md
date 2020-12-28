@@ -1,6 +1,6 @@
 ---
 title: 360解读PHP面试题
-permalink: 'posts/:abbrlink.html'
+
 copyright: true
 categories: PHP
 tags: 360解读PHP面试

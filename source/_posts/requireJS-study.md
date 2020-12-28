@@ -1,6 +1,6 @@
 ---
 title: requireJS入门学习
-permalink: 'posts/:abbrlink.html'
+
 copyright: true
 abbrlink: 5422b83b
 date: 2019-07-11 22:43:59

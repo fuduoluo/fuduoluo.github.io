@@ -1,6 +1,6 @@
 ---
 title: Vue组件-自定义事件
-permalink: "posts/:abbrlink.html"
+permalink: "posts/:abbrlink/"
 top_img: （除非特定需要，可以不寫）
 comments: true
 toc: 是否顯示toc （除非特定文章設置，可以不寫）
@@ -18,7 +18,7 @@ updated: 2020-02-20 09:15:45
 
 
 <blockquote class="blockquote-center">Vue组件学习</blockquote>
-{% note warning %}
+{% note warn flat %}
 请注意实例化方法等使用Vue版本
 {% endnote %}
 
@@ -40,7 +40,7 @@ updated: 2020-02-20 09:15:45
         'component-a': ComponentA,
     }
     })
-    {% note success %}
+    {% note success flat %}
     注意局部注册的组件在其子组件中不可用
     {% endnote %}
 #### Prop
@@ -48,12 +48,12 @@ updated: 2020-02-20 09:15:45
 #### 自定义事件
 
 ![组件间通信](https://i.loli.net/2020/03/22/UhHz3xWEBnsLKuP.png)
-{% note warning %}
+{% note warn flat %}
 当子组件需要向父组件传递数据时，就要用到自定义事件
 子组件用**\$ emit()来触发事件**，父组件在调用子组件上，加@事件名来监听子组件的事件。
 {% endnote %}
 
-{% note success %}
+{% note success flat %}
 [摘自参考文章](https://segmentfault.com/a/1190000018809309)
 
 ##### 子向父的介质是自定义事件
@@ -84,14 +84,14 @@ updated: 2020-02-20 09:15:45
   this.$emit('my-event')
   <my-component v-on:my-event="doSomething"></my-component>
   ```
-  {% note danger %}
+  {% note danger flat %}
   推荐：始终使用 kebab-case 的事件名 [短横线分隔命名]
   {% endnote %}
 
 ##### 自定义事件
 
 - 自定义事件及其注意点
-  {% note info %}
+  {% note info  flat%}
   以下例子-父子组件传递值和监听事件
   {% endnote %}
 
@@ -101,7 +101,7 @@ updated: 2020-02-20 09:15:45
   [\$nextTick 详解](https://cn.vuejs.org/v2/api/#Vue-nextTick)
   [\$refs 详解](https://cn.vuejs.org/v2/guide/components-edge-cases.html#%E8%AE%BF%E9%97%AE%E5%AD%90%E7%BB%84%E4%BB%B6%E5%AE%9E%E4%BE%8B%E6%88%96%E5%AD%90%E5%85%83%E7%B4%A0)
 
-  {% note success %}
+  {% note success flat %}
   [摘自参考文章](https://blog.csdn.net/wh710107079/article/details/88243638)
 
   - \$refs 是一个对象，持有已注册过 ref 的所有的子组件
@@ -246,14 +246,14 @@ updated: 2020-02-20 09:15:45
 ##### 绑定原生事件至组件中
 
 - 如何绑定原生事件至组件
-  {% note info %}
+  {% note info  flat%}
   Vue中$attrs和$listeners的使用---解决组件通信
   {% endnote %}
   [移步](/posts/48944071.html)
 ##### .sync 修饰符
 
 - .sync 修饰符
-  {% note info %}
+  {% note info  flat%}
   深入理解vue 修饰符sync【 vue sync修饰符示例】
   {% endnote %}
   [移步]( https://www.jianshu.com/p/6b062af8cf01)

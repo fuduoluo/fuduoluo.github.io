@@ -366,7 +366,7 @@ reward:
 # 推薦文章
 related_post:
   enable: true
-  limit: 3 # 顯示推薦文章數目
+  limit: 6 # 顯示推薦文章數目
   date_type: created # or created or updated 文章日期顯示創建日或者更新日
 
 # figcaption

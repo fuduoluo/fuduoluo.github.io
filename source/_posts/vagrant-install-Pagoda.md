@@ -1,6 +1,6 @@
 ---
 title: vagrant虚拟机安装centos和宝塔
-permalink: 'posts/:abbrlink.html'
+
 copyright: true
 abbrlink: 5a9ca69a
 date: 2019-07-11 21:31:10

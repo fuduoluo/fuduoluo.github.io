@@ -1,6 +1,6 @@
 ---
 title: CakePHP学习
-permalink: 'posts/:abbrlink.html'
+
 copyright: true
 categories: cakephp
 tags: cakephp
@@ -11,7 +11,7 @@ subtitle:
 cover: https://cakephp.org/images/slider/slide-1.jpg
 ---
 
-{% note success %}
+{% note success flat flat %}
 CakePHP学习的水平只有这么点
 {% endnote %}
 

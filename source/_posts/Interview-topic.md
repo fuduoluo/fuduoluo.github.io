@@ -1,6 +1,6 @@
 ---
 title: 归纳总结PHP面试(笔试)
-permalink: 'posts/:abbrlink.html'
+
 copyright: true
 abbrlink: 5c07421a
 date: 2019-09-09 20:09:44

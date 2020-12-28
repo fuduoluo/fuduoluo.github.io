@@ -1,6 +1,6 @@
 ---
 title: vue组件-插槽
-permalink: "posts/:abbrlink.html"
+permalink: "posts/:abbrlink/"
 top_img: （除非特定需要，可以不寫）
 comments: true
 toc: 是否顯示toc （除非特定文章設置，可以不寫）
@@ -22,7 +22,7 @@ description: v-slot适用
 
 ![废弃语法](https://i.loli.net/2020/03/22/czphIqNl4M9XQm2.png)
 
-{% note success %}
+{% note success flat %}
 介绍插槽使用及注意点
 {% endnote %}
 
@@ -32,7 +32,7 @@ description: v-slot适用
 
 #### 插槽
 
-{% note success %}
+{% note success flat %}
 Vue 实现了一套内容分发的 API，将<slot>元素作为承载分发内容的出口，
 插槽内可以包含任何模板代码，包含 HTML。插槽就是子组件提供的可替换模板，父组件可以根据需求改变模板的内容
 脚手架[ES6 语法] 写法[移步参考文章资料](https://segmentfault.com/a/1190000019630737?utm_source=tag-newest)
@@ -40,7 +40,7 @@ Vue 实现了一套内容分发的 API，将<slot>元素作为承载分发内容
 
 #### 注意点
 
-{% note warning %}
+{% note warn flat %}
 
 - v-slot 只能添加到 \<template>标签上，v-slot 的简写形式#，例如 v-slot:header 等价于 #header
 - 利用了<slot>的 name 属性，利用这个属性可以用来定义额外的插槽，一个不带 name 的<slot>出口会带有隐含的名字“default”
@@ -49,7 +49,7 @@ Vue 实现了一套内容分发的 API，将<slot>元素作为承载分发内容
 
 #### 具名插槽
 
-{% note success %}
+{% note success flat %}
     自身理解：顾名思义具体名称的插槽---需要多个插槽
     不带 name 的 <slot> 出口会带有隐含的名字“default”。
     <slot> 元素有一个特殊的 attribute：name,定义额外插槽
@@ -92,7 +92,7 @@ Vue.component('base-layout', {
 ![具名插槽](https://i.loli.net/2020/03/22/OVL2rdaemXTBF8j.png)
 #### 作用域插槽
 
-{% note success %}
+{% note success flat %}
 自身理解：顾名思义不同作用域插槽
 通过“插槽prop”，父组件可以接收到子组件的数据，并且可以对数据进行操作，展现成父组件想要实现的样子。
 插槽 prop：绑定在 <slot> 元素上的 attribute
@@ -186,7 +186,7 @@ Vue.component('slot-child', {
 
 ##### 独占默认插槽的缩写语法
 
-{% note warning %}
+{% note warn flat %}
 默认插槽的缩写语法不能和具名插槽混用，因为它会导致作用域不明确
 {% endnote %}
 

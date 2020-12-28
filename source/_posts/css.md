@@ -1,6 +1,6 @@
 ---
 title: 图片占位自适应
-permalink: 'posts/:abbrlink.html'
+
 copyright: true
 abbrlink: 78cea6d8
 date: 2019-07-11 22:58:01

@@ -1,6 +1,6 @@
 ---
 title: 前端常用代码块
-permalink: 'posts/:abbrlink.html'
+
 top_img: （除非特定需要，可以不寫）
 comments: true
 toc: 是否顯示toc （除非特定文章設置，可以不寫）
@@ -17,7 +17,7 @@ description:
 ---
 
 <blockquote class="blockquote-center"></blockquote>
-{% note success %}
+{% note success flat %}
 前端常用代码块或JS
 {% endnote %}
 

@@ -1,6 +1,6 @@
 ---
 title: git常见操作命令与问题
-permalink: 'posts/:abbrlink.html'
+
 copyright: true
 abbrlink: 888d2e2
 date: 2019-07-11 22:32:11
@@ -112,7 +112,7 @@ git rm -r --cached 文件夹/文件名
 ### [git rebase](https://www.jianshu.com/p/f7ed3dd0d2d8)
 
 ### 不同分支合并
-{% note success %}
+{% note success flat %}
 开发新功能在分支上，测试完成后合并到主分支上
 一般步骤如下：
 {% endnote %}

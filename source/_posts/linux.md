@@ -1,12 +1,11 @@
 ---
 title: Linux备忘录
-permalink: 'posts/:abbrlink.html'
-top_img: https://user-gold-cdn.xitu.io/2018/7/3/1645efa7048fd018?imageView2/0/w/1280/h/960/format/webp/ignore-error/1
+top_img: https://ae01.alicdn.com/kf/Uac8e2662ccf642ca955f21e1eb4b0949g.jpg
 comments: true
 toc: 是否顯示toc （除非特定文章設置，可以不寫）
 toc_number: 是否顯示toc數字 （除非特定文章設置，可以不寫）
 copyright: true
-cover: https://user-gold-cdn.xitu.io/2018/7/3/1645efa7048fd018?imageView2/0/w/1280/h/960/format/webp/ignore-error/1
+cover: https://ae01.alicdn.com/kf/Uac8e2662ccf642ca955f21e1eb4b0949g.jpg
 abbrlink: 59c3cb02
 date: 2020-06-28 23:31:38
 updated: 2020-06-28 23:31:38
@@ -18,18 +17,18 @@ description: Linux笔记
 
 ### Linux修改用户名主机名
 
-{% note primary %}
+{% note primary flat %}
 $ sudo vi /etc/hostname 
 laputcat
 $ sudo vi /etc/hosts
 127.0.0.1       localhost
 127.0.1.1       laputcat
 {% endnote %}
-{% note danger %}
+{% note danger flat %}
 记得重启Linux
 {% endnote %}
 
-{% note info %}
+{% note info  flat%}
 重启命令：
 1、reboot
 2、shutdown -r now 立刻重启(root用户使用)
@@ -47,7 +46,7 @@ $ sudo vi /etc/hosts
 
 ### linux下载软件安装的位置
 
-{% note warning %}
+{% note warn flat %}
 /usr：系统级的目录，可以理解为C:/Windows/。
 
 /usr/lib理解为C:/Windows/System32。

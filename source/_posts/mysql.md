@@ -1,6 +1,6 @@
 ---
 title: Mysql常用语句
-permalink: 'posts/:abbrlink.html'
+
 top_img: http://image.laputcat.top/blog/mysql.png
 comments: true
 toc: 是否顯示toc （除非特定文章設置，可以不寫）

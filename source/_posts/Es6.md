@@ -1,6 +1,6 @@
 ---
 title: ES6
-permalink: 'posts/:abbrlink.html'
+
 top_img: https://i.loli.net/2020/03/20/laLpVHNxdgWDsJf.png
 comments: true
 toc: 是否顯示toc （除非特定文章設置，可以不寫）
@@ -29,7 +29,7 @@ description:
 - 异步编程：Promise、Generator、Async
 
 ### 总结
-{% note primary %}
+{% note primary flat %}
 记录不理解的地方
 {% endnote %}
 
@@ -38,13 +38,13 @@ https://www.cnblogs.com/douyage/p/8630529.html
 
 #### rest参数与arguments关键字
 - arguments
-    {% note warning %}
+    {% note warn flat %}
     arguments，可以获得调用者传入的所有参数
     arguments最常用于判断传入参数的个数
     arguments.length
     {% endnote %}
 - rest 
-    {% note warning %}
+    {% note warn flat %}
     获得额外的传入js参数
     rest参数只能写在最后，前面用...标识，从运行结果可知，传入的参数先绑定a、b，多余的参数以数组形式交给变量rest
     {% endnote %}
@@ -89,7 +89,7 @@ https://www.cnblogs.com/douyage/p/8630529.html
     // 如果浏览器支持解构赋值就不会报错:
     var [x, y, z] = ['hello', 'JavaScript', 'ES6'];
     ```
-    {% note danger %}
+    {% note danger flat %}
     1.注意，对数组元素进行解构赋值时，多个变量要用[...]括起来。
     2.如果数组本身还有嵌套，也可以通过下面的形式进行解构赋值，注意嵌套层次和位置要保持一致
     3.解构赋值还可以忽略某些元素
@@ -118,7 +118,7 @@ https://www.cnblogs.com/douyage/p/8630529.html
     
     ```
 #### 数组解构
-    {% note info %}
+    {% note info  flat%}
     左边模式等于右边模式
     {% endnote %}
 
@@ -150,7 +150,7 @@ https://www.cnblogs.com/douyage/p/8630529.html
 
     ```
 - 默认值
-    {% note warning %}
+    {% note warn flat %}
     ES6 内部使用严格相等运算符（===），判断一个位置是否有值
     只有当一个数组成员严格等于undefined，默认值才会生效。
     默认值是一个表达式只有在用到的时候，才会求值。
@@ -184,7 +184,7 @@ https://www.cnblogs.com/douyage/p/8630529.html
 
 #### 对象解构
 
-{%  note success %}
+{%  note success flat %}
 
     区别：数组的元素是按次序排列的，变量的取值由它的位置决定；
     而对象的属性没有次序，变量必须与属性同名，才能取到正确的值
@@ -250,7 +250,7 @@ https://www.cnblogs.com/douyage/p/8630529.html
 
 #### 扩展运算符
 
-    {% note success%}
+    {% note success flat%}
     扩展运算符（spread）是三个点（...）。它好比 rest 参数的逆运算，将一个数组转为用逗号分隔的参数序列
     {% endnote %}
 
@@ -309,7 +309,7 @@ https://www.cnblogs.com/douyage/p/8630529.html
 
 #### Prototype 属性
 ##### 构造函数
-{% note info %}
+{% note info  flat%}
 构造函数的特点有：
 
 　　　　a：构造函数的函数名首字母必须大写。

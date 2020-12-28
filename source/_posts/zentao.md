@@ -1,6 +1,6 @@
 ---
 title: 禅道安装笔记
-permalink: 'posts/:abbrlink.html'
+
 top_img: https://i.loli.net/2020/06/29/fpvousCXDnj48Vm.png
 comments: true
 toc: 是否顯示toc （除非特定文章設置，可以不寫）
@@ -16,11 +16,11 @@ keywords: 宝塔安装禅道
 description: 纯手工打造禅道项目管理软件
 ---
 
-{% note danger %}
+{% note danger flat %}
 注: 请确保域名已经解析到服务器上。
 {% endnote %}
 ### 环境搭建
-{% note warning %}
+{% note warn flat %}
 web服务：Nginx
 数据库：mysql
 PHP：5.6
@@ -33,16 +33,16 @@ PHP：5.6
 - 添加站点
 ![添加站点](https://www.zentao.net/file.php?f=201809/f_dfb70819bc272bdfa38d165bd71235f2.png&t=png&o=&s=full&v=1538189161)
 - 上传文件
-{% note info %}
+{% note info  flat%}
 下载禅道源码包，解压后得到zentaopms文件夹，将里面的所有文件上传到网站根目录下。
 {% endnote %}
 - 设置运行目录
-{% note info %}
+{% note info  flat%}
 在宝塔面板的网站管理中，点击相应站点的设置按钮，在网站目录中设置运行目录。将运行目录指向/www目录
 {% endnote %}
 ![设置运行目录](https://www.zentao.net/file.php?f=201809/f_8a81de45973e58fcf7f7d43ece521d55.png&t=png&o=&s=full&v=1538189161)
 - 配置文件
-{% note info %}
+{% note info  flat%}
 配置文件中端口号、域名、站点根目录等信息根据自己实际情况填写
 {% endnote %}
 - 伪静态设置
@@ -62,12 +62,12 @@ rewrite /(.*)$ /index.php/$1 last;
 ![重启NGINX](https://www.zentao.net/file.php?f=201809/f_746942db4021538168882b10895ab8da.png&t=png&o=&s=full&v=1538189161)
 
 - 安装禅道
-{% note warning %}
+{% note warn flat %}
 傻瓜式进行安装禅道
 {% endnote %}
 ### 遇到问题
 - 安装禅道到操作数据库时出现以下错误：
-{% note danger %}
+{% note danger flat %}
 Access denied for user 'root'@'localhost'  xxxxxx
 {% endnote %}
 ### 解决问题

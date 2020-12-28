@@ -1,6 +1,6 @@
 ---
 title: 百度[待定]Google收录站点
-permalink: 'posts/:abbrlink.html'
+
 copyright: true
 categories: Baidu-Google
 tags: Baidu-Google
@@ -15,7 +15,7 @@ top_img: https://i.loli.net/2020/03/20/LOYJRzZjaHg618A.png
 
 <blockquote class="blockquote-center">hexo站点地图收录</blockquote>
 
-{% note success %}
+{% note success flat %}
 网站的SEO对一个网站非常重要，SEO指的是搜索引擎优化。通过搜索引擎优化，可以提高网站的网站关键词排名以及博客文章的曝光度。
 一般来说，我们针对百度和Google这两个搜索引擎进行优化，提高对网站资源的索引量，使我们的文章更容易被发现。
 {% endnote %}

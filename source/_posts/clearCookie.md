@@ -1,6 +1,6 @@
 ---
 title: 如何清理微信缓存
-permalink: 'posts/:abbrlink.html'
+
 comments: true
 toc: 是否顯示toc （除非特定文章設置，可以不寫）
 toc_number: 是否顯示toc數字 （除非特定文章設置，可以不寫）
@@ -17,7 +17,7 @@ updated: 2020-04-22 10:05:43
 ---
 
 <blockquote class="blockquote-center">如何清除微信缓存</blockquote>
-{% note warning %}
+{% note warn flat flat %}
 是否遇到过缓存清理，尤其是si在微信上~~~~~~
 出现缓存问题可能导致用户出现很多车祸现场，主要上线了的项目需要内部测试
 于是就有下面去折腾了，哈哈哈哈

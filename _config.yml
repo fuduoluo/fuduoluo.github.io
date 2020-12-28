@@ -9,7 +9,7 @@ title: 爱笑の猫
 subtitle: 爱笑の猫 
 
 # 博客介绍（同时用于seo）
-description: 爱笑の猫正在寻找快乐的鱼
+description: 爱笑の猫~寻找快乐的鱼
 
 # banner显示的简短介绍
 subtitle_desc: 爱笑の猫, blog, PHP, 前端开发, 全栈开发
@@ -65,12 +65,23 @@ error_page_bg: https://images.unsplash.com/photo-1542434684-41a0bf4e6cd3?ixlib=r
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 # url: http://s_lindan.gitee.io/blog/
-url: https://www.laputcat.top/
+url: http://www.laputcat.top/
 root: /
-permalink: posts/:abbrlink.html
+
+permalink: posts/:abbrlink/
 abbrlink:
-  alg: crc32 
-  rep: hex    
+  alg: crc32      #support crc16(default) and crc32
+  rep: hex        #support dec(default) and hex
+  drafts: false   #(true)Process draft,(false)Do not process draft. false(default) 
+  # Generate categories from directory-tree
+  # depth: the max_depth of directory-tree you want to generate, should > 0
+  auto_category:
+     enable: true  #true(default)
+     depth:        #3(default)
+     over_write: false 
+  auto_title: false #enable auto title, it can auto fill the title by path
+  auto_date: false #enable auto date, it can auto fill the date by time today
+  force: false #enable force mode,in this mode, the plugin will ignore the cache, and calc the abbrlink for every post even it already had abbrlink.
 
 # Directory
 source_dir: source
@@ -85,22 +96,22 @@ skip_render:
   - CNAME
 
 # Writing
-new_post_name:  # 新的博文的文件名
-  :title.md
-default_layout: #默认布局
-  post 
-titlecase: # 将标题转换为首字母大写标题
-  false 
-external_link: # 在新标签中打开外部链接
-  true 
-filename_case: #把文件名称转换为 (1) 小写或 (2) 大写
-  0 
-render_drafts: #是否显示草稿
-  false 
-post_asset_folder: #是否启动资源文件夹
-  false 
-relative_link: #把链接改为与根目录的相对位址
-  false 
+new_post_name: :title.md  # 新的博文的文件名
+  
+default_layout: post #默认布局
+   
+titlecase: false # 将标题转换为首字母大写标题
+
+external_link: true|false # deprecated
+   
+filename_case: 0 #把文件名称转换为 (1) 小写或 (2) 大写
+
+render_drafts: false #是否显示草稿
+   
+post_asset_folder: false #是否启动资源文件夹
+   
+relative_link: false #把链接改为与根目录的相对位址
+   
 future: true
 highlight: #代码块的设置
   enable: true
@@ -196,3 +207,29 @@ Plugins:
   - hexo-generator-sitemap
   
 seo: true
+
+douban:
+  user: 204270341
+  builtin: true
+  book:
+    title: '《挪威的森林》'
+    quote: '希望你能记住我，记住我曾这样存在过。'
+    meta: true
+    comments: true
+    top_img: https://ae01.alicdn.com/kf/U8e50d09d042349d7b9b8fc18d74f8877b.jpg
+    aside: true
+  movie:
+    title: '《了不起的盖茨比》'
+    quote: '我年纪还轻、阅历不深的时候，我父亲教导过我一句话，我至今还念念不忘。‘每逢你想要批评任何人的时候，’他对我说，‘你就记住，这个世界上所有的人，并不是个个都有过你拥有的那些优越条件。'
+    meta: true
+    comments: true
+    top_img: https://ae01.alicdn.com/kf/U69091cd815af41859c9e7be8cd63fd13W.jpg
+    aside: true
+  # game:
+  #   title: 'This is my game title'
+  #   quote: 'This is my game quote'
+  #   meta: true
+  #   comments: true
+  #   top_img: https://cccccc.png
+  #   aside: true
+  timeout: 10000 

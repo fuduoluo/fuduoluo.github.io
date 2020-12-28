@@ -1,6 +1,6 @@
 ---
 title: 关于网页[H5]微信授权登录
-permalink: 'posts/:abbrlink.html'
+
 top_img: https://i.loli.net/2020/03/20/LkXy5aFSPhH2wtV.png
 toc: 是否顯示toc （除非特定文章設置，可以不寫）
 toc_number: 是否顯示toc數字 （除非特定文章設置，可以不寫）
@@ -16,7 +16,7 @@ description: 微信登录步骤
 ---
 
 
-{% note success %}
+{% note success flat %}
 关于网页[H5]微信授权登录
 {% endnote %}
 

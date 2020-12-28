@@ -1,6 +1,6 @@
 ---
 title: Swoole编译安装和TP5接入使用等问题
-permalink: 'posts/:abbrlink.html'
+
 copyright: true
 abbrlink: 5d473dd
 date: 2019-10-29 17:12:01
@@ -13,11 +13,11 @@ cover: https://i.loli.net/2020/03/22/QIoP2rFjqyBeNcv.png
 
 ![swoole新手入门手册](http://noobcourse.php20.cn/NoobCourse/Introduction.html)
 
-{% note success %}
+{% note success flat %}
 Swoole编译安装和TP5接入使用等问题
 {% endnote %}
 
-{% note danger %}
+{% note danger flat %}
  以下是通过PHP7.2.23和Swoole4.4.9安装编译遇到的问题！
  PHP7.2.23安装路径/home/var/www/soft/php   
  swoole 编译安装目录 /home/var/www/soft/php/lib/php/extensions

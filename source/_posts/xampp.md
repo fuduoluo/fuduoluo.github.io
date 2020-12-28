@@ -1,6 +1,6 @@
 ---
 title: Xampp汇总
-permalink: 'posts/:abbrlink.html'
+
 top_img: https://i.loli.net/2020/03/20/hDBRKMuCLEp5d7z.jpg
 comments: true
 toc: 是否顯示toc （除非特定文章設置，可以不寫）
@@ -17,7 +17,7 @@ description:
 ---
 
 <blockquote class="blockquote-center"></blockquote>
-{% note success %}
+{% note success flat %}
 XAMPP 配置虚拟域名/localhost重定向
 {% endnote %}
 

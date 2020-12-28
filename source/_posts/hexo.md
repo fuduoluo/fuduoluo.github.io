@@ -1,6 +1,6 @@
 ---
 title: Hexo问题汇总
-permalink: 'posts/:abbrlink.html'
+
 top_img: https://i.loli.net/2020/03/22/gJEfsq5SzKaptj6.png
 copyright: true
 categories: Hexo
@@ -18,14 +18,14 @@ cover: https://i.loli.net/2020/03/22/gJEfsq5SzKaptj6.png
 
 - 在博客根目录下  [D:\blogs] 
 - 运行以下代码 Hexo版本升级可以通过npm实现
-    {% note primary %}
+    {% note primary flat %}
     全局升级hexo-cli
     {% endnote %}
     ```
     npm i hexo-cli -g
     ```
 
-    {% note primary %}
+    {% note primary flat %}
     npm-check检查更新
     {% endnote %}
     ```
@@ -33,7 +33,7 @@ cover: https://i.loli.net/2020/03/22/gJEfsq5SzKaptj6.png
     npm-check
     ```
 
-    {% note primary %}
+    {% note primary flat %}
     npm-upgrade更新
     {% endnote %}
     ```
@@ -41,14 +41,14 @@ cover: https://i.loli.net/2020/03/22/gJEfsq5SzKaptj6.png
     npm-upgrade
     ```
 
-    {% note primary %}
+    {% note primary flat %}
     更新全局包：
     {% endnote %}
     ```
     npm update <name> -g
     ```
 
-    {% note primary %}
+    {% note primary flat %}
     更新生产环境依赖包
     {% endnote %}
     ```
@@ -56,7 +56,7 @@ cover: https://i.loli.net/2020/03/22/gJEfsq5SzKaptj6.png
     ```
 
 #### 升级butterfly主题
-{% note success %}
+{% note success flat %}
 进入主题目录路径  [D:\blogs\themes\Butterfly]
 使用 git bash here 工具
 使用 git pull 进项拉取新项目

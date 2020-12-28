@@ -1,6 +1,6 @@
 ---
 title:  Vue Cli 3 与 TP5 前后端分离访问[未跨域]
-permalink: 'posts/:abbrlink.html'
+
 copyright: true
 categories: vue
 tags: vue 
@@ -360,7 +360,7 @@ location ~ ^/(thinkphp|vendor/phpunit|application|runtime)/.*\.php
 ```
 ####  安装vue脚手架出现以下问题[电脑本身禁止运行脚本]
 
-{% note danger %}
+{% note danger flat %}
 无法加载文件 C:\Users\1111111\AppData\Roaming\npm\vue.ps1,因为在此系统禁止运行脚本
 {% endnote %}
 
