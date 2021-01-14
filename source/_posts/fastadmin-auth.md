@@ -1,23 +1,23 @@
 ---
-title: {{ title }}
-date: {{ date }}
-updated: {{ date }}
+title: fastadmin-权限管理生成树状列表
 tags: 文章標籤
-top:
-categories:
-keywords:
-description:
-abbrlink: 
 top_img: 文章頂部圖片
-comments:  true
-toc:  是否顯示toc （除非特定文章設置，可以不寫）
+comments: true
+toc: 是否顯示toc （除非特定文章設置，可以不寫）
 toc_number: 是否顯示toc數字 （除非特定文章設置，可以不寫）
 copyright: true
 copyright_author: 文章版權模塊的文章作者
 copyright_author_href: 文章版權模塊的文章作者鏈接
 copyright_url: 文章版權模塊的文章連結鏈接
 copyright_info: 文章版權模塊的版權聲明文字
-cover:  縮略圖
+cover: 縮略圖
+date: 2021-01-08 10:21:59
+updated: 2021-01-08 10:21:59
+top:
+categories:
+keywords:
+description:
+abbrlink:
 mathjax:
 katex:
 aside:

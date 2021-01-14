@@ -12,6 +12,8 @@ cover: https://i.loli.net/2020/03/22/ycpGbagOj8SCwH3.png
 ---
 
 
+![git总结大全](https://ae01.alicdn.com/kf/Uf66da370aebf4979b04f311f46591fd4X.jpg)
+
 ### 标准Git提交注解
 第1行：提交修改内容的摘要
 第2行：空行
@@ -195,6 +197,26 @@ git reflog
 git log --oneline --graph
 
 ```
+#### 查看git log简写及其提交说明
+```
+git log --oneline
+```
+#### 查看每次提交改变差异
+```
+git log -p <file>
+```
+#### 查看每次提交的简略信息，可以快速查看每次提交的差异，比-p简洁
+```
+git log --stat
+```
+#### 用于自定义输出格式信息；比如：oneline[单行],format[定制时间格式]
+```
+git log --pretty=oneline
+```
+#### -n代表限制输出的数量，最近的n条提交信息
+```
+git log -2  //最近两条的提交信息
+```
 ### 忽略.idea文件夹下文件
 ```
 git rm -r --cached .idea
@@ -221,5 +243,9 @@ git pull = git fetch + git merge FETCH_HEAD
 
 git pull --rebase =  git fetch + git rebase FETCH_HEAD 「推荐使用」
 ```
-
+### git fetch 使用
+- 从远程仓库拉取和抓取到本地仓库，但未合并（同步远程仓库数据]
+```
+git fetch <remote>    //remote： 远程地址
+```
 还在补充中ing......

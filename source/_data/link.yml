@@ -2,22 +2,17 @@ class1:
   class_name: 友情鏈接
   link_list:
     1:
+      name:  Heo
+      link: https://blog.zhheo.com/
+      avatar: https://blog.zhheo.com/img/avatar.png
+      descr: 爱折腾的设计师
+    2:
       name:  DaleInTeach
       link: https://dale-.github.io/
       avatar: https://dale-.github.io/css/images/pose.jpg
       descr: Dale|前端工作者
-    2:
-      name:  BookJ
-      link: http://html5book.bluej.cn/#/
-      avatar: http://html5book.bluej.cn/book_logo.png
-      descr: 一本讲求技术情怀的书
-    3:
-      name:  ZhangYi
-      link: http://codewithzhangyi.com/
-      avatar: http://codewithzhangyi.com/images/background/001.jpg
-      descr: 一个简单的代码爱好者💻，数学专业，数学建模竞赛 国赛/美赛 奖牌收割者
 class2:
-  class_name: 代码规范
+  class_name: Code&Book~
   link_list:
     1:
       name:  代码规范(前端)
@@ -29,13 +24,10 @@ class2:
       link: http://sideeffect.kr/popularconvention
       avatar: https://xxxxx/avatar.png
       descr: Popular Coding Convention on Github
-class3:
-  class_name: 没放盐的鸡汤
-  link_list:
-    1:
-      name:  毒鸡汤和黑科技
-      link: http://www.sunnyos.com/
-      avatar: http://www.sunnyos.com/public/home/images/default.jpg
-      descr: 讲述一个程序员代码史记
+    3:
+      name: 蓝景
+      link: http://html5book.bluej.cn/#/
+      avatar: http://html5book.bluej.cn/book_logo.png
+      descr: 一本讲求技术情怀的书
     
       
