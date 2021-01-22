@@ -8,7 +8,7 @@ toc: 是否顯示toc （除非特定文章設置，可以不寫）
 toc_number: 是否顯示toc數字 （除非特定文章設置，可以不寫）
 copyright: true
 cover: 'https://ae01.alicdn.com/kf/U1707cec45ca84f7b824264cd722e3fd08.jpg'
-tags: blog aliCloud nginx
+tags: Blog 
 categories: Linux Hexo 
 keywords: 迁移博客 部署 服务器 hexo
 description: 打造属于自己博客，部署到阿里云~~

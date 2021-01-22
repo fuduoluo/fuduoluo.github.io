@@ -10,7 +10,7 @@ cover: https://i.loli.net/2020/06/29/fpvousCXDnj48Vm.png
 abbrlink: d1b59bb9
 date: 2020-06-29 00:10:52
 updated: 2020-06-29 00:10:52
-tags: Linux
+tags: 宝塔
 categories: Linux
 keywords: 宝塔安装禅道
 description: 纯手工打造禅道项目管理软件

@@ -5,8 +5,8 @@ copyright: true
 abbrlink: 5422b83b
 date: 2019-07-11 22:43:59
 updated: 2019-07-11 22:43:59
-categories:  requireJS
-tags:  requireJS入门与使用
+categories:  RequireJS
+tags:  RequireJS
 subtitle:
 cover: https://i.loli.net/2020/03/22/T9UXiJH6McSb5uR.png
 ---

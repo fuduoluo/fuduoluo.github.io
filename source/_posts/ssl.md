@@ -1,6 +1,6 @@
 ---
 title: 服务器配置SSL证书
-tags: SSL Nginx
+tags: SSL
 top_img: https://ae01.alicdn.com/kf/U64b71c8662fa4ebaabbba516613a2321K.jpg
 comments: true
 toc: 是否顯示toc （除非特定文章設置，可以不寫）

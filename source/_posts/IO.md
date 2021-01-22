@@ -3,7 +3,7 @@ title: Linux IO模型
 
 copyright: true
 categories: IO
-tags: IO阻塞线程同步
+tags: Linux
 abbrlink: 8601bab2
 date: 2019-10-29 16:55:50
 updated: 2019-10-29 16:55:50

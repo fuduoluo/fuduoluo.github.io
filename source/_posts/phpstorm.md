@@ -10,7 +10,7 @@ cover: https://i.loli.net/2020/03/20/MbQ5TnxrIGt87zD.png
 abbrlink: 7a17374d
 date: 2020-01-15 14:49:36
 updated: 2020-02-20 11:49:36
-tags: PHPSTORM
+tags: PHPSTORM-IDE
 categories: PHPSTORM IDE
 keywords: PHPSTORM  IDE  tool
 description: active 

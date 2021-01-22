@@ -86,11 +86,12 @@ favicon: /img/cat.png
 
 # Avatar (頭像)
 avatar:
-  img: http://image.laputcat.top/blog/06818ca4361a28447cffdd2daaed2799.jpeg
+  img: https://ae01.alicdn.com/kf/U2fc6caac6d6342a893c02eb027d60df1C.jpg
   effect: false
 
 # The banner image of home page
-index_img: http://image.laputcat.top/blog/ff7b0000b4345ae33839.jpg
+#index_img: http://image.laputcat.top/blog/ff7b0000b4345ae33839.jpg
+index_img: https://ae01.alicdn.com/kf/U9b2f9da88af940a4964dc4ae5bb8931eh.jpg
 
 # If the banner of page not setting, it will show the top_img
 default_top_img: https://ae01.alicdn.com/kf/Ufb1254a219c64dada2966179f9846addX.jpg
@@ -606,7 +607,7 @@ subtitle:
   # source: 3  調用一句網（簡體） http://yijuzhan.com/
   # source: 4  調用今日詩詞（簡體） https://www.jinrishici.com/
   # subtitle 會先顯示 source , 再顯示 sub 的內容
-  source: 3
+  source: 1
   # 如果有英文逗號' , ',請使用轉義字元 &#44;
   # 如果有英文雙引號' " ',請使用轉義字元 &quot;
   # 開頭不允許轉義字元，如需要，請把整個句子用雙引號包住
@@ -635,6 +636,7 @@ aside:
   card_announcement:
     enable: true
     content: <div class="announcement_content">最近更新Hexo主题版本5.3.0，butterfly主题至最新版本！有关于<span style="color:#49b1f5">搭建问题请评论区留言</span>,搭建问题后面慢慢补上！</div>
+    #content: <div class="card-content"><div class="card-info-avatar is-center"><div class="author-info__sayhi" id="author-info__sayhi">👋 下午好！我是</div><div class="author-info__name">张洪Heo</div><div class="author-info__description">这里有我遇到的关于<b>产品、设计、开发</b>相关的问题和看法，还有一些<b>优质的文章翻译</b>和<b>分享</b>。</div><div class="author-info__description2">这是我的网站，你可以在这里找到有用的<b>知识</b>和<b>教程</b>。</div><img class="avatar-background entered loaded" data-lazy-src="https://p.zhheo.com/1189d6762f50cd993807095dcc1ce413b3d76421.png!cover" onerror="this.onerror=null,this.src=&quot;/img/friend_404.gif&quot;" alt="avatar" data-ll-status="loaded" src="https://p.zhheo.com/1189d6762f50cd993807095dcc1ce413b3d76421.png!cover"></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/" data-pjax-state=""><div class="headline">文章</div><div class="length-num">394</div></a></div><div class="card-info-data-item is-center"><a href="/tags/" data-pjax-state=""><div class="headline">标签</div><div class="length-num">48</div></a></div><div class="card-info-data-item is-center"><a href="/categories/" data-pjax-state=""><div class="headline">分类</div><div class="length-num">8</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/zhheo"><i class="fab fa-github"></i><span>Github</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://dribbble.com/zhheo" rel="external nofollow noreferrer" target="_blank" title="Dribbble"><i class="ri-dribbble-line"></i></a><a class="social-icon" href="https://space.bilibili.com/4218173" rel="external nofollow noreferrer" target="_blank" title="Bilibili"><i class="ri-bilibili-fill"></i></a></div></div>
   card_recent_post:
     enable: true
     limit: 5 # if set 0 will show all

@@ -6,7 +6,7 @@ abbrlink: 5c07421a
 date: 2019-09-09 20:09:44
 updated: 2019-09-09 20:09:44
 categories: PHP-interview
-tags: PHP面试笔试题
+tags: PHP
 subtitle:
 cover: https://i.loli.net/2020/03/22/WFRe4ALGt27wocX.png
 ---

@@ -13,10 +13,6 @@ comments:  true
 toc:  是否顯示toc （除非特定文章設置，可以不寫）
 toc_number: 是否顯示toc數字 （除非特定文章設置，可以不寫）
 copyright: true
-copyright_author: 文章版權模塊的文章作者
-copyright_author_href: 文章版權模塊的文章作者鏈接
-copyright_url: 文章版權模塊的文章連結鏈接
-copyright_info: 文章版權模塊的版權聲明文字
 cover:  縮略圖
 mathjax:
 katex:
@@ -24,8 +20,6 @@ aside:
 aplayer:
 highlight_shrink:
 ---
-
-<blockquote class="blockquote-center"></blockquote>
 
 {% note flat %}
 默認 提示塊標籤
@@ -56,25 +50,25 @@ danger 提示塊標籤
 {% endnote %}
 
 
-{% note 'fab fa-cc-visa' modern %}
+{% note 'fab fa-gg' modern %}
 你是刷 Visa 還是 UnionPay
 {% endnote %}
-{% note blue 'fas fa-bullhorn' modern %}
+{% note blue 'fab fa-codiepie' modern %}
 2021年快到了....
 {% endnote %}
-{% note pink 'fas fa-car-crash' modern %}
+{% note pink 'fab fa-envira ' modern %}
 小心開車 安全至上
 {% endnote %}
-{% note red 'fas fa-fan' modern%}
+{% note red 'fab fa-yelp' modern%}
 這是三片呢？還是四片？
 {% endnote %}
-{% note orange 'fas fa-battery-half' modern %}
+{% note orange 'fab fa-github-alt' modern %}
 你是刷 Visa 還是 UnionPay
 {% endnote %}
-{% note purple 'far fa-hand-scissors' modern %}
+{% note purple 'far fa-houzz' modern %}
 剪刀石頭布
 {% endnote %}
-{% note green 'fab fa-internet-explorer' modern %}
+{% note green 'fab fa-connectdevelop' modern %}
 前端最討厭的瀏覽器
 {% endnote %}
 

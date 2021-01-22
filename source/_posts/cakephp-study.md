@@ -2,8 +2,8 @@
 title: CakePHP学习
 
 copyright: true
-categories: cakephp
-tags: cakephp
+categories: Cakephp
+tags: Cakephp
 abbrlink: cf2bd071
 date: 2019-10-29 17:16:25
 updated: 2019-10-29 17:16:25

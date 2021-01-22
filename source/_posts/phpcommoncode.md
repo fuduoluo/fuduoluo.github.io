@@ -8,7 +8,7 @@ updated: 2019-12-04 12:01:07
 cover: http://image.laputcat.top/blog/php.jpg
 top_img: http://image.laputcat.top/blog/php.jpg
 categories: PHP
-tags: PHP常用代码块
+tags: PHP
 subtitle:
 ---
 

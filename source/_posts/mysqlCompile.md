@@ -3,7 +3,7 @@ title: 编译安装Mysql
 
 copyright: true
 categories: Mysql
-tags: Mysql编译安装
+tags: Mysql
 top_img: http://image.laputcat.top/blog/mysql.png
 abbrlink: 2ce8eb6c
 date: 2019-10-29 16:37:25

@@ -8,7 +8,7 @@ top_img: https://cdn.jsdelivr.net/gh/BNDong/Cnblogs-Theme-SimpleMemory@master/im
 ### My Blob's infomations
 - name: LaputCat
 - address: https://www.laputcat.top
-- avatar: http://image.laputcat.top/blog/avatar.jpeg
+- avatar: https://ae01.alicdn.com/kf/U2fc6caac6d6342a893c02eb027d60df1C.jpg
 - info: Work your ass off
 - comments: 如果需要交換友鏈,請留言!!!
 
@@ -17,7 +17,7 @@ top_img: https://cdn.jsdelivr.net/gh/BNDong/Cnblogs-Theme-SimpleMemory@master/im
 ```
     name: LaputCat
     address: https://www.laputcat.top
-    avatar: http://image.laputcat.top/blog/avatar.jpeg
+    avatar: https://ae01.alicdn.com/kf/U2fc6caac6d6342a893c02eb027d60df1C.jpg
     descr: Work your ass off
 ```
 <!-- endtab -->

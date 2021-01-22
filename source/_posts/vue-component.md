@@ -7,7 +7,7 @@ toc: 是否顯示toc （除非特定文章設置，可以不寫）
 toc_number: 是否顯示toc數字 （除非特定文章設置，可以不寫）
 copyright: true
 cover: https://cdn.jsdelivr.net/npm/@bootcss/www.bootcss.com@0.0.3/dist/img/vuejs.png
-tags: vue
+tags: Vue
 categories: vue
 keywords: Prop component VueComponnets
 description: vue组件 vue自定义事件

@@ -7,7 +7,7 @@ cover: https://img.php.cn/upload/article/000/000/007/2f6af5226adfeb6e67b09841b30
 toc: 是否顯示toc （除非特定文章設置，可以不寫）
 toc_number: 是否顯示toc數字 （除非特定文章設置，可以不寫）
 copyright: true
-tags: swoole nginx httpserver
+tags: Swoole
 categories: Swoole
 keywords: swoole nginx httpserver 
 description: 'centos7 宝塔[LNMP] 访问swoole服务问题'

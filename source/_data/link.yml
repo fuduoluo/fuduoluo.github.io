@@ -11,6 +11,12 @@ class1:
       link: https://dale-.github.io/
       avatar: https://dale-.github.io/css/images/pose.jpg
       descr: Dale|前端工作者
+    3:
+      name:  SeeseeU
+      link: https://seeseeu.top/
+      avatar: https://cdn.jsdelivr.net/gh/seeseeu/bpics@main/imgs/seeseey.jpg
+      descr: 写过java, 写过python, 现在在写golang的码农
+      
 class2:
   class_name: Code&Book~
   link_list:

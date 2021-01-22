@@ -10,7 +10,7 @@ cover: "https://cdn.jsdelivr.net/npm/@bootcss/www.bootcss.com@0.0.3/dist/img/vue
 abbrlink: 4595edb9
 date: 2020-02-21 10:52:59
 updated: 2020-02-21 10:52:59
-tags: vue
+tags: Vue
 categories: vue
 keywords: vue slot v-slot
 description: v-slot适用

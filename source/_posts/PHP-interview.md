@@ -3,7 +3,7 @@ title: 360解读PHP面试题
 
 copyright: true
 categories: PHP
-tags: 360解读PHP面试
+tags: PHP
 abbrlink: 263d185a
 cover: https://i.loli.net/2020/03/20/qeC8SmpIi5WT3gY.jpg
 top_img: https://i.loli.net/2020/03/20/qeC8SmpIi5WT3gY.jpg

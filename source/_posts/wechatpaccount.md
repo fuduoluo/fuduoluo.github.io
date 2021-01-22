@@ -10,7 +10,7 @@ cover: https://i.loli.net/2020/03/20/LkXy5aFSPhH2wtV.png
 abbrlink: '277e2557'
 date: 2020-03-23 18:26:54
 updated: 2020-03-28 12:16:54
-tags: wechat
+tags: Wechat
 categories: wechat
 keywords:
 description: 微信公众测试号接入

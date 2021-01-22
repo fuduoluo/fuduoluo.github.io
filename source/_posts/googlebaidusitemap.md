@@ -3,7 +3,7 @@ title: 百度[待定]Google收录站点
 
 copyright: true
 categories: Baidu-Google
-tags: Baidu-Google
+tags: Sitemap
 top: true
 abbrlink: 895444f1
 date: 2019-07-25 09:57:50
