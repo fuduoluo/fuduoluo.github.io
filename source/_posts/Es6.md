@@ -464,3 +464,6 @@ bar();       // 'this' 指向全局 window 对象，因为
 ![](https://ae01.alicdn.com/kf/Uefb8cf0254ad44a1af49a8ee3382c130L.jpg)
 
 ![](https://ae01.alicdn.com/kf/Ud44f335e8e764663aa1f29a38e4f9210S.jpg)
+
+#### async-await和Promise的关系
+[ES6系列文章 异步神器async-await-转载](https://segmentfault.com/a/1190000011526612#)

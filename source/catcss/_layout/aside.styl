@@ -1,0 +1,30 @@
+#aside_content
+  .aside-list
+    & > .aside-list-item
+      .thumbnail
+        & > img
+          border-radius .3rem
+
+  .card-archives ul.card-archive-list > .card-archive-list-item,
+  .card-categories ul.card-category-list > .card-category-list-item
+    a
+      &:hover
+        color #fff
+        border-radius .3rem
+  .card-info
+    img
+    #card-info-btn
+      border-radius 1rem
+  .card-info-social-icons
+      .social-icon
+        margin: 0 .5rem
+        color: var(--font-color)
+        font-size: 1.4em
+        cursor: pointer
+      i
+        transition: all .3s
+        &:hover
+          transform: scale(.95);
+          // background: var(--heo-post-blockquote-bg);
+          // color: var(--heo-main);
+          box-shadow: none;

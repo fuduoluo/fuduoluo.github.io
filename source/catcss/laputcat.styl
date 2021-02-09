@@ -1,15 +1,12 @@
-if hexo-config('css_prefix')
-  @import 'nib'
-
-@import '_third-party/normalize.min.css'
+// Laputcat Css
 // project
 @import 'var'
 @import '_global/*'
-@import '_highlight/highlight'
+// @import '_highlight/highlight'
 @import '_page/*'
 @import '_layout/*'
-@import '_tags/*'
-@import '_mode/*'
+// @import '_tags/*'
+// @import '_mode/*'
 
 // search
 if hexo-config('algolia_search.enable')
@@ -18,7 +15,4 @@ if hexo-config('algolia_search.enable')
 
 if hexo-config('local_search') && hexo-config('local_search.enable')
   @import '_search/index'
-  @import '_search/local-search'
-
-// LaputCat Css
-@import url(../../../source/catcss/laputcat.styl)
+  // @import '_search/local-search'
