@@ -63,6 +63,7 @@ tags: Wechat
         // failure
     });
 ```
+[理解 JavaScript 的 async/await](https://segmentfault.com/a/1190000007535316)
 #### async
 -  https://es6.ruanyifeng.com/#docs/async
 -  就是 Generator 函数的语法糖
